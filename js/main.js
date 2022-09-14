@@ -47,17 +47,17 @@ function handleTouchMove(evt) {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
         if (xDiff > 0) {
             /* right swipe */
-            gui.mobileMove('D');
-        } else {
             gui.mobileMove('A');
+        } else {
+            gui.mobileMove('D');
             /* left swipe */
         }
     } else {
         if (yDiff > 0) {
             /* down swipe */
-            gui.mobileMove('S');
-        } else {
             gui.mobileMove('W');
+        } else {
+            gui.mobileMove('S');
             /* up swipe */
         }
     }

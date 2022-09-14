@@ -64,10 +64,13 @@
     }
 
     &-buttons {
-        font-size: 2rem;
         display: flex;
-        flex-direction: column;
         margin-inline: auto;
+        font-size: .5rem;
+
+        @media (min-width: 60em) {
+            flex-direction: column;
+        }
 
         &>button {
             margin-block: 1rem;
@@ -86,14 +89,20 @@
             border: 4px solid rgb(98, 224, 98);
             color: rgb(98, 224, 98);
             padding: 2rem 3rem;
-            font-size: 3rem;
+
+            @media (min-width: 60em) {
+                font-size: 3rem;
+            }
         }
 
         &__score {
             border: 4px solid #ba3873;
             color: #ba3873;
             padding: 1rem;
-            font-size: 1rem;
+
+            @media (min-width: 60em) {
+                font-size: 1rem;
+            }
             line-height: 1;
             margin: 0;
 
