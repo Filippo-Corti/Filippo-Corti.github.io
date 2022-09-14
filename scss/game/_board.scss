@@ -1,0 +1,134 @@
+.board {
+    --cols: 15;
+    --rows: var(--cols);
+    --cell-dim-w: 4vw;
+    --cell-dim-h: 4vh;
+    position: relative;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    /* IMPORTANT: also change global.js when changing the number of cols */
+    background-color: hsl(120, 38%, 43%);
+
+    &__cell {
+
+        width: min(var(--cell-dim-w), var(--cell-dim-h));
+        aspect-ratio: 1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        &[cell-type="empty"] {
+            background-image: url('../../images/grass.png')
+        }
+
+        &[cell-type="apple"] {
+            background-image: url('../../images/apple.png'), url('../../images/grass.png')
+        }
+
+        &[cell-type="snake"] {
+            background-image: url('../../images/snake.png')
+        }
+
+        &[cell-type="snake-head"] {
+            background-image: url('../../images/snakeHead.png'), url('../../images/grass.png')
+        }
+
+        &[cell-type="snake-tail"] {
+            background-image: url('../../images/snakeTail.png')
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        z-index: -1;
+        background-image: url(../../images/wall.png);
+    }
+}
+
+.game {
+    &-title {
+        background-image: linear-gradient(20deg, rgb(37, 124, 37) 10%, rgb(248, 248, 3) 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-size: 6rem;
+        line-height: 1;
+    }
+
+    &-buttons {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+
+        &>button {
+            margin-block: 1rem;
+            background-color: rgb(29, 32, 30);
+            border-radius: 1rem;
+            font-family: var(--ff);
+            transition: 250ms ease-in-out;
+            cursor: pointer;
+
+            &:is(:hover, :focus) {
+                transform: scale(1.2);
+            }
+        }
+
+        &__start {
+            border: 4px solid rgb(98, 224, 98);
+            color: rgb(98, 224, 98);
+            padding: 2rem 3rem;
+            font-size: 3rem;
+        }
+
+        &__score {
+            border: 4px solid #ba3873;
+            color: #ba3873;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1;
+            margin: 0;
+
+            &>p:first-child {
+                text-align: left;
+                margin-top: 0;
+            }
+
+            &>p:last-child {
+                font-size: 3rem;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &__highest {
+            border: 4px solid #972c18;
+            color: #972c18;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1;
+            margin: 0;
+
+            &>p:first-child {
+                text-align: left;
+                margin-top: 0;
+            }
+
+            &>p:last-child {
+                font-size: 3rem;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

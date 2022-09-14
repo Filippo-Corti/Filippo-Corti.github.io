@@ -1,0 +1,15 @@
+:root {
+    --ff: 'Rubik Moonrocks', cursive;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: var(--ff);
+    background: url(../../images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
