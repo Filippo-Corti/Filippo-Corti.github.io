@@ -4,5 +4,5 @@ export let globals = {
     DEFAULT_SNAKE_LENGTH: 4,
     DEFAULT_ROW: 7,
     DEFAULT_COL: 2,
-    PACE: 150,
+    PACE: 200,
 }

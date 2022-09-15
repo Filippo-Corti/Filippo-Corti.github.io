@@ -1,22 +1,22 @@
-import Cell from './Cell.js';
-import SnakeGame from './SnakeGame.js';
 import { globals as G } from './globals.js';
 
 export default class GUI {
 
-    #gameBoard; //Board (Div)
-    #currentScore;
-    #highestScore;
+    #gameBoardDiv; //Board (Div)
+    #currentScoreEl;
+    #highestScoreEl;
+    #gameOverModal;
     #rows;
     #cols;
-    #snakeGame; //Game Logic
+    #snakeGame;
     #isGameRunning;
 
     constructor(rows, cols) {
+        this.#isGameRunning = false;
         this.#rows = rows;
         this.#cols = cols;
         this.#initControls();
-        this.#isGameRunning = false;
+        this.#generateBoard();
     }
 
     /* Public Methods */
@@ -25,55 +25,32 @@ export default class GUI {
         this.#snakeGame = snakeGame;
     }
 
-    generateBoard() {
-        this.#gameBoard = document.createElement("div");
-        this.#gameBoard.classList.add("board");
-        document.querySelector(".game-container").append(this.#gameBoard);
-        this.#fillBoard();
-        this.#currentScore = document.querySelector(".current-score");
-        this.#highestScore = document.querySelector(".highest-score");
-    }
-
     startGame() {
         this.#isGameRunning = true;
-        this.updateGUI(this.#snakeGame.getSnake(), this.#snakeGame.getApple());
+        this.#drawDefaultSnake();
+        this.#updateApplePosition(this.#snakeGame.getApple());
         this.#snakeGame.startMoving();
     }
 
-    updateGUI(snake, apple) {
-        this.#updateSnakePosition(snake);
+    updateGUI(moveData, apple) {
+        if (moveData === undefined) return;
+        this.#updateSnakePosition(moveData);
         this.#updateApplePosition(apple);
-        this.#updateScores(snake.length - G.DEFAULT_SNAKE_LENGTH);
-    }
-
-    eatApple() {
-        this.#removeApple(this.#snakeGame.getApple());
+        this.#updateScores(moveData.snakeLength - G.DEFAULT_SNAKE_LENGTH);
     }
 
     gameOver() {
         if (this.#isGameRunning) { //Prevents multiple executions
-            alert('Game Over');
+            this.#gameOverModal.showModal();
         }
         this.#isGameRunning = false;
     }
 
     regenerate() {
-        this.#removeBoard();
-        this.generateBoard();
+        this.#emptyBoard();
     }
 
-    isCellOccupiable(cell) {
-        return this.#isCellEmpty(cell) || this.isCellAnApple(cell);
-    }
-
-    isCellAnApple(cell) {
-        if (this.#doesCellExist(cell)) {
-            let cellDiv = this.#getCellDivFromCoordinates(cell.row, cell.col);
-            return cellDiv.getAttribute("cell-type") === "apple";
-        }
-    }
-
-    mobileMove(key){
+    mobileMove(key) {
         this.#snakeGame.changeSnakeDirection(key);
     }
 
@@ -86,6 +63,16 @@ export default class GUI {
         })
     }
 
+    #generateBoard() {
+        this.#currentScoreEl = document.querySelector(".current-score");
+        this.#highestScoreEl = document.querySelector(".highest-score");
+        this.#gameOverModal = document.querySelector("#game-over");
+        this.#gameBoardDiv = document.createElement("div");
+        this.#gameBoardDiv.classList.add("board");
+        document.querySelector(".game-container").append(this.#gameBoardDiv);
+        this.#fillBoard();
+    }
+
     #fillBoard() {
         for (let i = 0; i < this.#cols; i++) {
             for (let j = 0; j < this.#rows; j++) {
@@ -94,7 +81,7 @@ export default class GUI {
                 cell.classList.add("board__cell");
                 cell.setAttribute("cell-type", "empty")
                 cell.id = "cell" + i + "-" + j;
-                this.#gameBoard.append(cell);
+                this.#gameBoardDiv.append(cell);
             }
         }
     }
@@ -104,30 +91,45 @@ export default class GUI {
             for (let j = 0; j < this.#rows; j++) {
                 let currentCell = this.#getCellDivFromCoordinates(i, j);
                 currentCell.setAttribute("cell-type", "empty");
+                currentCell.style.transform = "rotate(0deg)";
             }
         }
     }
 
-    #removeBoard() {
-        document.querySelector(".board").remove();
+    #drawDefaultSnake() {
+        let snake = this.#snakeGame.getSnake();
+        let currentCell;
+        //Draw Body
+        for (let i = 0; i < snake.length - 1; i++) {
+            currentCell = document.querySelector("#cell" + snake[i].row + "-" + snake[i].col);
+            currentCell.setAttribute("cell-type", "snake");
+            currentCell.style.transform = "rotate(90deg)";
+        }
+        //Draw Head
+        currentCell = document.querySelector("#cell" + snake[snake.length - 1].row + "-" + snake[snake.length - 1].col);
+        currentCell.setAttribute("cell-type", "snake-head");
+        currentCell.style.transform = "rotate(90deg)";
     }
 
-    #drawSnake(snake) {
-        let a = 0;
-        snake.forEach(cell => {
-            let currentCell = document.querySelector("#cell" + cell.row + "-" + cell.col);
-            if (a == snake.length - 1) {
-                currentCell.setAttribute("cell-type", "snake-head");
-                this.#styleTextureDirection(currentCell);
-            } else {
-                if (a === 0) {
-                    currentCell.setAttribute("cell-type", "snake-tail");
-                    currentCell.style.transform = "rotate(0deg)";
-                } else
-                    currentCell.setAttribute("cell-type", "snake");
-            }
-            a++;
-        });
+    #updateSnakePosition(snakeData) {
+        let cellDiv;
+        //Delete 
+        cellDiv = this.#getCellDivFromCoordinates(snakeData.cellToDelete.row, snakeData.cellToDelete.col);
+        cellDiv.setAttribute("cell-type", "empty");
+        cellDiv.style.transform = "rotate(0deg)";
+        //Update
+        cellDiv = this.#getCellDivFromCoordinates(snakeData.cellToUpdate.row, snakeData.cellToUpdate.col);
+        if (snakeData.cellToUpdate.curve != null) {
+            cellDiv.setAttribute("cell-type", "snake-curve");
+            cellDiv.style.transform = "rotate(" + snakeData.cellToUpdate.curve + "deg)";
+        }
+        else {
+            cellDiv.setAttribute("cell-type", "snake");
+        }
+        //New Head
+        cellDiv = this.#getCellDivFromCoordinates(snakeData.cellHead.row, snakeData.cellHead.col);
+        cellDiv.setAttribute("cell-type", "snake-head");
+        this.#styleTextureDirection(cellDiv);
     }
 
     #styleTextureDirection(cell) {
@@ -150,35 +152,9 @@ export default class GUI {
         }
     }
 
-    #updateSnakePosition(currentSnake) {
-        this.#emptyBoard();
-        this.#drawSnake(currentSnake);
-    }
-
-    #drawApple(apple) {
+    #updateApplePosition(apple) {
         let appleCell = this.#getCellDivFromCoordinates(apple.row, apple.col);
         appleCell.setAttribute("cell-type", "apple");
-    }
-
-    #removeApple(apple) {
-        let appleCell = this.#getCellDivFromCoordinates(apple.row, apple.col);
-        appleCell.setAttribute("cell-type", "snake-head");
-    }
-
-    #updateApplePosition(currentApple) {
-        this.#drawApple(currentApple);
-    }
-
-    #doesCellExist(cell) {
-        let cellDiv = this.#getCellDivFromCoordinates(cell.row, cell.col);
-        return !(cellDiv === null);
-    }
-
-    #isCellEmpty(cell) {
-        if (this.#doesCellExist(cell)) {
-            let cellDiv = this.#getCellDivFromCoordinates(cell.row, cell.col);
-            return cellDiv.getAttribute("cell-type") === "empty";
-        }
     }
 
     #getCellDivFromCoordinates(row, col) {
@@ -186,9 +162,9 @@ export default class GUI {
     }
 
     #updateScores(score) {
-        this.#currentScore.innerHTML = score;
-        if (score > (this.#highestScore.innerHTML)) {
-            this.#highestScore.innerHTML = score;
+        this.#currentScoreEl.innerHTML = score;
+        if (score > (this.#highestScoreEl.innerHTML)) {
+            this.#highestScoreEl.innerHTML = score;
         }
     }
 

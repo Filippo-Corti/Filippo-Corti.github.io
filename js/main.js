@@ -5,7 +5,6 @@ import { globals as G } from './globals.js';
 
 /* Create Game Board and Interface and link them together */
 const gui = new GUI(G.TOTAL_ROWS, G.TOTAL_COLS);
-gui.generateBoard();
 const snakeGame = new SnakeGame(gui);
 gui.linkGameLogic(snakeGame);
 
@@ -13,6 +12,18 @@ document.querySelector(".game-buttons__start").addEventListener('click', () => {
     snakeGame.reset();
     gui.startGame();
 })
+
+
+
+
+/* Close Game Over Button*/
+
+const closeGameOver = document.querySelector(".game-over__button");
+
+closeGameOver.addEventListener('click',() => {
+    document.querySelector("#game-over").close();
+})
+
 
 /* Mobile Controls */
 

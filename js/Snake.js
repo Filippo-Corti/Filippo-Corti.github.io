@@ -1,4 +1,5 @@
 import Cell from './Cell.js'
+import MoveData from './MoveData.js';
 import { globals as G } from './globals.js';
 
 
@@ -16,20 +17,30 @@ export default class Snake {
         return this.#snake;
     }
 
-    move(deltaRow, deltaCol) {
+    move(deltaRow, deltaCol, snakeCurve) {
+        let moveData = new MoveData();
         let currentHead = this.#getSnakeHead();
         let newOccupiedCell = new Cell(currentHead.row + deltaRow, currentHead.col + deltaCol);
         if (!this.#isCellFree(newOccupiedCell)) {
             this.#snakeGame.gameOver();
             return;
         }
+        moveData.cellToDelete = this.#snake[0];
         if (this.#isCellAnApple(newOccupiedCell)) {
+            this.#setSnakeCurveToCell(this.#snake[this.#snake.length - 1], snakeCurve);
+            moveData.cellToUpdate = this.#snake[this.#snake.length - 1];
+            this.#addNewSnakeHead(newOccupiedCell);
             this.#snakeGame.appleEaten();
         }
         else {
             this.#removeSnakeTail(); //Only remove 1 if it's not eating
+            this.#setSnakeCurveToCell(this.#snake[this.#snake.length - 1], snakeCurve);
+            moveData.cellToUpdate = this.#snake[this.#snake.length - 1];
+            this.#addNewSnakeHead(newOccupiedCell);
         }
-        this.#addNewSnakeHead(newOccupiedCell);
+        moveData.cellHead = newOccupiedCell;
+        moveData.snakeLength = this.#snake.length;
+        return moveData;
     }
 
     #generateDefaultSnake() {
@@ -59,6 +70,13 @@ export default class Snake {
 
     #isCellAnApple(cell) {
         return this.#snakeGame.isCellAnApple(cell);
+    }
+
+    #setSnakeCurveToCell(cell, curve) {
+        if (curve == null) {
+            return;
+        }
+        cell.curve = curve;
     }
 
 }

@@ -23,7 +23,7 @@
         }
 
         &[cell-type="apple"] {
-            background-image: url('../../images/apple.png'), url('../../images/grass.png')
+            background-image: url('../../images/apple.png')
         }
 
         &[cell-type="snake"] {
@@ -31,11 +31,15 @@
         }
 
         &[cell-type="snake-head"] {
-            background-image: url('../../images/snakeHead.png'), url('../../images/grass.png')
+            background-image: url('../../images/snakeHead.png')
         }
 
         &[cell-type="snake-tail"] {
             background-image: url('../../images/snakeTail.png')
+        }
+
+        &[cell-type="snake-curve"]{
+            background-image: url('../../images/snakeCurve.png')
         }
     }
 
@@ -103,6 +107,7 @@
             @media (min-width: 60em) {
                 font-size: 1rem;
             }
+
             line-height: 1;
             margin: 0;
 
@@ -139,5 +144,50 @@
                 padding: 0;
             }
         }
+    }
+}
+
+.game-over {
+    max-width: 50vw;
+    max-height: 30vh;
+    background-color: black;
+    color: rgb(218, 100, 100);
+    border: 6px solid rgb(218, 100, 100);
+    border-radius: 1rem;
+
+    &__container {
+
+        @media(min-width: 60em) {
+            display: flex;
+        }
+
+        align-items: center;
+
+        &>div {
+            font-size: 2rem;
+            margin: 1rem;
+            text-align: center;
+
+            &>button {
+                margin-block: 1rem;
+                color: rgb(218, 100, 100);
+                background-color: rgb(29, 32, 30);
+                border: 4px solid rgb(218, 100, 100);
+                border-radius: 1rem;
+                font-family: var(--ff);
+                font-size: 1.2rem;
+                cursor: pointer;
+                padding: 2rem 2.5rem;
+            }
+        }
+
+
+        &>img {
+            max-height: 30vh;
+        }
+    }
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }

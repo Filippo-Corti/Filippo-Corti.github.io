@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snake</title>
   <link rel="stylesheet" href="css/style.css">
@@ -29,6 +29,16 @@
       </button>
     </div>
   </div>
+  <dialog class="game-over" id="game-over">
+    <div class="game-over__container">
+      <img src="images/sad-snake.webp" alt="">
+      <div>
+        <p>Game Over</p>
+        <button class="game-over__button">Try Again ツ</button>
+      </div>
+    </div>
+  </dialog>
+
   <script type="module" src="js/main.js"></script>
 </body>
 

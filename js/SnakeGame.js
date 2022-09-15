@@ -1,5 +1,6 @@
 import Apple from './Apple.js';
 import Snake from './Snake.js';
+import MoveData from './MoveData.js';
 import { globals as G } from './globals.js';
 
 export default class SnakeGame {
@@ -55,7 +56,6 @@ export default class SnakeGame {
     }
 
     appleEaten() {
-        this.#gameGui.eatApple();
         this.generateApple();
     }
 
@@ -66,34 +66,52 @@ export default class SnakeGame {
     }
 
     moveSnake(key) {
+        let moveData;
         if (!this.isKeyTheOppositeOfDirection(key)) {
+            let cellRotation = this.#getSnakeRotation(this.direction, key);
             this.direction = key;
             switch (this.direction) {
                 case 'W':
-                    this.#snake.move(-1, 0);
+                    moveData = this.#snake.move(-1, 0, cellRotation);
                     break;
                 case 'A':
-                    this.#snake.move(0, -1);
+                    moveData = this.#snake.move(0, -1, cellRotation);
                     break;
                 case 'S':
-                    this.#snake.move(1, 0);
+                    moveData = this.#snake.move(1, 0, cellRotation);
                     break;
                 case 'D':
-                    this.#snake.move(0, 1);
+                    moveData = this.#snake.move(0, 1, cellRotation);
                     break;
                 default:
                     return;
             }
-            this.#updateGUI();
+            this.#updateGUI(moveData);
         }
     }
 
     isCellFree(cell) {
-        return this.#gameGui.isCellOccupiable(cell);
+        return this.isCellInsideTheBoard(cell) && !this.isCellPartOfTheSnake(cell);
+    }
+
+    isCellInsideTheBoard(cell) {
+        return (cell.row >= 0 && cell.row < G.TOTAL_ROWS) && (cell.col >= 0 && cell.col < G.TOTAL_COLS);
+    }
+
+    isCellPartOfTheSnake(cell) {
+        let snake = this.#snake.getSnake();
+        let returnValue = false;
+        snake.forEach(el => {
+            if (el.row == cell.row && el.col == cell.col) {
+                returnValue = true;
+            }
+        });
+        return returnValue;
     }
 
     isCellAnApple(cell) {
-        return this.#gameGui.isCellAnApple(cell);
+        if (!this.#apple) return false;
+        return (this.#apple.row === cell.row && this.#apple.col === cell.col);
     }
 
     isKeyTheOppositeOfDirection(key) {
@@ -111,8 +129,26 @@ export default class SnakeGame {
         }
     }
 
-    #updateGUI() {
-        this.#gameGui.updateGUI(this.getSnake(), this.getApple());
+    #getSnakeRotation(lastDir, newDir) {
+        if (lastDir === newDir) {
+            return null;
+        }
+        if ((lastDir === 'D' && newDir === 'W') || (lastDir === 'S' && newDir === 'A')) {
+            return 0;
+        }
+        if ((lastDir === 'A' && newDir === 'W') || (lastDir === 'S' && newDir === 'D')) {
+            return 90;
+        }
+        if ((lastDir === 'A' && newDir === 'S') || (lastDir === 'W' && newDir === 'D')) {
+            return 180;
+        }
+        if ((lastDir === 'D' && newDir === 'S') || (lastDir === 'W' && newDir === 'A')) {
+            return 270;
+        }
+    }
+
+    #updateGUI(moveData) {
+        this.#gameGui.updateGUI(moveData, this.getApple());
     }
 
 }

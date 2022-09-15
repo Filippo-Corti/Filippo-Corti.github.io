@@ -4,6 +4,8 @@ import Cell from './Cell.js'
 export default class Apple {
 
     #snakeGame;
+    row;
+    col;
 
     constructor(snakeGame) {
         this.#snakeGame = snakeGame;
