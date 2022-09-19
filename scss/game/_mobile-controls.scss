@@ -1,0 +1,32 @@
+@use '../abstracts/' as a;
+
+.game-mobile-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include a.respond-to-increase(medium) {
+        display: none;
+    }
+
+    &>div>button {
+        background-color: rgb(182, 206, 136);
+        border: 2px solid black;
+        box-shadow: 0 0 10px;
+
+
+        &>img {
+            width: 20vw;
+            height: 20vw;
+        }
+    }
+
+
+    &__updown {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}

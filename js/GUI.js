@@ -1,5 +1,11 @@
 import { globals as G } from './globals.js';
 
+/* Button controls */
+const buttonUp = document.querySelector(".game-mobile-controls__button-up");
+const buttonDown = document.querySelector(".game-mobile-controls__button-down");
+const buttonLeft = document.querySelector(".game-mobile-controls__button-left");
+const buttonRight = document.querySelector(".game-mobile-controls__button-right");
+
 export default class GUI {
 
     #gameBoardDiv; //Board (Div)
@@ -60,6 +66,22 @@ export default class GUI {
         window.addEventListener('keydown', (e) => {
             if (this.#isGameRunning)
                 this.#snakeGame.changeSnakeDirection(e.key.toUpperCase());
+        })
+        buttonUp.addEventListener('click', () => {
+            if (this.#isGameRunning)
+                this.#snakeGame.changeSnakeDirection('W');
+        })
+        buttonDown.addEventListener('click', () => {
+            if (this.#isGameRunning)
+                this.#snakeGame.changeSnakeDirection('S');
+        })
+        buttonLeft.addEventListener('click', () => {
+            if (this.#isGameRunning)
+                this.#snakeGame.changeSnakeDirection('A');
+        })
+        buttonRight.addEventListener('click', () => {
+            if (this.#isGameRunning)
+                this.#snakeGame.changeSnakeDirection('D');
         })
     }
 

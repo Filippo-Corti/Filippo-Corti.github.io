@@ -27,7 +27,9 @@ closeGameOver.addEventListener('click',() => {
 
 /* Mobile Controls */
 
-document.addEventListener('touchstart', handleTouchStart, false);
+
+// CONTROLS FOR SCROLL-MOVING
+/* document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;
@@ -55,25 +57,24 @@ function handleTouchMove(evt) {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
-            /* right swipe */
+            // right swipe 
             gui.mobileMove('A');
         } else {
             gui.mobileMove('D');
-            /* left swipe */
+            // left swipe 
         }
     } else {
         if (yDiff > 0) {
-            /* down swipe */
+            // down swipe
             gui.mobileMove('W');
         } else {
             gui.mobileMove('S');
-            /* up swipe */
+            // up swipe 
         }
     }
-    /* reset values */
     xDown = null;
     yDown = null;
-};
+};  */
 
