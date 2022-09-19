@@ -14,7 +14,21 @@ document.querySelector(".game-buttons__start").addEventListener('click', () => {
 })
 
 
+/* Settings */
 
+const settingsButton = document.querySelector(".game-settings__button");
+
+settingsButton.addEventListener('click', () => {
+    document.querySelector("#game-settings").showModal();
+})
+
+const settingsSaveButton = document.querySelector(".game-settings__save");
+
+settingsSaveButton.addEventListener('click', () => {
+    let newPace = 450 - document.querySelector("#game-speed").value;
+    document.querySelector("#game-settings").close();
+    G.PACE = newPace;
+})
 
 /* Close Game Over Button*/
 

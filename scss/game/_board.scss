@@ -58,6 +58,12 @@
 }
 
 .game {
+
+    &-header {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-inline: 1rem;
+    }
     &-title {
         background-image: linear-gradient(20deg, rgb(37, 124, 37) 10%, rgb(248, 248, 3) 90%);
         background-clip: text;
@@ -70,7 +76,7 @@
         margin-block: 3rem;
 
         @include a.respond-to-decrease(medium){
-            font-size: 4rem;
+            font-size: 3rem;
             margin-block: 1rem;
         }
 
@@ -102,7 +108,7 @@
         &__start {
             border: 4px solid rgb(98, 224, 98);
             color: rgb(98, 224, 98);
-            padding: 0.2rem 3rem;
+            padding: 0.2rem 2rem;
 
             @include a.respond-to-increase(medium){
                 font-size: 3rem;
