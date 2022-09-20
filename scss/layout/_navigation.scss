@@ -1,0 +1,123 @@
+@use '../abstracts/' as a;
+
+.primary-header {
+    background-color: var(--clr-neutral-400);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 5vw;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+
+        @include a.respond-to-increase(medium) {
+            gap: 1rem;
+        }
+
+        &>div {
+            &>* {
+                padding: 0.3rem;
+            }
+
+            &>.logo-title {
+                font-size: clamp(0.75rem, 0.4rem + 3vw, var(--fs-600));
+            }
+
+            &>.logo-subtitle {
+                font-size: clamp(0.55rem, 0.3rem + 3vw, var(--fs-400));
+            }
+        }
+
+        &>img {
+            max-height: 100px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        &>img {
+            min-width: 3rem;
+            width: calc(1rem + 4vw);
+        }
+
+        &>button {
+            @include a.respond-to-decrease(medium) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-container {
+    position: relative;
+    background-color: var(--clr-primary-100);
+    padding: 1rem 10vw;
+    border-bottom: 4px solid var(--clr-neutral-400);
+    min-height: 20px;
+
+    &>ul {
+        display: flex;
+        align-items: center;
+        gap: 6vw;
+
+        @include a.respond-to-decrease(medium) {
+            /* display: none; */
+            flex-direction: column;
+            margin-top: 2.5rem;
+            gap: 2rem;
+            max-height: 0;
+            opacity: 0;
+            transition: 350ms ease-in-out;
+
+            &[showing] {
+                transition: 250ms ease-in-out;
+                max-height: 1000px;
+                opacity: 1;
+            }
+        }
+
+        &>a {
+            text-decoration: none;
+            color: var(--clr-neutral-100);
+            font-weight: var(--fw-bold);
+            letter-spacing: 0.5px;
+
+            &>li[data-type="active"] {
+                padding-bottom: 0.1rem;
+                border-bottom: 3px solid var(--clr-neutral-100);
+
+            }
+        }
+
+        & button {
+            @include a.respond-to-increase(large) {
+                display: none;
+            }
+        }
+    }
+
+    & .navbar-mobile-button {
+        position: absolute;
+        top: 2.5rem;
+        right: 5vw;
+        transform: translateY(-50%);
+
+        @include a.respond-to-increase(large) {
+            display: none;
+        }
+
+        &>img[overlay] {
+            display: none;
+        }
+    }
+
+}

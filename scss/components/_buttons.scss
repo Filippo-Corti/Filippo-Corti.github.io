@@ -1,0 +1,16 @@
+.button {
+    display: inline-flex;
+    background-color: var(--clr-primary-100);
+    color: var(--clr-neutral-100);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-regular);
+    border: 0;
+
+    &-inverted {
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-100);
+    }
+}

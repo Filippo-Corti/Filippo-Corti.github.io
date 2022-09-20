@@ -1,7 +1,9 @@
 $breakpoints-up: (
-    medium: 60em,
+    medium: 40em,
+    large: 63em,
 );
 
 $breakpoints-down: (
-    medium: 60em,
-);
+    small: 39.99875em,
+    medium: 62.99875em,
+)

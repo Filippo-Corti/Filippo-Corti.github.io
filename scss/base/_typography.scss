@@ -1,0 +1,58 @@
+@use '../abstracts/' as a;
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+}
+
+.ff-epilogue {
+    font-family: Epilogue;
+}
+
+.ff-laila {
+    font-family: Laila;
+}
+
+.letters-spaced {
+    @include a.respond-to-increase(large) {
+        letter-spacing: 5px;
+    }
+}
+
+@each $color,
+$shades in a.$colors {
+
+    @each $shade,
+    $value in $shades {
+        .text-#{$color}-#{$shade} {
+            color: $value;
+        }
+
+        .bg-#{$color}-#{$shade} {
+            background-color: $value;
+        }
+    }
+}
+
+@each $font-size,
+$sizes in a.$font-sizes {
+
+    // Just to do it once 
+    @if $font-size ==small {
+
+        @each $size,
+        $value in $sizes {
+            .fs-#{$size} {
+                font-size: var(--fs-#{$size});
+            }
+        }
+
+    }
+}
+
+@each $font-weight,
+$weight in a.$font-weights {
+    .fw-#{$font-weight} {
+        font-weight: $weight;
+    }
+}

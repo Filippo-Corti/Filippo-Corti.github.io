@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="840px" height="600px" viewBox="0 0 840 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>de-germany-flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="840" height="600" rx="60"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="840" height="600" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="840" height="600" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Working" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GoPro-EMEA_APAC-Flags" transform="translate(-3220.000000, -900.000000)">
+            <g id="de-germany-flag" transform="translate(3220.000000, 900.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="CC-BG-Copy-13" stroke="#666666" mask="url(#mask-2)" stroke-width="10" fill="#FFFFFF">
+                    <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-36" mask="url(#mask-3)">
+                    <g transform="translate(-80.000000, 0.000000)">
+                        <polygon id="Fill-1" fill="#0A0A08" points="0 599.8 1000 599.8 1000 0 0 0"></polygon>
+                        <polygon id="Fill-3" fill="#C9232A" points="0 599.8 1000 599.8 1000 200 0 200"></polygon>
+                        <polygon id="Fill-4" fill="#F9CA23" points="0 599.8 1000 599.8 1000 400 0 400"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
