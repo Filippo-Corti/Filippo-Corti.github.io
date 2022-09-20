@@ -1,6 +1,7 @@
 @use '../abstracts/' as a;
 
 body {
+    min-height: 100vh;
     font-family: var(--ff-primary);
     font-size: var(--fs-300);
 }

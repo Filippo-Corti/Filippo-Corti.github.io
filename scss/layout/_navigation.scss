@@ -33,7 +33,7 @@
             }
         }
 
-        &>img {
+        & img {
             max-height: 100px;
         }
     }
@@ -49,7 +49,7 @@
             width: calc(1rem + 4vw);
         }
 
-        &>button {
+        & button {
             @include a.respond-to-decrease(medium) {
                 display: none;
             }

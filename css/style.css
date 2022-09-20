@@ -109,6 +109,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -122,6 +126,7 @@ table {
 }
 /* End reset styles */
 body {
+  min-height: 100vh;
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
 }
@@ -229,6 +234,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   display: inline-flex;
   background-color: var(--clr-primary-100);
   color: var(--clr-neutral-100);
@@ -242,6 +248,10 @@ body {
 .button-inverted {
   background-color: var(--clr-neutral-400);
   color: var(--clr-neutral-100);
+}
+
+.language-button {
+  cursor: pointer;
 }
 
 .modal-language {
@@ -337,7 +347,7 @@ body {
 .primary-header__left > div > .logo-subtitle {
   font-size: clamp(0.55rem, 0.3rem + 3vw, var(--fs-400));
 }
-.primary-header__left > img {
+.primary-header__left img {
   max-height: 100px;
 }
 .primary-header__right {
@@ -351,7 +361,7 @@ body {
   width: calc(1rem + 4vw);
 }
 @media (max-width: 62.99875em) {
-  .primary-header__right > button {
+  .primary-header__right button {
     display: none;
   }
 }
@@ -441,6 +451,11 @@ body {
   align-items: center;
   --gap: 3vw;
 }
+@media (max-width: 62.99875em) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+}
 .hero-section__text {
   display: flex;
   flex-direction: column;
@@ -522,6 +537,49 @@ body {
 .warranties-section li::marker {
   content: "✔️";
   background-color: red;
+}
+
+.contacts__container {
+  min-height: 75vh;
+}
+.contacts__title {
+  padding: 3rem;
+}
+@media (max-width: 62.99875em) {
+  .contacts__title {
+    padding-block: 1.5rem;
+  }
+}
+.contacts__contacts {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+@media (max-width: 62.99875em) {
+  .contacts__contacts {
+    padding-block: 2rem;
+  }
+}
+.contacts__contacts img {
+  max-width: 5rem;
+  margin-block: 0.3rem;
+}
+
+.google-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.google-map img {
+  z-index: 1;
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
