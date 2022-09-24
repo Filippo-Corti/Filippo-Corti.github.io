@@ -25,7 +25,7 @@
             }
 
             &>.logo-title {
-                font-size: clamp(0.75rem, 0.4rem + 3vw, var(--fs-600));
+                font-size: clamp(0.85rem, 0.5rem + 3vw, var(--fs-600));
             }
 
             &>.logo-subtitle {
@@ -36,6 +36,10 @@
 
         & img {
             max-height: 100px;
+            
+            @include a.respond-to-decrease(small){
+                max-height: 70px;
+            }
         }
     }
 
