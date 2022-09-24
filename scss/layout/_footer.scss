@@ -1,9 +1,8 @@
 .primary-footer {
     padding: 1rem;
-    background-color: var(--clr-neutral-400);
+    background-color: var(--clr-neutral-600);
     color: var(--clr-neutral-100);
     text-align: center;
-
 
     & h1 {
         font-size: clamp(0.75rem, 1rem + 3vw, var(--fs-500));
@@ -11,7 +10,7 @@
     }
 
     & p {
-        color: rgba(255 255 255 / 0.6);
+        color: var(--clr-neutral-400);
         letter-spacing: 1.5px;
         line-height: 1.3;
         padding-block: 0.3rem 1.5rem;

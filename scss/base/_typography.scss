@@ -6,12 +6,8 @@ body {
     font-size: var(--fs-300);
 }
 
-.ff-epilogue {
-    font-family: Epilogue;
-}
-
-.ff-laila {
-    font-family: Laila;
+.ff-primary {
+    font-family: Alata;
 }
 
 .letters-spaced {
@@ -56,4 +52,8 @@ $weight in a.$font-weights {
     .fw-#{$font-weight} {
         font-weight: $weight;
     }
+}
+
+.title {
+    font-size: clamp(var(--fs-600), 1rem + 6vw ,var(--fs-700));
 }

@@ -1,0 +1,106 @@
+@use '../abstracts/'as a;
+
+.warranties-section {
+    margin-block: 5%;
+
+    & .title {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.warranties-grid {
+    display: grid;
+    justify-content: center;
+
+    @include a.respond-to-increase(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include a.respond-to-increase(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__col {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+
+        &>div {
+            max-width: 20rem;
+            background-color: var(--clr-neutral-100);
+            box-shadow: 0 0 10px 4px rgba(44, 41, 41, 0.3);
+            margin: 1.5rem;
+            padding: 1vw;
+            border-radius: 2rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: 150ms ease;
+            
+            @include a.respond-to-decrease(medium) {
+                margin: 1rem;
+            }
+
+            & p {
+                margin-top: 1rem;
+                font-size: var(--fs-400);
+            }
+
+            &:is(:hover, :focus-visible) {
+                background-color: var(--clr-neutral-300);
+                transition: 150ms ease-in;
+                scale: 1.1;
+            }
+        }
+
+        &:nth-of-type(odd) {
+            justify-content: end;
+        }
+    }
+
+
+    &__col:nth-child(odd) {
+        &>div:first-of-type {
+            grid-row: 1;
+        }
+
+        &>div:last-of-type {
+            min-height: 24rem;
+            grid-row: 2 / -1;
+
+            @include a.respond-to-decrease(medium) {
+                min-height: 18rem;
+            }
+
+            @include a.respond-to-decrease(small) {
+                min-height: 0;
+            }
+        }
+    }
+
+    &__col:nth-child(even) {
+        &>div:first-of-type {
+            min-height: 24rem;
+            grid-row: 1 / 3;
+
+            @include a.respond-to-decrease(medium) {
+                min-height: 18rem;
+            }
+
+            @include a.respond-to-decrease(small) {
+                min-height: 1rem;
+            }
+        }
+
+        &>div:last-of-type {
+            grid-row: 3 / -1;
+        }
+    }
+
+
+    & img {
+        margin-inline: auto;
+        max-width: 5rem;
+    }
+}

@@ -5,10 +5,6 @@
     gap: var(--gap, 0);
 
     @include a.respond-to-increase(medium) {
-        &--2cols-thin {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
         &--3cols {
             grid-template-columns: repeat(3, 1fr);
         }

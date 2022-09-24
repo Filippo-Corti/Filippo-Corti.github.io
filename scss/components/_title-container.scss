@@ -1,0 +1,20 @@
+.title-container {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__story {
+        background-image: url(../../images/view.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    &__text {
+        padding: 2rem 4rem;
+        background-color: rgba(255 255 255 / 0.7);
+        text-align: center;
+    }
+}

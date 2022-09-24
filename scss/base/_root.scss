@@ -1,8 +1,7 @@
 @use '../abstracts/'as a;
 
 :root {
-    --ff-primary: Epilogue;
-    --ff-accent: Laila;
+    --ff-primary: Alata;
 
     @each $color,
     $shades in a.$colors {

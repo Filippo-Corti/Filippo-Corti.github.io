@@ -1,0 +1,39 @@
+.plastic-modal {
+    &__container {
+        max-width: 70vw;
+        margin-inline: auto;
+        padding: 4rem;
+        background-color: lightblue;
+    }
+
+    &__title {
+        margin: 2rem;
+        font-size: var(--fs-700);
+    }
+
+    &__text {
+        margin: 2rem;
+        color: var(--clr-neutral-500);
+        font-size: var(--fs-400);
+        line-height: 1.2;
+    }
+
+    &__container > div {
+        display: flex;
+        justify-content: center;
+        font-size: var(--fs-400);
+
+
+        & table, tr, td, th {
+            background-color: var(--clr-neutral-100);
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 2rem;
+        }
+
+        & th {
+            font-weight: bold;
+        }
+    }
+
+}
