@@ -1,14 +1,30 @@
+@use '../abstracts/' as a;
 .plastic-modal {
     &__container {
         position: fixed;
         max-width: 64rem;
         max-height: 80vh;
         margin: auto;
-        padding: 3rem 3rem;
+        padding: 5rem 2rem 1rem;
         background-color: var(--clr-neutral-300);
 
         &::backdrop {
             background-color: rgba(0 0 0 / 0.6);
+        }
+
+        @include a.respond-to-decrease(small){
+            height: 30rem;
+            overflow: hidden;
+        }
+    }
+
+    &__scroller {
+        height: 100%;
+        padding: 0.5rem;
+        background-color: var(--clr-neutral-300);
+
+        @include a.respond-to-decrease(small){
+            overflow: auto;
         }
     }
 
@@ -17,7 +33,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin: 2rem;
+        margin: 2.5rem;
         scale: 1.3;
     }
 
@@ -36,13 +52,12 @@
         line-height: 1.2;
     }
 
-    &__container>div {
+    &__container .plastic-modal__table-container {
         display: flex;
         justify-content: center;
         font-size: var(--fs-300);
 
-
-        & table,
+        Z & table,
         tr,
         td,
         th {
@@ -56,4 +71,9 @@
             font-weight: bold;
         }
     }
+}
+
+.lock-background {
+    height: 100%;
+    overflow-y: hidden;
 }

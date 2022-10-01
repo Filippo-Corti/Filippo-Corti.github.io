@@ -7,6 +7,7 @@ materials.forEach(el => {
         let modalId = target.getAttribute('data-activate');
         let modal = document.querySelector("#" + modalId);
         modal.showModal();
+        document.querySelector("body").classList.add("lock-background");
     })
 })
 
@@ -14,6 +15,15 @@ const closeModalButtons = document.querySelectorAll(".plastic-modal__close-butto
 
 closeModalButtons.forEach(el => {
     el.addEventListener('click', (e) => {
-        e.target.parentElement.close();
+        e.target.parentElement.parentElement.close();
+        document.querySelector("body").classList.remove("lock-background");
+    })
+})
+
+const dialogs = document.querySelectorAll(".plastic-modal__container");
+
+dialogs.forEach(el => {
+    el.addEventListener('cancel', (e) => {
+        document.querySelector("body").classList.remove("lock-background");
     })
 })
