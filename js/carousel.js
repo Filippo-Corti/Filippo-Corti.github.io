@@ -34,19 +34,7 @@ const updateButtons = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
-prevButton.addEventListener('click', () => {
-    const currentSlide = track.querySelector(".current-slide");
-    const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector(".current-slide");
-    const nextDot = currentDot.previousElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === prevSlide);
-
-    moveToSlide(track, currentSlide, prevSlide);
-    updateDots(currentDot, nextDot);
-    updateButtons(slides, prevButton, nextButton, nextIndex);
-})
-
-nextButton.addEventListener('click', () => {
+function moveNext() {
     const currentSlide = track.querySelector(".current-slide");
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotsNav.querySelector(".current-slide");
@@ -56,6 +44,26 @@ nextButton.addEventListener('click', () => {
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     updateButtons(slides, prevButton, nextButton, nextIndex);
+}
+
+function movePrev() {
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector(".current-slide");
+    const nextDot = currentDot.previousElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === prevSlide);
+
+    moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, nextDot);
+    updateButtons(slides, prevButton, nextButton, nextIndex);
+}
+
+prevButton.addEventListener('click', () => {
+    movePrev();
+})
+
+nextButton.addEventListener('click', () => {
+    moveNext();
 })
 
 dotsNav.addEventListener('click', e => {
@@ -72,3 +80,42 @@ dotsNav.addEventListener('click', e => {
     updateButtons(slides, prevButton, nextButton, targetIndex);
 
 })
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
+function getTouches(evt) {
+    return evt.touches ||             // browser API
+        evt.originalEvent.touches; // jQuery
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+};
+
+function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) {
+            moveNext();
+        } else {
+            movePrev();
+        }
+    }
+    xDown = null;
+    yDown = null;
+}; 
