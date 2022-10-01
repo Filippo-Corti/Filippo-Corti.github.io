@@ -1,0 +1,45 @@
+@use '../abstracts/'as a;
+
+.language-button {
+    cursor: pointer;
+}
+
+.modal-language {
+    max-width: 60vw;
+    background-color: var(--clr-neutral-200);
+    border: 0;
+    padding: 2rem;
+
+    & p {
+        text-align: center;
+        margin-block: 0.8rem;
+
+        @include a.respond-to-increase(medium){
+            margin-bottom: 3rem;
+        }
+    }
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        @include a.respond-to-decrease(small) {
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        & img {
+            max-width: 4rem;
+        }
+    }
+
+    &::backdrop {
+        background-color: rgba(0 0 0 / 0.6);
+    }
+}

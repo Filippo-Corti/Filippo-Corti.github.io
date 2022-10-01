@@ -1,0 +1,30 @@
+.article {
+    &__container {
+        min-height: 30rem;
+        margin: 2rem;
+        max-width: 28rem;
+        line-height: 1.2;
+    }
+
+    &__img > img{
+        width: 100%;
+    }
+
+    &__date {
+        padding-top: 1rem;
+        color: var(--clr-neutral-500);
+        font-size: var(--fs-200);
+    }
+
+    &__title {
+        padding-block: 0.7rem;
+        color: var(--clr-neutral-600);
+        font-size: var(--fs-400);
+    }
+
+    &__text {
+        padding-top: 1rem;
+        color: var(--clr-neutral-500);
+        font-size: var(--fs-300);
+    }
+}

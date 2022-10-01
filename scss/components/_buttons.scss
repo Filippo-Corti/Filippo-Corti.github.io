@@ -1,0 +1,36 @@
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    background-color: var(--clr-primary-100);
+    color: var(--clr-neutral-100);
+    padding: 1rem 2rem;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-regular);
+    text-transform: uppercase;
+    border: 0;
+
+    &:is(:hover, :focus-visible){
+        animation: buttonHover 700ms;
+    }
+
+    @keyframes buttonHover {
+        0% {
+            scale: 1;
+        }
+        33% {
+            scale: 0.9;
+        }
+        66% {
+            scale: 1.2;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+
+    &-inverted {
+    background-color: var(--clr-neutral-600);
+    color: var(--clr-neutral-100);
+    }
+}

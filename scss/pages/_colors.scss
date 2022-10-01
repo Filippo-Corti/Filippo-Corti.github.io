@@ -1,0 +1,24 @@
+.colors {
+    text-align: center;
+
+    &__main {
+        min-height: 50vh;
+        display: grid;
+        place-items: center;
+    }
+
+    &__title {
+        margin: 4rem 0 3rem;
+    }
+
+    &__text {
+        max-width: 60ch;
+        margin-inline: auto;
+        color: var(--clr-neutral-500);
+        margin-bottom: 3rem;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

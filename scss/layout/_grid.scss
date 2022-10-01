@@ -1,0 +1,30 @@
+@use '../abstracts/'as a;
+
+.grid {
+    display: grid;
+    gap: var(--gap, 0);
+
+    @include a.respond-to-increase(medium) {
+        &--3cols {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &--4cols {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    @include a.respond-to-increase(large) {
+        &--2cols {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--4cols {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+
+}
