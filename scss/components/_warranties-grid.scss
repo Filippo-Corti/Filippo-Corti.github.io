@@ -1,15 +1,17 @@
 @use '../abstracts/'as a;
 
 .warranties-section {
-    margin-block: 5%;
+    margin-bottom: 2rem;
 
     & .title {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-block: 3rem;
     }
 }
 
 .warranties-grid {
+    position: relative;
+    margin: 1vw;
     display: grid;
     justify-content: center;
 
@@ -26,32 +28,31 @@
         grid-template-rows: repeat(3, auto);
 
         &>div {
-            max-width: 20rem;
+            max-width: 16rem;
             background-color: var(--clr-neutral-100);
             box-shadow: 0 0 10px 4px rgba(44, 41, 41, 0.3);
-            margin: 1.5rem;
-            padding: 1vw;
-            border-radius: 2rem;
+            margin: 2rem;
+            padding: 1.3vw;
             display: grid;
             justify-content: center;
             align-items: center;
             text-align: center;
             transition: 150ms ease;
-            
+
             @include a.respond-to-decrease(medium) {
                 margin: 1rem;
+                padding: 1rem;
             }
 
             & p {
                 margin-top: 1rem;
                 margin-inline: 1rem;
-                font-size: var(--fs-400);
+                font-size: var(--fs-300);
             }
 
             &:is(:hover, :focus-visible) {
-                background-color: var(--clr-neutral-300);
                 transition: 150ms ease-in;
-                scale: 1.1;
+                scale: 1.02;
             }
         }
 
@@ -103,5 +104,34 @@
     & img {
         margin-inline: auto;
         max-width: 5rem;
+    }
+
+    @include a.respond-to-increase(large) {
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12%;
+            height: 100%;
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 12%;
+            height: 100%;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+            z-index: -1;
+        }
     }
 }

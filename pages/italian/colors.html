@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../../images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Briccola SPA</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <!-- Languages Modal -->
+    <dialog class="modal-language" id="modal-language">
+        <p class="text-neutral-500 fs-500 fw-regular letters-spaced">Select a Language:</p>
+        <div>
+            <ul>
+                <a href="aboutus.html">
+                    <li><img src="../../images/flag-italy.svg" alt="Language-Italian"></li>
+                </a>
+                <a href="../english/aboutus.html">
+                    <li><img src="../../images/flag-uk.svg" alt="Language-English"></li>
+                </a>
+                <a href="../german/aboutus.html">
+                    <li><img src="../../images/flag-germany.svg" alt="Language-German"></li>
+                </a>
+                <a href="../french/aboutus.html">
+                    <li><img src="../../images/flag-france.svg" alt="Language-French"></li>
+                </a>
+                <a href="../spanish/aboutus.html">
+                    <li><img src="../../images/flag-spain.svg" alt="Language-Spanish"></li>
+                </a>
+            </ul>
+        </div>
+    </dialog>
+
+    <header class="primary-header">
+        <div class="primary-header__container">
+            <div class="primary-header__left">
+                <a href="../../index.html"><img src="../../images/logo.png" alt="Briccola Spa Logo"></a>
+                <div>
+                    <h1 class="logo-title | text-neutral-100 letters-spaced">Ing. Italo Briccola S.p.A.
+                    </h1>
+                    <p class="logo-subtitle | text-neutral-400  letters-spaced">Plastic Sheets and
+                        Rolls Since 1967</p>
+                </div>
+            </div>
+            <div class="primary-header__right">
+                <a href="contacts.html"><button class="button">Contattaci</button></a>
+                <img class="language-button" src="../../images/flag-italy.svg" alt="Language Picker">
+            </div>
+        </div>
+        <nav class="navbar-container">
+            <ul class="mobile-menu">
+                <a href="../../index.html">
+                    <li class="mobile-menu__item">Home</li>
+                </a>
+                <div class="navbar-dropdown__button navbar-dropdown--prodotti">
+                    <a href="#">
+                        <li data-type="active" class="mobile-menu__item">Produzione</li>
+                    </a>
+                    <div class="navbar-dropdown__submenu">
+                        <ul>
+                            <a href="products.html">
+                                <li class="mobile-menu__item">Prodotti</li>
+                            </a>
+                            <a href="materials.html">
+                                <li class="mobile-menu__item">Materiali</li>
+                            </a>
+                            <a href="colors.html">
+                                <li data-type="active" class="mobile-menu__item">Colori</li>
+                            </a>
+                            <a href="texture.html">
+                                <li class="mobile-menu__item">Goffrature</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <a href="quality.html">
+                    <li class="mobile-menu__item">Qualità</li>
+                </a>
+                <a href="environment.html">
+                    <li class="mobile-menu__item">Ambiente</li>
+                </a>
+                <a href="news.html">
+                    <li class="mobile-menu__item">Novità</li>
+                </a>
+                <li>
+                    <a href="contacts.html"><button class="button button-inverted">Contattaci</button></a>
+                </li>
+            </ul>
+            <div class="navbar-mobile-button">
+                <img id="mobile-menu-open" src="../../images/icon-menu.svg" alt="Open Menu">
+                <img id="mobile-menu-close" overlay src="../../images/icon-close-menu.svg" alt="Close Menu">
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="colors__main">
+
+        <section class="colors container">
+            <h1 class="colors__title | title">I Nostri Colori</h1>
+            <div class="colors__text">
+                Possiamo proporre dei nostri colori standard. Su richiesta e' disponibile tutta la gamma RAL, quella
+                Pantone, o l' imitazione diretta di qualsiasi campione.
+            </div>
+        </section>
+
+        <img class="colors__image" src="../../images/colors.jpg" alt="">
+
+    </main>
+
+    <footer>
+        <div class="primary-footer">
+            <h1 class=" fw-regular fs-500 letters-spaced">Ing. Italo Briccola S.p.A.</h1>
+            <p class="fw-light fs-200">Via Leopardi, 25 <br>
+                22075 LURATE CACCIVIO (COMO) <br>
+                ITALY</p>
+            <a href="contacts.html"><button class="button">Contattaci</button></a>
+        </div>
+    </footer>
+
+    <script type="module" src="../../js/main.js"></script>
+</body>
+
+</html>

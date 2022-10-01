@@ -17,3 +17,4 @@ const languageModal = document.querySelector(".modal-language");
 languageButton.addEventListener('click', () => {
     languageModal.showModal();
 });
+

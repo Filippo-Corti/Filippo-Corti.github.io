@@ -1,0 +1,54 @@
+.contacts {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 1400px;
+
+    &__title {
+        margin: 4rem 0 3rem;
+    }
+
+    &__contacts {
+        justify-content: space-around;
+        margin-block: 2rem;
+        --gap: 2rem;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+
+            & a {
+                color: var(--clr-neutral-600);
+            }
+        }
+
+        & img {
+            max-width: 3.5rem;
+            margin-inline: auto;
+        }
+    }
+}
+
+.google-map {
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+        max-width: fit-content;
+        margin-inline: auto;
+        background: rgba(0 0 0 / 0.8);
+    }
+
+    & img {
+        max-width: 100vw;
+        object-fit: cover;
+        opacity: 0.6;
+    }
+
+    &>a {
+        margin-block: 1rem;
+    }
+
+}

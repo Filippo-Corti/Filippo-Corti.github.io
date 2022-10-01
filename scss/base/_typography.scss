@@ -1,4 +1,4 @@
-@use '../abstracts/' as a;
+@use '../abstracts/'as a;
 
 body {
     min-height: 100vh;
@@ -35,7 +35,7 @@ $shades in a.$colors {
 $sizes in a.$font-sizes {
 
     // Just to do it once 
-    @if $font-size ==small {
+    @if $font-size==small {
 
         @each $size,
         $value in $sizes {
@@ -54,6 +54,41 @@ $weight in a.$font-weights {
     }
 }
 
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-inline: 2rem;
+    margin-block: 2rem;
+}
+
 .title {
-    font-size: clamp(var(--fs-600), 1rem + 6vw ,var(--fs-700));
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2000;
+    font-size: clamp(var(--fs-600), 1rem + 6vw, var(--fs-700));
+    padding: 1rem;
+    border: 3px solid black;
+
+    /* &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 80%;
+        left: -5%;
+        background-color: hsla(354 99% 38% / 0.6);
+        width: 110%;
+        height: 0.8rem;
+    } */
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+        background-image: linear-gradient(to right, hsla(354 99% 38% / 0.4) 100%, transparent);
+        width: 100%;
+        height: 100%;
+    }
 }

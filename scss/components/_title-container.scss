@@ -4,12 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
 
     &__story {
         background-image: url(../../images/view.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+    }
+    
+    &__environment {
+        background-image: url(../../images/solar-panels.jpg);
     }
 
     &__text {

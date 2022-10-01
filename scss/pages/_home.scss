@@ -5,6 +5,8 @@ body {
 }
 
 .hero {
+    max-width: min(100%, 2000px);
+    margin-inline: auto;
     background-image: linear-gradient(to right, var(--clr-neutral-200) 40%, transparent), url(../../images/uffici.webp);
     background-repeat: no-repeat;
     background-size: contain;
@@ -50,11 +52,24 @@ body {
         }
     }
 
+    &__title {
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: unset;
+        }
+    }
+
     &__text {
         font-size: var(--fs-400);
         color: var(--clr-neutral-500);
         max-width: 30ch;
         line-height: 1.5;
+
+        @include a.respond-to-decrease(small){
+            margin-inline: auto;
+        }
     }
 
     &__button {
@@ -72,8 +87,9 @@ body {
         & p {
             margin-top: 0.4rem;
             text-transform: uppercase;
-            max-width: 10ch;
+            max-width: 12ch;
             margin-inline: auto;
+            font-size: var(--fs-300);
         }
 
         

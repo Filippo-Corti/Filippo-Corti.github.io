@@ -1,39 +1,59 @@
 .plastic-modal {
     &__container {
-        max-width: 70vw;
-        margin-inline: auto;
-        padding: 4rem;
-        background-color: lightblue;
+        position: fixed;
+        max-width: 64rem;
+        max-height: 80vh;
+        margin: auto;
+        padding: 3rem 3rem;
+        background-color: var(--clr-neutral-300);
+
+        &::backdrop {
+            background-color: rgba(0 0 0 / 0.6);
+        }
+    }
+
+    &__close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2rem;
+        scale: 1.3;
     }
 
     &__title {
-        margin: 2rem;
-        font-size: var(--fs-700);
+        margin-left: 2rem;
+        font-size: var(--fs-600);
+        padding: 0.5rem 1rem;
+        border: 3px solid black;
+        display: inline-flex;
     }
 
     &__text {
         margin: 2rem;
         color: var(--clr-neutral-500);
-        font-size: var(--fs-400);
+        font-size: var(--fs-300);
         line-height: 1.2;
     }
 
-    &__container > div {
+    &__container>div {
         display: flex;
         justify-content: center;
-        font-size: var(--fs-400);
+        font-size: var(--fs-300);
 
 
-        & table, tr, td, th {
+        & table,
+        tr,
+        td,
+        th {
             background-color: var(--clr-neutral-100);
-            border: 1px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         & th {
             font-weight: bold;
         }
     }
-
 }
