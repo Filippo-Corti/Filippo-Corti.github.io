@@ -1075,6 +1075,7 @@ body {
 .hero__title {
   position: relative;
   z-index: 1;
+  background-color: unset;
 }
 .hero__title::after {
   content: unset;
