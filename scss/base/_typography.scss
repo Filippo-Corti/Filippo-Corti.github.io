@@ -69,6 +69,7 @@ $weight in a.$font-weights {
     font-size: clamp(var(--fs-600), 1rem + 6vw, var(--fs-700));
     padding: 1rem;
     border: 3px solid black;
+    background-color:  hsla(354 99% 38% / 0.4);
 
     /* &::after {
         content: '';
@@ -80,15 +81,4 @@ $weight in a.$font-weights {
         width: 110%;
         height: 0.8rem;
     } */
-
-    &::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 0%;
-        left: 0%;
-        background-image: linear-gradient(to right, hsla(354 99% 38% / 0.4) 100%, transparent);
-        width: 100%;
-        height: 100%;
-    }
 }
