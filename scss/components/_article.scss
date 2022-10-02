@@ -1,12 +1,14 @@
 .article {
     &__container {
         min-height: 30rem;
-        margin: 2rem;
+        margin: 1rem;
         max-width: 28rem;
         line-height: 1.2;
+        padding: 2rem;
+        border: 3px solid black;
     }
 
-    &__img > img{
+    &__img>img {
         width: 100%;
     }
 

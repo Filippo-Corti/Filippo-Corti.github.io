@@ -1,0 +1,14 @@
+.quality {
+    &__grid {
+        margin-block: 2rem; 
+
+        & .image-card__container::after, & .image-card__container::before {
+            content: unset; //Disables hover effect
+        }
+
+
+        & .long-text {
+            transform: translateY(-3rem);
+        }
+    }
+}

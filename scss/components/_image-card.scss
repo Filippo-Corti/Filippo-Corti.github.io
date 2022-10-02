@@ -5,6 +5,9 @@
         position: relative;
         width: 18rem;
         height: 32rem;
+        background-blend-mode: darken;
+        background-size: 100% 100%;
+        background-color: rgba(0 0 0 / 0.5);
 
         & h1 {
             color: var(--clr-neutral-100);
@@ -15,10 +18,35 @@
     }
 
     &__pmma {
-        background-color: rgba(0 0 0 / 0.4);
         background-image: url(../../images/card-pmma.jpg);
-        background-blend-mode: darken;
-        background-size: 100% 100%;
+    }
+
+    &__abs {
+        background-image: url(../../images/card-abs.jpg);
+    }
+
+    &__hips {
+        background-image: url(../../images/card-hips.jpg);
+    }
+
+    &__hdpe {
+        background-image: url(../../images/card-hdpe.jpg);
+    }
+
+    &__analysis {
+        background-image: url(../../images/card-analysis.jpg);
+    }
+
+    &__color {
+        background-image: url(../../images/card-colors.jpg);
+    }
+
+    &__resistance {
+        background-image: url(../../images/card-impact.jpg);
+    }
+
+    &__termo {
+        background-image: url(../../images/card-termo.jpeg);
     }
 
     &__container::before {

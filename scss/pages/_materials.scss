@@ -1,11 +1,6 @@
 @use '../abstracts/'as a;
 
 .materials {
-    &__container {
-        max-width: 1400px;
-        margin-inline: auto;
-    }
-
     &__title {
         margin: 4rem 3rem;
 
