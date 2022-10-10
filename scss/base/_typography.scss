@@ -57,9 +57,9 @@ $weight in a.$font-weights {
 .title-wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     padding-inline: 2rem;
     margin-block: 2rem;
+    text-align: left;
 }
 
 .title {

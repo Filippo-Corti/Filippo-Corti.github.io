@@ -1,7 +1,54 @@
 @use '../abstracts/'as a;
 
-.language-button {
-    cursor: pointer;
+.language {
+
+    &-container {
+        color: var(--clr-neutral-100);
+        position: relative;
+    }
+
+    &-button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        
+        & img {
+            width: 1.3rem;
+
+            &[showing]{
+                rotate: 180deg;
+            }
+        }
+    }
+
+    &-menu {
+        position: absolute;
+        z-index: 2000;
+        top: 200%;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        line-height: 1;
+        background-color: var(--clr-primary-100);
+        border: 3px solid var(--clr-neutral-700);
+        font-size: var(--fs-200);
+        
+        & a {
+            margin-inline: 0.3rem;
+            padding: 1rem 1.6rem;
+            color: var(--clr-neutral-100);
+            border-bottom: 2px solid var(--clr-neutral-100);
+
+            &:last-of-type {
+                border: 0;
+            }
+        }
+
+        &[showing]{
+            display: flex;
+        }
+    }
 }
 
 .modal-language {

@@ -10,11 +10,13 @@ mobileMenuButton.addEventListener('click', () => {
     mobileMenuOpen.toggleAttribute("overlay");
 });
 
-//Language Modal
-const languageButton = document.querySelector(".language-button");
-const languageModal = document.querySelector(".modal-language");
+//Language Menu
+const languageButton = document.querySelector("#language-button");
+const languageMenu = document.querySelector("#language-menu");
+const languageMenuArrow = document.querySelector(".language-arrow")
 
 languageButton.addEventListener('click', () => {
-    languageModal.showModal();
+    languageMenu.toggleAttribute("showing");
+    languageMenuArrow.toggleAttribute("showing");
 });
 

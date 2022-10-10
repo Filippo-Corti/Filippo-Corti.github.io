@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../../images/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Briccola SPA</title>
     <link rel="stylesheet" href="../../css/style.css">
@@ -11,29 +11,6 @@
 
 <body>
 
-    <!-- Languages Modal -->
-    <dialog class="modal-language" id="modal-language">
-        <p class="text-neutral-500 fs-500 fw-regular letters-spaced">Select a Language:</p>
-        <div>
-            <ul>
-                <a href="aboutus.html">
-                    <li><img src="../../images/flag-italy.svg" alt="Language-Italian"></li>
-                </a>
-                <a href="../english/aboutus.html">
-                    <li><img src="../../images/flag-uk.svg" alt="Language-English"></li>
-                </a>
-                <a href="../german/aboutus.html">
-                    <li><img src="../../images/flag-germany.svg" alt="Language-German"></li>
-                </a>
-                <a href="../french/aboutus.html">
-                    <li><img src="../../images/flag-france.svg" alt="Language-French"></li>
-                </a>
-                <a href="../spanish/aboutus.html">
-                    <li><img src="../../images/flag-spain.svg" alt="Language-Spanish"></li>
-                </a>
-            </ul>
-        </div>
-    </dialog>
 
     <header class="primary-header">
         <div class="primary-header__container">
@@ -47,36 +24,31 @@
                 </div>
             </div>
             <div class="primary-header__right">
-                <a href="contacts.html"><button class="button">Contattaci</button></a>
-                <img class="language-button" src="../../images/flag-italy.svg" alt="Language Picker">
+                <a href="contacts.html"><button class="button">Contatti</button></a>
+                <div class="language-container">
+                    <div class="language-button" id="language-button">
+                        IT
+                        <img class="language-arrow" aria-label="Switch Language" src="../../images/icon-arrow-down.png"
+                            alt="Switch Languages">
+                    </div>
+                    <div class="language-menu" id="language-menu">
+                        <a href="">ITALIAN</a>
+                        <a href="">ENGLISH</a>
+                        <a href="">FRENCH</a>
+                        <a href="">SPANISH</a>
+                        <a href="">GERMAN</a>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="navbar-container">
             <ul class="mobile-menu">
                 <a href="../../index.html">
-                    <li data-type="active" class="mobile-menu__item">Home</li>
+                    <li class="mobile-menu__item">Home</li>
                 </a>
-                <div class="navbar-dropdown__button navbar-dropdown--prodotti">
-                    <a href="#">
-                        <li class="mobile-menu__item">Produzione</li>
-                    </a>
-                    <div class="navbar-dropdown__submenu">
-                        <ul>
-                            <a href="products.html">
-                                <li class="mobile-menu__item">Prodotti</li>
-                            </a>
-                            <a href="materials.html">
-                                <li class="mobile-menu__item">Materiali</li>
-                            </a>
-                            <a href="colors.html">
-                                <li class="mobile-menu__item">Colori</li>
-                            </a>
-                            <a href="texture.html">
-                                <li class="mobile-menu__item">Goffrature</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
+                <a href="products.html">
+                    <li class="mobile-menu__item">Prodotti</li>
+                </a>
                 <a href="quality.html">
                     <li class="mobile-menu__item">Qualità</li>
                 </a>
@@ -84,10 +56,10 @@
                     <li class="mobile-menu__item">Ambiente</li>
                 </a>
                 <a href="news.html">
-                    <li class="mobile-menu__item">Novità</li>
+                    <li class="mobile-menu__item">Notizie</li>
                 </a>
                 <li>
-                    <a href="contacts.html"><button class="button button-inverted">Contattaci</button></a>
+                    <a href="contacts.html"><button class="button button-inverted">Contatti</button></a>
                 </li>
             </ul>
             <div class="navbar-mobile-button">
@@ -133,7 +105,7 @@
             <p class="fw-light fs-200">Via Leopardi, 25 <br>
                 22075 LURATE CACCIVIO (COMO) <br>
                 ITALY</p>
-            <a href="contacts.html"><button class="button">Contattaci</button></a>
+            <a href="contacts.html"><button class="button">Contatti</button></a>
         </div>
     </footer>
 

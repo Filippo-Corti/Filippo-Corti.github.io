@@ -68,7 +68,7 @@ body {
         max-width: 30ch;
         line-height: 1.5;
 
-        @include a.respond-to-decrease(small){
+        @include a.respond-to-decrease(medium){
             margin-inline: auto;
         }
     }
