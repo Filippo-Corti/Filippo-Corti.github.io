@@ -3,716 +3,754 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stripe</title>
-  <script type="module" crossorigin src="/assets/index-dff62d3c.js"></script>
-  <link rel="stylesheet" href="/assets/index-ae447583.css">
+  <title>Briccola S.p.A.</title>
+  <script type="module" crossorigin src="/assets/index-53883d33.js"></script>
+  <link rel="stylesheet" href="/assets/index-fd8d55a1.css">
 </head>
 
-<body class="bg-gradient-to-br from-indigo-500 to-pink-700 via-blue-800 antialiased bg-no-repeat text-white bg-fixed ">
-
-
-  <header class="relative container mx-auto  px-10 md:px-4 py-6 flex justify-between items-center">
-    <a href="#" class="font-bold text-white text-2xl">
-      stripe
-    </a>
-    <div class="md:hidden" id="mobile-menu-button-on">
+<body class="h-full font-sans bg-neutral-50">
+  <!-- Header -->
+  <header
+    class="container mx-auto flex items-center mt-4 lg:mt-6 pb-2 mb-2 md:gap-4 px-4 lg:border-0 border-b-[7px] border-light_gray">
+    <div class="w-10 sm:w-14 lg:w-20">
+      <a href="#">
+        <img src="/img/logo.jpg" alt="Briccola-SPA">
+      </a>
+    </div>
+    <div class="ml-2 md:ml-5 flex-1 flex flex-col gap-2">
+      <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
+      <h1 class="text-black/70 font-normal text-fluid-lg uppercase">Plastic Sheets And Rolls Since 1967</h1>
+    </div>
+    <div class="lg:hidden" id="mobile-menu-on">
       <button type="button"
-        class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
         <span class="sr-only">Open Menu</span>
         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" aria-hidden="true">
+          stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
     </div>
-    <nav class="hidden md:block">
-      <ul class="flex items-center justify-center font-semibold">
-        <li class="relative group px-3 py-2">
-          <button class="hover:opacity-50 cursor-default">Products</button>
-          <div
-            class="absolute top-0 -left-48 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
-            <div class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
-              <div
-                class="absolute top-0 z-0 w-10 h-10 bg-white transform rotate-45 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm">
-              </div>
-              <div class="relative z-10">
-                <div class="grid grid-cols-2 gap-6">
-                  <div>
-                    <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px]">The Suite</p>
-                    <ul class="mt-3 text-[15px]">
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Course Editor
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">All-in-one editor</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Accept Payments
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">Ore-build payments page</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Closed Captioning
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">Use AI to generate captions</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px]">The Suite</p>
-                    <ul class="mt-3 text-[15px]">
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Extensions
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">Tweak existing functionality</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Back Uploads
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">Get your time back</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-gray-800 font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Social Sharing
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          <p class="text-gray-500 font-normal">Generate content for socials</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="relative group px-3 py-2">
-          <button class="hover:opacity-50 cursor-default">Solutions</button>
-          <div
-            class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[260px] transform">
-            <div class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
-              <div
-                class="absolute top-0 z-0 w-10 h-10 bg-white transform rotate-45 -translate-x-4 transition-transform group-hover:translate-x-3 duration-500 ease-in-out rounded-sm">
-              </div>
-              <div class="relative z-10">
-                <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px]">Use Cases</p>
-                <ul class="mt-3 text-[15px]">
-                  <li>
-                    <a href="#"
-                      class="bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500 font-semibold hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400 py-1 block">
-                      Creator
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500 font-semibold hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400 py-1 block">
-                      Streamers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500 font-semibold hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400 py-1 block">
-                      Influence
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500 font-semibold hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400 py-1 block">
-                      Programming
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="bg-transparent bg-clip-text text-transparent bg-gradient-to-br from-indigo-400 to-pink-700 via-blue-500 font-semibold hover:from-blue-600 hover:to-indigo-600 hover:via-pink-400 py-1 block">
-                      Design
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="relative group px-3 py-2">
-          <button class="hover:opacity-50 cursor-default">Developers</button>
-          <div
-            class="absolute top-0 -left-48 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[560px] transform">
-            <div class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
-              <div
-                class="absolute top-0 z-0 w-10 h-10 bg-white transform rotate-45 translate-x-0 transition-transform group-hover:translate-x-[12.5rem] duration-500 ease-in-out rounded-sm">
-              </div>
-              <div class="relative z-10">
-                <a href="#"
-                  class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
-                  Documentation
-                  <p class="text-gray-500 font-normal">Start integrating in no time</p>
-                </a>
-                <div class="grid grid-cols-2 gap-6 mt-6">
-                  <div>
-                    <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px]">Get Started</p>
-                    <ul class="mt-3 text-[15px]">
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Libraries and SDKs
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Plugins
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Code samples
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Tutorials
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px]">Guides</p>
-                    <ul class="mt-3 text-[15px]">
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Accept online payments
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Editing video like a pro
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Automation techniques
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                          Create stunning effects
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="relative group px-3 py-2">
-          <button class="hover:opacity-50 cursor-default">Resources</button>
-          <div
-            class="absolute top-0 -left-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px] transform">
-            <div class="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
-              <div
-                class="absolute top-0 z-0 w-10 h-10 bg-white transform rotate-45 -translate-x-4 transition-transform group-hover:translate-x-3 duration-500 ease-in-out rounded-sm">
-              </div>
-              <div class="relative z-10">
-                <ul class="text-[15px]">
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                      Get Support
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                      Case Studies
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                      Guides
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 py-1 block font-normal">
-                      News &amp; Events
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </div>
-        </li>
-        <li class="relative group px-3 py-2">
-          <a href="#" class="hover:opacity-50 cursor-pointer">Pricing</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="hidden md:block">
-      <ul>
-        <li>
-          <a href="#" class="rounded-full px-3 py-2 font-semibold bg-white bg-opacity-10 flex items-center group">
-            <span class="mr-2">Sign in</span>
-            <svg fill="transparent" class="stroke-current" width="10" height="10" stroke-width="2" viewBox="0 0 10 10"
-              aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200" d="M0 5h7"></path>
-                <path
-                  class="opacity-100 group-hover:transform group-hover:translate-x-[0.25rem] transition ease-in-out duration-200"
-                  d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
+    <div class="hidden lg:flex flex-col justify-center items-center gap-3">
+      <div>
+        <ul class="flex text-3xl">
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
+            data-active>
+            <a href="#">IT</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="#">EN</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="#">FR</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="#">ES</a>
+          </li>
+          <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="#">DE</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
+          <a class="" href="#">
+            <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contatti</span>
           </a>
-        </li>
-      </ul>
-    </nav>
-    <nav id="mobile-menu"
-      class="z-50 preload transition-all duration-500 ease-in-out fixed top-0 right-0 bg-gradient-to-br from-indigo-500 to-pink-700 via-blue-800 min-h-full pt-5 px-5 w-4/6 transform translate-x-[100%] overflow-y-scroll overflow-x-hidden">
-      <div class="flex justify-end pb-3" id="mobile-menu-button-off">
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- PC Navigation Mega Menu -->
+  <nav class="hidden lg:block w-full bg-light_gray px-4 py-3">
+    <ul class="container mx-auto flex justify-evenly items-center">
+      <li class="group megamenu-item" tabindex="0" data-active>
+        <div class="relative">
+          <a href="#">
+            <button class="flex gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Azienda</span>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a href="#">
+            <button class="flex gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Sostenibilità</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Ambiente</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Riciclo e Riutilizzo di prodotti</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Energia</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Impianto Voltaico da 400kW</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a href="#">
+            <button class="flex gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Produzione</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Produzione</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Qualità, Consegne e Garanzie</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Proprietà</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Alti-Batterico, Resistenza a Impatto </p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Qualità</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  I nostri strumenti: Spettrofotometro</p>
+              </a>
+            </div>
+          </div>
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Goffrature</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Frozen, Sand, Grain A, B, C</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Colore</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Gamma RAL, Pantone e campionamento</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a href="#">
+            <button class="flex gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Materiali</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">ABS</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">ABS/PMMA</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">ABS + Film</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+          </div>
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">HIPS</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  High Impact PolyStryene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">HDPE</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  High Density Polyethylene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-xl text-black">Materiali Speciali</h3>
+                <p
+                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  ABS/TPU, ASA, PC, PPO, ...</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a href="#">
+            <button class="flex gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Informazioni</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Contatti</h3>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Privacy</h3>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-6">
+              <a href="#">
+                <h3 class="uppercase font-semibold text-2xl text-black">Condizioni di Vendita</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- Mobile Navigation Menu -->
+  <div class="relative">
+    <nav id="mobile-menu" class="transform translate-x-full fixed h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll transition duration-400 ease-in-out">
+      <div class="absolute top-12 right-8" id="mobile-menu-off">
         <button type="button"
-          class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
           <span class="sr-only">Close Menu</span>
-          <svg width="40" height="40" viewBox="0 0 40 40" stroke="currentColor" stroke-width="1.5" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
+            stroke="currentColor">
             <path
-              d="M25.6 14.3a1 1 0 0 1 0 1.4l-4.24 4.25 4.25 4.24a1 1 0 1 1-1.42 1.42l-4.24-4.25-4.24 4.25a1 1 0 0 1-1.42-1.42l4.25-4.24-4.25-4.24a1 1 0 0 1 1.42-1.42l4.24 4.25 4.24-4.25a1 1 0 0 1 1.42 0z">
-            </path>
+              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
           </svg>
         </button>
       </div>
-      <ul class="flex flex-col items-start justify-center font-semibold">
-        <li id="submenu-for-products" class="relative group px-3 py-5 border-b w-full submenu-item">
-          <button class="cursor-default flex gap-3 items-center">
-            <span>Products</span>
-            <svg fill="transparent" class="stroke-current transform rotate-90 transition ease-in-out duration-100"
-              width="10" height="10" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+      <ul class="mt-24">
+        <li class="border-b-2 border-light_gray group ">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Azienda</span>
+          </a>
+        </li>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Sostenibilità</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
               <g fill-rule="evenodd">
                 <path d="M1 1l4 4-4 4"></path>
               </g>
             </svg>
-          </button>
-          <div id="submenu-for-products-extender"
-            class="transition duration-500 ease-in-out z-50 transform translate-x-[150%] h-0">
-            <div class="p-6 rounded-xl shadow-xl">
-              <div class="relative z-10">
-                <div class="">
-                  <div>
-                    <p class="uppercase tracking-wider text-white font-medium text-[13px]">The Suite</p>
-                    <ul class="mt-3 text-[15px]">
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-white font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Course Editor
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-white font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Accept Payments
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          class="block p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out durantion-300 text-white font-semibold hover:text-indigo-600 group/inside">
-                          <span class="flex items-center gap-1">
-                            Closed Captioning
-                            <svg fill="transparent"
-                              class="opacity-0 group-hover/inside:opacity-100 stroke-current mb-[1px] translate-x-0 group-hover/inside:translate-x-1  translate-y-[0.125rem] transition-transform ease-in-out duration-100"
-                              width="10" height="10" stroke-width="1.5" viewBox="0 0 10 10" aria-hidden="true">
-                              <g fill-rule="evenodd">
-                                <path class="" d="M0 5h7"></path>
-                                <path class="translate-x-[0.25rem]" d="M1 1l4 4-4 4"></path>
-                              </g>
-                            </svg>
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray h-0 transition duration-300 ease-in-out">
+            <ul class="py-2 ml-12">
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Ambiente
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Energia
+                </a>
+              </li>
+            </ul>
           </div>
         </li>
-        <li id="submenu-for-solutions" class="relative group px-3 py-5 border-b w-full submenu-item">
-          <button class="cursor-default flex gap-3 items-center">
-            <span>Solutions</span>
-            <svg fill="transparent" class="stroke-current transform rotate-90 transition ease-in-out duration-100"
-              width="10" height="10" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Produzione</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
               <g fill-rule="evenodd">
                 <path d="M1 1l4 4-4 4"></path>
               </g>
             </svg>
-          </button>
-          <div id="submenu-for-solutions-extender"
-            class="transition duration-500 ease-in-out z-50 transform translate-x-[150%] h-0">
-            <div class="relative p-6 rounded-xl shadow-xl w-full">
-              <div class="relative z-10">
-                <p class="uppercase tracking-wider text-white font-medium text-[13px]">Use Cases</p>
-                <ul class="mt-3 text-[15px] list-square marker:block marker:content-['\01F538'] marker:text-white ml-5 marker:transform marker:rotate-45">
-                  <li>
-                    <a href="#" class="bg-transparent text-white font-semibold block p-2">
-                      Creator
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="bg-transparent bg-clip-text text-white font-semibold p-2 block">
-                      Streamers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="bg-transparent bg-clip-text text-white font-semibold p-2 block">
-                      Influence
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="bg-transparent bg-clip-text text-white font-semibold p-2 block">
-                      Programming
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="bg-transparent bg-clip-text text-white font-semibold p-2 block">
-                      Design
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray h-0 transition duration-300 ease-in-out">
+            <ul class="py-2 ml-12">
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Produzione
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Proprietà
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Qualità
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Goffrature
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Colore
+                </a>
+              </li>
+            </ul>
           </div>
         </li>
-        <li id="submenu-for-developers" class="relative group px-3 py-5 border-b w-full submenu-item">
-          <button class="hover:opacity-50 cursor-default">Developers</button>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Materiali</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray h-0 transition duration-300 ease-in-out">
+            <ul class="py-2 ml-12">
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  ABS
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  ABS/PMMA
+                </a>
+              </li><li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  ABS + Film
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  HIPS
+                </a>
+              </li><li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  HDPE
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Materiali Speciali
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li id="submenu-for-resources" class="relative group px-3 py-5 border-b w-full submenu-item">
-          <button class="hover:opacity-50 cursor-default">Resources</button>
-        </li>
-        <li class="relative group px-3 py-5 w-full">
-          <a href="#" class="hover:opacity-50 cursor-pointer">Pricing</a>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Informazioni</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray h-0 transition duration-300 ease-in-out">
+            <ul class="py-2 ml-12">
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Contatti
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Privacy
+                </a>
+              </li>
+              <li class="py-2 text-black font-semibold text-fluid-md">
+                <a href="#">
+                  Condizioni di Vendita
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
-    <div id="mobile-menu-bg-blur"
-      class="preload fixed top-0 right-0 bg-black/80 w-screen min-h-screen transform translate-x-[100%] "></div>
-  </header>
+    <div id="mobile-menu-blur" class="transform translate-x-full fixed h-screen w-screen bg-black/60 inset-0 z-10"></div>
+  </div>
 
-  <section class="container mx-auto flex flex-col items-center">
-    <div class="m-5 py-6 px-3 bg-white text-black rounded-2xl lg:flex flex-row">
-      <div class="basis-1/2 mb-6 lg:mb-0">
-        <div class="px-5 py-2 border-x border-dashed">
-          <h1 class="text-midnight text-2xl font-bold">Ready to get started?</h1>
-          <p class="text-gray-600 font-medium text-[18px] my-5  max-w-[45ch]">Explore <span
-              class="text-indigo-500 hover:text-midnight">
-              <a href="#">Stripe Payments</a> </span>, or create an account instantly and start accepting payments. You
-            can
-            also
-            contact us to design a custom package for your business.</p>
-          <div class="inline-flex gap-1 ml-3">
-            <button>
-              <a href="#"
-                class="flex items-center gap-2 bg-indigo-500 text-white font-medium py-1 px-3 rounded-full group hover:bg-midnight">
-                <span class="ml-1">Start now</span>
-                <svg fill="transparent" class="stroke-current mt-[2px]" width="10" height="10" stroke-width="2"
-                  viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200" d="M0 5h7">
-                    </path>
-                    <path
-                      class="opacity-100 group-hover:transform group-hover:translate-x-[0.25rem] transition ease-in-out duration-200"
-                      d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </a>
-            </button>
-            <button>
-              <a href="#"
-                class="flex items-center gap-2 bg-white text-indigo-500 font-medium py-1 px-3 rounded-full group hover:text-midnight">
-                <span class="ml-1">Contact sales</span>
-                <svg fill="transparent" class="stroke-current mt-[2px]" width="10" height="10" stroke-width="2"
-                  viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200" d="M0 5h7">
-                    </path>
-                    <path
-                      class="opacity-100 group-hover:transform group-hover:translate-x-[0.25rem] transition ease-in-out duration-200"
-                      d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="basis-1/2 md:flex">
-        <div class="basis-1/2 border-x border-dashed">
-          <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96"
-            xmlns="http://www.w3.org/2000/svg" data-js-controller="PricingIcon">
-            <defs>
-              <path id="pricingIconTag"
-                d="M41.4 30.38l8.4 8.27A4 4 0 0 1 51 41.5V62a3 3 0 0 1-3 3H32a3 3 0 0 1-3-3V41.5a4 4 0 0 1 1.2-2.85l8.4-8.27a2 2 0 0 1 2.8 0zM40 36a3 3 0 1 0 0 6 3 3 0 0 0 0-6z">
-              </path>
-              <clipPath id="pricingClipPath">
-                <use href="#pricingIconTag" style="transform-origin: 40px 39px; transform: rotate(45deg)"
-                  data-js-target-list="PricingIcon.tagBacks"></use>
-              </clipPath>
-            </defs>
-            <use href="#pricingIconTag" fill="#92e9fd" style="transform-origin: 40px 39px; transform: rotate(45deg)"
-              data-js-target-list="PricingIcon.tagBacks"></use>
-            <use class="PricingIcon__tag" href="#pricingIconTag" fill="#7d77fc" style="transform-origin: 40px 39px;"
-              data-js-target-list="PricingIcon.tagFronts"></use>
-            <g clip-path="url(#pricingClipPath)">
-              <use class="PricingIcon__tag" href="#pricingIconTag" fill="#244ee1" style="transform-origin: 40px 39px;"
-                data-js-target-list="PricingIcon.tagFronts"></use>
-            </g>
-          </svg>
-          <h2 class="border-l border-midnight leading-none pl-3 text-midnight font-semibold">Always know what you pay
-          </h2>
-          <p class="pl-3 mt-3 text-gray-500 font-normal px-2">Integrated per-transaction pricing with no hidden fees.
-          </p>
-          <button class="-ml-3 pl-3 mt-2">
-            <a href="#"
-              class="flex items-center gap-2 bg-white text-indigo-500 font-medium py-1 px-3 rounded-full group hover:text-midnight">
-              <span class="ml-1">Pricing details</span>
-              <svg fill="transparent" class="stroke-current mt-[2px]" width="10" height="10" stroke-width="2"
-                viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200" d="M0 5h7"></path>
-                  <path
-                    class="opacity-100 group-hover:transform group-hover:translate-x-[0.25rem] transition ease-in-out duration-200"
-                    d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-          </button>
-        </div>
-        <div class="basis-1/2 border-x border-dashed">
-          <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96"
-            xmlns="http://www.w3.org/2000/svg" data-js-controller="CodeFilesIcon">
-            <defs>
-              <path id="codeFilesIconBack"
-                d="M21.13 28h16.74c1.79 0 2.43.19 3.08.53.66.35 1.17.86 1.52 1.52.34.65.53 1.3.53 3.08v24.74c0 1.79-.19 2.43-.53 3.08a3.63 3.63 0 0 1-1.52 1.52c-.65.34-1.3.53-3.08.53H21.13c-1.79 0-2.43-.19-3.08-.53a3.63 3.63 0 0 1-1.52-1.52c-.34-.65-.53-1.3-.53-3.08V33.13c0-1.79.19-2.43.53-3.08.35-.66.86-1.17 1.52-1.52.65-.34 1.3-.53 3.08-.53z">
-              </path>
-              <path id="codeFilesIconFront"
-                d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,36 20.6699942,35.640408 22.175,34.175C23.6800058,32.709592 24.0203993,33 34.5277778,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 "
-                data-js-target-list="CodeFilesIcon.fileFrontPaths" mask="url(#codeFilesCaretMask)"></path>
-              <path id="codeFilesIconCarets"
-                d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z">
-              </path>
-              <clipPath id="codeFilesClipPath">
-                <use href="#codeFilesIconBack" data-js-target-list="CodeFilesIcon.fileBacks"></use>
-              </clipPath>
-              <mask id="codeFilesCaretMask">
-                <path
-                  d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,36 20.6699942,35.640408 22.175,34.175C23.6800058,32.709592 24.0203993,33 34.5277778,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 "
-                  data-js-target-list="CodeFilesIcon.fileFrontPaths" fill="white"></path>
-                <path
-                  d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z"
-                  fill="#000" x="-27" data-js-target-list="CodeFilesIcon.carets"></path>
-                <path
-                  d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z"
-                  fill="#000" data-js-target-list="CodeFilesIcon.carets"></path>
-              </mask>
-            </defs>
-
-            <use href="#codeFilesIconBack" fill="#92e9fd" data-js-target-list="CodeFilesIcon.fileBacks"></use>
-            <use href="#codeFilesIconFront" fill="#7d77fc" data-js-target-list="CodeFilesIcon.fileFronts"></use>
-            <g clip-path="url(#codeFilesClipPath)">
-              <use href="#codeFilesIconFront" fill="#244ee1" data-js-target-list="CodeFilesIcon.fileFronts"></use>
-            </g>
-          </svg>
-          <h2 class="border-l border-midnight leading-none pl-3 text-midnight font-semibold">Start your integration</h2>
-          <p class="pl-3 mt-3 text-gray-500 font-normal px-2">Get up and running with Stripe in as little as 10 minutes.
-          </p>
-          <button class="-ml-3 pl-3 mt-2">
-            <a href="#"
-              class="flex items-center gap-2 bg-white text-indigo-500 font-medium py-1 px-3 rounded-full group hover:text-midnight">
-              <span class="ml-1">API reference</span>
-              <svg fill="transparent" class="stroke-current mt-[2px]" width="10" height="10" stroke-width="2"
-                viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200" d="M0 5h7"></path>
-                  <path
-                    class="opacity-100 group-hover:transform group-hover:translate-x-[0.25rem] transition ease-in-out duration-200"
-                    d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="m-5 max-w-fit p-6 bg-white text-black rounded-2xl grid md:grid-cols-2 gap-12">
-      <div class="flex flex-col gap-6 justify-center items-center">
-        <div class="bg-teal-500 px-3 py-2 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"
-              d="M28.3111 23.04L39.3867 11.7067C40.5155 10.5778 42.2044 11.8934 40.8889 13.4045C40.8889 13.4045 30.2222 26.8178 29.6178 27.5734C29.2699 28.1179 28.6684 28.4474 28.0222 28.4474C27.3761 28.4474 26.7745 28.1179 26.4267 27.5734L22.8711 21.5289C22.4756 20.8552 22.641 19.9927 23.2578 19.5132C23.8746 19.0337 24.7513 19.0861 25.3067 19.6356L28.3111 23.04ZM37.2533 45.68C42.0978 45.68 44.64 43.3956 45.3333 40.2223L40.4089 40.2312C40.0843 41.5892 38.7898 42.4854 37.4044 42.3112C34.8711 42.3112 33.9822 40.0978 33.9822 37.6889C33.9822 35.0223 35.1022 33.2445 37.3955 33.2445C39.5467 33.2445 40.1689 34.48 40.3822 35.3156H45.3689C44.9778 32.5867 42.56 29.92 37.4578 29.92C31.6178 29.92 28.8622 33.6623 28.8622 37.7867C28.8622 42.1245 31.6622 45.68 37.2533 45.68ZM13.3333 30.2223H21.8133C25.44 30.2223 27.9644 32 27.9644 35.1378C27.9644 38.2756 25.5822 40.1867 21.8311 40.1867H18.2044V45.3334H13.3333V30.2223ZM18.2133 36.8712H21.0489C22.3733 36.8712 23.1378 36.3378 23.1378 35.1823C23.1378 34.2134 22.56 33.52 21.0489 33.52H18.2044L18.2133 36.8712ZM51.5555 30.2223V45.3334H46.6222V30.2223H51.5555Z">
-            </path>
-          </svg>
-          <p class="text-base font-medium pl-2">PCI DSS Level 1 certification</p>
-        </div>
-        <div class="bg-violet-500 px-3 py-2 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <g fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.4044 19.4044L9.67111 18.7822L9.59111 20.7911L7.95555 24.8177L7.87555 26.5066L7.23555 27.6089L7.47555 28.4711L7.27999 29.4666L7.96444 31.1822L8.09777 32.6489L8.78222 34.6133L8.72888 35.4489L10.9244 36.7377L11.5467 38.6133L13.7422 38.9155L17.1822 41.1644L20.2489 41.5466L20.3467 41.0666L21.9022 41.2977L23.2355 42.72L23.6267 43.9555L24.9956 44.9155L26 43.9289L27.1556 44.4355L27.9289 45.92L28.7378 46.7822L29.1289 48.1422L30.9956 48.8889L31.3511 48.6311L31.2178 47.1822L31.8044 46.16L33.9822 44.6489L35.4667 44.2311L37.1911 44.4622L37.9644 44.9955L38.8622 44.4711L39.7067 44.88L40.1511 44.1866L39.6711 43.2977L42.4089 43.0222L43.6533 43.7155L44.6667 43.1289L45.7778 44.2577L46.1867 45.9289L47.8133 48.1511L47.9289 49.9644L49.4844 48.1511L50 46.56L49.4044 44.7022L48.1511 42.1866L47.8044 40.3644L52.0889 35.6977L52.16 34.7555L51.28 33.5111L51.8933 31.9466L51.6622 31.12L52.4267 29.8133L52.3733 29.1822L54.0178 27.6266L56 27.3333L54.6667 25.52L55.1467 24.48L57.2267 22.5155L56.0711 21.4489L55.8133 19.9289L54.56 19.4489L53.5555 20.1866L53.4044 22.3555L52.8978 23.1466L50.1422 23.8577L49.1289 25.12L48.9511 26.2044L47.5111 26.3822L47.1378 27.4577L45.2978 28.7822L43.8933 26.5955L43.6267 24.6311L42.96 23.4044L41.2267 23.8489L38.56 22.1155L37.8489 24.0355L35.6267 23.6266L36 21.7422L33.4489 20.6311L31.8933 21.1822L28.1867 20.9244L23.52 20.5155L18.5689 19.7689L13.9378 18.7377L12 18.0355L11.4044 19.4044V19.4044Z"
-                stroke="#FFFFFF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
-              </path>
-              <path d="M39.8933 29.4489L40.1155 27.1111L40.48 25.2622L41.2267 23.8489" stroke="#FFFFFF"
-                stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-          </svg>
-          <p class="text-base font-medium pl-2">Money Transmitter Licenses across US</p>
-        </div>
-        <div class="bg-blue-900 px-3 py-2 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <g fill="none">
-              <circle cx="32.0267" cy="32" r="22.1956" stroke="#FFFFFF" stroke-width="1.77778"></circle>
-              <path d="M9.83112 32.6667H54.2222V31.3333H9.83112V32.6667ZM31.36 9.80444V54.1956H32.6933V9.80444H31.36Z"
-                fill="#FFFFFF"></path>
-              <ellipse cx="32.0267" cy="32.0001" rx="12.4178" ry="22.2222" stroke="#FFFFFF" stroke-width="1.33333">
-              </ellipse>
-              <path
-                d="M48.2704 16.9952C44.3351 19.805 38.5408 21.5556 32 21.5556V22.8889C38.757 22.8889 44.8383 21.084 49.0452 18.0804L48.2704 16.9952ZM32 21.5556C25.4623 21.5556 19.5265 19.7265 15.5905 16.8819L14.8095 17.9626C19.0157 21.0024 25.24 22.8889 32 22.8889V21.5556ZM15.3004 47.3581C19.2333 44.3783 25.2435 42.4445 32 42.4445V41.1111C25.0143 41.1111 18.7045 43.1062 14.4952 46.2953L15.3004 47.3581ZM32 42.4445C38.5462 42.4445 44.3775 44.2467 48.3156 47.0498L49.0888 45.9636C44.8847 42.9711 38.7694 41.1111 32 41.1111V42.4445Z"
-                fill="#FFFFFF"></path>
-            </g>
-          </svg>
-          <p class="text-base font-medium pl-2">E-Money Licenses in the EU and the UK</p>
-        </div>
-        <div class="bg-sky-400 px-3 py-2 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <path
-              d="M13.4704 24.2527H10V40.7473H13.4704V36.0149L15.4298 33.8554L20.4111 40.7473H24.4716L17.7198 31.3054L24.0703 24.2527H20.0097L13.4704 31.7419V24.2527Z"
-              fill="#FFFFFF"></path>
-            <path
-              d="M31.9971 30.9378L27.8658 24.2527H24.0885L30.2265 34.0392V40.7473H33.6969V34.0392L39.8113 24.2527H36.1285L31.9971 30.9378Z"
-              fill="#FFFFFF"></path>
-            <path
-              d="M42.6682 32.5C42.6682 29.1459 44.486 26.9635 47.0829 26.9635C48.9243 26.9635 50.27 28.0892 50.7421 29.927L54 28.8703C53.0085 25.8838 50.6005 24 47.0829 24C42.503 24 39.1742 27.5149 39.1742 32.5C39.1742 37.4851 42.503 41 47.0829 41C50.6005 41 53.0085 39.1162 54 36.1297L50.7421 35.073C50.27 36.9108 48.9243 38.0365 47.0829 38.0365C44.486 38.0365 42.6682 35.8541 42.6682 32.5Z"
-              fill="#FFFFFF"></path>
-          </svg>
-          <p class="text-base font-medium pl-2">Know Your Customer and AML checks</p>
-        </div>
-      </div>
-      <div class="flex flex-col gap-6 justify-center items-center">
-        <div class="bg-blue-500 px-3 py-6 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M30.3555 27.3511C33.6089 27.3511 33.92 24.24 33.9822 23.4933H32.3644C32.3022 24.1244 32.0711 25.9555 30.3911 25.9555C28.5066 25.9555 28.2133 23.1289 28.2133 20.5511C28.2133 17.9733 28.5333 15.3066 30.48 15.3066C32.24 15.3066 32.3378 17.2533 32.3378 17.6978H33.9466C33.9111 16.8533 33.7155 13.8933 30.5067 13.8933C27.5822 13.8933 26.5422 16.6578 26.5422 20.5422C26.5422 23.7511 26.8 27.3511 30.3555 27.3511ZM14.6755 27.1466L15.5644 23.1644H18.9067L19.7955 27.1466H21.4933L18.2844 14.0889H16.1955L13.0667 27.1466H14.6755ZM18.2599 20.4008C18.3572 20.8256 18.4603 21.2755 18.5689 21.7511H15.8755L16.0659 20.8927L16.0659 20.8927L16.0659 20.8927L16.0659 20.8927C16.5862 18.5487 17.0136 16.6232 17.1644 15.5911H17.2178C17.368 16.5078 17.728 18.0788 18.2599 20.4008L18.2599 20.4008ZM24.48 14.0889V27.1466H22.8711V14.0889H24.48ZM35.6978 14.0889H39.1733C41.2355 14.0889 42.7289 15.3778 42.7289 17.7689C42.7289 20.16 41.4222 21.5644 39.0044 21.5644H37.3333V27.1466H35.7333L35.6978 14.0889ZM38.8267 20.2311H37.3333V15.4311H38.9867C40.3644 15.4311 41.1022 16.3378 41.1022 17.7511C41.1022 19.4311 40.3466 20.2311 38.8267 20.2311ZM45.0044 23.1644L44.1155 27.1466H42.5067L45.6355 14.0889H47.7244L50.9333 27.1466H49.2355L48.3466 23.1644H45.0044ZM47.7948 20.8643L48 21.7511H45.2978L45.4882 20.8926L45.4883 20.8921L45.4884 20.8915C46.0086 18.5481 46.4358 16.623 46.5866 15.5911H46.64C46.8001 16.5676 47.198 18.2864 47.7948 20.8643ZM20.7378 46.7733C20.8444 48.0622 21.4489 49.1111 22.8355 49.1111C24.2222 49.1111 24.8089 48.3733 24.8089 46.9689C24.8089 45.5644 24.2578 44.9422 22.4978 44.0978C20.4444 43.1022 19.5555 42.1866 19.5555 40.2844C19.5036 39.3854 19.8439 38.508 20.4883 37.8789C21.1327 37.2499 22.018 36.9309 22.9155 37.0044C25.52 37.0044 26.2044 38.8444 26.2489 40.4089H24.6311C24.5689 39.7511 24.3733 38.32 22.8533 38.32C22.3703 38.2922 21.9 38.481 21.5701 38.8349C21.2403 39.1888 21.085 39.6712 21.1467 40.1511C21.1467 41.3422 21.68 41.9289 23.2978 42.6666C25.5911 43.76 26.4711 44.8355 26.4711 46.8266C26.552 47.8159 26.1903 48.7902 25.4833 49.4869C24.7763 50.1836 23.7968 50.531 22.8089 50.4355C20.1422 50.4355 19.2533 48.6578 19.1467 46.7733H20.7378ZM31.7155 50.4444C34.5778 50.4444 35.6889 48.1155 35.6889 43.6C35.6889 39.1555 34.5244 36.9955 31.7867 36.9955C29.2 36.9955 27.84 39.0489 27.84 43.6178C27.84 48.1866 29.0489 50.4444 31.7155 50.4444ZM29.4667 43.6C29.4667 47.2089 30.1689 49.0844 31.7422 49.0844C33.3155 49.0844 34.0089 47.3066 34.0089 43.6266C34.0089 39.9466 33.3155 38.4 31.7244 38.4C30.1333 38.4 29.4933 40.1511 29.4933 43.5555L29.4667 43.6ZM41.1911 50.4444C44.4444 50.4444 44.7644 47.3333 44.8178 46.5955H43.2C43.1467 47.2711 42.9067 49.0489 41.2267 49.0489C39.3422 49.0489 39.0489 46.2844 39.0489 43.6533C39.0489 41.0222 39.3689 38.4 41.3244 38.4C43.0755 38.4 43.1733 40.3466 43.1733 40.7911H44.7822C44.7467 39.9466 44.5511 36.9955 41.3511 36.9955C38.4267 36.9955 37.3778 39.7511 37.3778 43.6355C37.3778 46.8889 37.6355 50.4444 41.1911 50.4444Z"
-              fill="#FFFFFF"></path>
-            <path d="M12.8622 32H51.1378" stroke="#FFFFFF" stroke-width="1.33333" stroke-linejoin="round">
-            </path>
-          </svg>
-          <p class="text-base font-medium pl-2 basis-2/3">SSAE18/SOC 1 type 1 and type 2 and SSAE18/SOC 2 type 1 and
-            type
-            2 reports
-          </p>
-        </div>
-        <div class="bg-indigo-500 px-3 py-6 rounded-xl shadow-md text-white flex justify-start items-center min-w-56">
-          <svg class="ComplianceIcon basis-1/3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64"
-            height="64">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M32.8533 10.3734L32.2844 8.59559C32.2943 8.44832 32.1828 8.32097 32.0356 8.31115C31.8883 8.30133 31.7609 8.41276 31.7511 8.56004L31.1822 10.3378H29.3333C29.2172 10.3306 29.1106 10.402 29.0732 10.5122C29.0358 10.6224 29.0768 10.7439 29.1733 10.8089L30.6756 11.8934L30.0978 13.6711C30.066 13.7798 30.1063 13.8967 30.1983 13.9627C30.2903 14.0287 30.4139 14.0294 30.5067 13.9645L32 12.88L33.5289 13.9823C33.6198 14.0531 33.7468 14.055 33.8398 13.9868C33.9328 13.9186 33.9691 13.797 33.9289 13.6889L33.36 11.9111L34.8178 10.8445C34.9125 10.7803 34.9536 10.6613 34.9187 10.5523C34.8837 10.4434 34.7811 10.3705 34.6667 10.3734H32.8533ZM32.8533 51.9467L32.2844 50.1689C32.2992 50.0217 32.1917 49.8903 32.0444 49.8756C31.8972 49.8609 31.7658 49.9683 31.7511 50.1156L31.1822 51.8934H29.3333C29.2172 51.8861 29.1106 51.9576 29.0732 52.0678C29.0358 52.1779 29.0768 52.2995 29.1733 52.3645L30.6756 53.4578L30.0978 55.2356C30.066 55.3443 30.1063 55.4612 30.1983 55.5272C30.2903 55.5932 30.4139 55.5939 30.5067 55.5289L32 54.4445L33.4933 55.5823C33.5843 55.6531 33.7112 55.655 33.8042 55.5868C33.8972 55.5186 33.9336 55.397 33.8933 55.2889L33.3244 53.5112L34.8178 52.4178C34.9125 52.3536 34.9536 52.2346 34.9187 52.1257C34.8837 52.0167 34.7811 51.9438 34.6667 51.9467H32.8533ZM22.0978 11.4134L22.6756 13.1911H24.5244C24.6389 13.1882 24.7415 13.2611 24.7764 13.3701C24.8114 13.4791 24.7703 13.5981 24.6756 13.6623L23.1822 14.7467L23.7511 16.5245C23.7914 16.6325 23.755 16.7542 23.662 16.8224C23.569 16.8905 23.4421 16.8887 23.3511 16.8178L21.8489 15.7334L20.3556 16.7823C20.2646 16.8531 20.1377 16.855 20.0447 16.7868C19.9517 16.7186 19.9153 16.597 19.9556 16.4889L20.5244 14.7111L19.0311 13.6267C18.9364 13.5625 18.8953 13.4435 18.9302 13.3346C18.9652 13.2256 19.0678 13.1527 19.1822 13.1556H21.0311L21.6089 11.3778C21.6511 11.2745 21.7549 11.2101 21.8662 11.2182C21.9775 11.2263 22.071 11.305 22.0978 11.4134ZM43.4578 49.1912L42.8889 47.4134C42.8987 47.2661 42.7873 47.1387 42.64 47.1289C42.4927 47.1191 42.3654 47.2305 42.3556 47.3778L41.7778 49.1556H39.9911C39.8767 49.1527 39.7741 49.2256 39.7391 49.3346C39.7042 49.4435 39.7453 49.5625 39.84 49.6267L41.3333 50.7112L40.7644 52.4889C40.7242 52.597 40.7606 52.7186 40.8536 52.7868C40.9465 52.855 41.0735 52.8531 41.1644 52.7823L42.6667 51.6978L44.16 52.8178C44.251 52.8887 44.3779 52.8905 44.4709 52.8224C44.5639 52.7542 44.6003 52.6325 44.56 52.5245L43.9911 50.7467L45.4844 49.6623C45.5792 49.5981 45.6203 49.4791 45.5853 49.3701C45.5504 49.2611 45.4478 49.1883 45.3333 49.1912H43.4578ZM11.6178 20.6489H13.4667L14.0444 18.8711C14.0796 18.766 14.1781 18.6952 14.2889 18.6952C14.3997 18.6952 14.4982 18.766 14.5333 18.8711L15.1111 20.6489H16.96C17.0744 20.646 17.177 20.7189 17.212 20.8279C17.247 20.9369 17.2059 21.0558 17.1111 21.12L15.6178 22.2223L16.1867 24C16.2269 24.1081 16.1905 24.2297 16.0976 24.2979C16.0046 24.3661 15.8776 24.3642 15.7867 24.2934L14.2844 23.2089L12.7911 24.2934C12.7002 24.3642 12.5732 24.3661 12.4802 24.2979C12.3873 24.2297 12.3509 24.1081 12.3911 24L12.96 22.2223L11.4667 21.12C11.3719 21.0558 11.3308 20.9369 11.3658 20.8279C11.4007 20.7189 11.5034 20.646 11.6178 20.6489ZM49.4667 41.4311H47.6178C47.5034 41.4282 47.4007 41.5011 47.3658 41.6101C47.3308 41.7191 47.3719 41.8381 47.4667 41.9023L48.96 42.9956L48.3911 44.7734C48.3509 44.8814 48.3873 45.0031 48.4802 45.0712C48.5732 45.1394 48.7002 45.1376 48.7911 45.0667L50.2844 43.9823L51.7778 45.0667C51.8705 45.1316 51.9942 45.1309 52.0862 45.0649C52.1782 44.9989 52.2185 44.882 52.1867 44.7734L51.6089 42.9956L53.1111 41.9023C53.2076 41.8373 53.2487 41.7157 53.2112 41.6055C53.1738 41.4954 53.0672 41.4239 52.9511 41.4311H51.1022L50.5333 39.6534C50.503 39.5409 50.401 39.4627 50.2844 39.4627C50.1679 39.4627 50.0659 39.5409 50.0356 39.6534L49.4667 41.4311ZM8.83556 30.9511H10.6667L11.2356 29.1734C11.2659 29.0609 11.3679 28.9827 11.4844 28.9827C11.601 28.9827 11.703 29.0609 11.7333 29.1734L12.3022 30.9511H14.1511C14.2659 30.9511 14.3678 31.0246 14.4041 31.1335C14.4404 31.2424 14.4029 31.3623 14.3111 31.4311L12.8089 32.5156L13.3867 34.2934C13.4132 34.4006 13.3708 34.5131 13.2801 34.5763C13.1894 34.6394 13.0691 34.64 12.9778 34.5778L11.4844 33.4934L9.99111 34.5778C9.90141 34.6448 9.7787 34.6463 9.68744 34.5814C9.59618 34.5165 9.55726 34.4001 9.59111 34.2934L10.16 32.5156L8.68445 31.4311C8.59381 31.3633 8.5559 31.2456 8.5899 31.1376C8.6239 31.0296 8.72239 30.9548 8.83556 30.9511ZM52.2489 30.9511H50.4C50.2926 30.956 50.1986 31.025 50.1616 31.126C50.1247 31.2271 50.1521 31.3404 50.2311 31.4134L51.7244 32.4978L51.1556 34.2756C51.1217 34.3823 51.1606 34.4987 51.2519 34.5636C51.3431 34.6285 51.4659 34.6271 51.5556 34.56L53.0667 33.4756L54.5689 34.5778C54.6586 34.6448 54.7813 34.6463 54.8726 34.5814C54.9638 34.5165 55.0027 34.4001 54.9689 34.2934L54.4 32.5156L55.8933 31.4312C55.984 31.3633 56.0219 31.2456 55.9879 31.1376C55.9539 31.0296 55.8554 30.9548 55.7422 30.9511H53.8933L53.3156 29.1734C53.2804 29.0683 53.1819 28.9974 53.0711 28.9974C52.9603 28.9974 52.8619 29.0683 52.8267 29.1734L52.2489 30.9511ZM12.3467 44.5245L12.9156 42.7467L11.4222 41.6534C11.3275 41.5892 11.2864 41.4702 11.3213 41.3612C11.3563 41.2522 11.4589 41.1794 11.5733 41.1823H13.4222L14 39.4045C14.0352 39.2994 14.1336 39.2285 14.2444 39.2285C14.3553 39.2285 14.4537 39.2994 14.4889 39.4045L15.0667 41.1823H16.8889C17.0033 41.1794 17.1059 41.2522 17.1409 41.3612C17.1758 41.4702 17.1348 41.5892 17.04 41.6534L15.5467 42.7467L16.1156 44.5245C16.1558 44.6325 16.1194 44.7542 16.0264 44.8224C15.9335 44.8905 15.8065 44.8887 15.7156 44.8178L14.2222 43.7334L12.72 44.8178C12.6294 44.8679 12.5176 44.8588 12.4361 44.7948C12.3547 44.7309 12.3195 44.6244 12.3467 44.5245ZM48.9156 21.9645L48.3467 23.7423C48.3283 23.8447 48.3733 23.9481 48.4608 24.0045C48.5482 24.0608 48.661 24.0591 48.7467 24L50.2311 22.9689L51.7244 24.0534C51.8172 24.1183 51.9408 24.1176 52.0328 24.0516C52.1248 23.9856 52.1651 23.8687 52.1333 23.76L51.5556 21.9823L53.0667 20.88C53.1632 20.8151 53.2042 20.6935 53.1668 20.5833C53.1294 20.4731 53.0228 20.4017 52.9067 20.4089H51.0578L50.4889 18.6311C50.4586 18.5186 50.3565 18.4405 50.24 18.4405C50.1235 18.4405 50.0215 18.5186 49.9911 18.6311L49.4222 20.4089H47.5733C47.4589 20.406 47.3563 20.4789 47.3213 20.5879C47.2864 20.6969 47.3275 20.8158 47.4222 20.88L48.9156 21.9645ZM19.8578 51.9645L20.4267 50.1867L18.9333 49.12C18.8386 49.0558 18.7975 48.9369 18.8325 48.8279C18.8674 48.7189 18.97 48.646 19.0844 48.6489H20.9333L21.5111 46.8711C21.5463 46.766 21.6447 46.6952 21.7556 46.6952C21.8664 46.6952 21.9648 46.766 22 46.8711L22.5778 48.6489H24.4267C24.5411 48.646 24.6437 48.7189 24.6787 48.8279C24.7136 48.9369 24.6725 49.0558 24.5778 49.12L23.1111 50.2045L23.68 51.9823C23.7203 52.0903 23.6839 52.2119 23.5909 52.2801C23.4979 52.3483 23.371 52.3465 23.28 52.2756L21.7867 51.1911L20.2844 52.2756C20.1985 52.3934 20.0334 52.4193 19.9156 52.3334C19.7977 52.2475 19.7719 52.0823 19.8578 51.9645ZM41.2089 14.2223L40.64 16C40.5926 16.1111 40.6287 16.2402 40.7269 16.3106C40.825 16.381 40.9588 16.3739 41.0489 16.2934L42.5511 15.2089L44.0444 16.2934C44.1354 16.3642 44.2624 16.3661 44.3553 16.2979C44.4483 16.2297 44.4847 16.1081 44.4444 16L43.8667 14.2223L45.36 13.1289C45.4548 13.0647 45.4958 12.9458 45.4609 12.8368C45.4259 12.7278 45.3233 12.6549 45.2089 12.6578H43.36L42.7911 10.88C42.7608 10.7675 42.6587 10.6894 42.5422 10.6894C42.4257 10.6894 42.3237 10.7675 42.2933 10.88L41.7156 12.6578H39.8756C39.7594 12.6506 39.6529 12.722 39.6154 12.8322C39.578 12.9424 39.619 13.0639 39.7156 13.1289L41.2089 14.2223Z"
-              fill="#FFFFFF"></path>
-          </svg>
-          <p class="text-base font-medium pl-2 basis-2/3">PSD2 and Strong Customer Authentication (SCA) compliant
-          </p>
-        </div>
-      </div>
+  <section>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima iure mollitia praesentium quia, consectetur
+      dolor? Necessitatibus saepe, nihil at porro hic modi maxime doloribus veniam, deleniti voluptatibus molestiae
+      culpa. Tempore, consectetur minima rerum placeat modi officia assumenda officiis ad numquam amet cupiditate maxime
+      veniam in dolores magni. Animi corrupti officiis laboriosam nihil illo consectetur? Reprehenderit ea, mollitia
+      commodi eveniet sint nostrum earum maxime, odio quibusdam nobis cumque enim voluptatum fuga consequatur culpa quod
+      suscipit natus quae placeat. Hic, voluptatum fugiat nulla inventore necessitatibus distinctio ab tempora placeat
+      illum commodi amet aliquid veniam reiciendis dicta, explicabo dignissimos odit atque alias blanditiis voluptatibus
+      in repellendus tenetur optio. Quasi, inventore necessitatibus culpa doloremque maiores nobis consequatur nostrum.
+      At maiores veniam consequatur repellat nobis ipsum, quidem voluptatum alias doloribus doloremque dolore
+      necessitatibus enim vero adipisci dolor consequuntur rem ut ab impedit. Molestias voluptatibus praesentium, quasi
+      quaerat exercitationem vitae alias nemo ipsa iste eligendi unde veritatis doloremque ad reprehenderit ab accusamus
+      ratione dolor, fugit quae dolores veniam animi! Officia iure asperiores rerum consequatur ea placeat sed alias
+      temporibus sequi omnis, quidem quasi, ipsa harum molestiae odit, amet aperiam vel unde laudantium facere aliquid
+      assumenda. Fugit ipsam, ad ex voluptatem similique provident, non iste, deleniti qui cum placeat obcaecati autem
+      quo amet fuga temporibus dolore quas dolor saepe eum distinctio voluptates. Deserunt maiores beatae perspiciatis?
+      Rem, officia nulla dolor fugiat facere hic quod itaque! Repudiandae nam modi sint, exercitationem tenetur dicta
+      magnam totam, unde cumque odit eum ratione, ut architecto et praesentium. Architecto dolore quas quisquam
+      incidunt, corrupti provident sed qui minima, ducimus saepe aliquid commodi praesentium perspiciatis eos ab ad
+      nostrum distinctio optio omnis eligendi aut, id non? Aliquam fugit, quod sint ullam, distinctio possimus
+      repellendus ipsam ut quisquam praesentium exercitationem officia animi odio velit, sapiente accusantium? Autem
+      debitis architecto, molestiae modi praesentium facilis illum pariatur nemo repellat quaerat hic ad ratione
+      excepturi reprehenderit dignissimos. Delectus accusantium at dolore nisi fuga odio deleniti rerum eveniet facere
+      sit ab repellat itaque eius culpa doloribus alias possimus, architecto tempora, libero iure blanditiis suscipit
+      magnam tenetur? Ipsum ab aliquam nisi iste voluptatum dicta nam cum saepe aperiam iure sequi suscipit, quasi
+      nostrum odio expedita molestiae rem totam. Neque, voluptas! Sapiente, laboriosam nemo aliquid quisquam quidem
+      dolorem perferendis magni maiores unde consequuntur, numquam hic deserunt molestias. Iusto aliquid maxime eum
+      placeat facere similique doloribus eligendi natus at magnam, deserunt delectus adipisci dolorem dolorum.
+      Aspernatur, sequi. Porro reprehenderit culpa doloremque alias quae quas voluptatibus deleniti omnis deserunt
+      error, enim quam, doloribus saepe. Eveniet recusandae assumenda id? Labore ipsa, reiciendis ducimus, ad ipsum
+      fugiat, perferendis rerum vitae doloremque possimus quam dolor impedit ratione. Eveniet quam debitis ipsa
+      voluptatibus labore molestias fugit necessitatibus velit autem dolor? Corrupti sit repudiandae obcaecati molestias
+      exercitationem suscipit hic corporis, ducimus impedit, aspernatur blanditiis alias praesentium maiores sint
+      incidunt, commodi dolorem! Molestiae asperiores vitae deserunt enim velit quis labore iste repellat, provident
+      natus reprehenderit. Harum dolore et unde ut voluptas natus, sequi ipsam quo fugiat odit cumque tempora
+      consequatur ipsa laboriosam eos quis quidem vitae! Libero ipsa, provident adipisci minus reiciendis porro
+      repellendus velit quibusdam delectus magni rerum. Possimus sunt quasi dolor, nam eum odio, at veniam, ut atque
+      accusamus tempore cum repudiandae tempora? Unde, laudantium? Reiciendis impedit eos quidem expedita architecto
+      veniam? Cum, accusantium natus exercitationem autem eveniet nesciunt voluptas itaque molestiae in tenetur quae
+      quaerat adipisci ullam facere. Illum magnam voluptates ipsam sunt, assumenda excepturi aspernatur nulla?
+      Consequuntur hic fuga natus enim expedita, nam ex quo unde, aperiam velit cumque, perferendis vero a atque in
+      nobis laborum excepturi possimus. Ipsum rem quos esse suscipit! Iure dolore non perspiciatis veritatis, facilis at
+      eaque nemo vel, minima quas provident cum sint earum in expedita dolorum laborum quis libero aperiam! Maxime, illo
+      expedita provident corrupti optio perspiciatis eveniet quidem quae nobis alias repudiandae debitis esse,
+      consequuntur repellendus velit voluptatibus dolorem aperiam fugiat quis dignissimos eum nulla. Nesciunt incidunt
+      delectus dignissimos fuga impedit debitis veniam perferendis animi illum quam quas sed amet magnam exercitationem
+      vel, autem voluptates! Ea exercitationem est dolorum vero asperiores, et optio officia veniam rem natus temporibus
+      iure nobis error voluptates deserunt necessitatibus, ad nihil cupiditate obcaecati! Aspernatur minima magnam
+      delectus molestiae maxime inventore consequatur corrupti, doloribus et illo praesentium at eaque, laboriosam
+      asperiores pariatur? Nulla, enim, nostrum, praesentium doloremque esse provident laboriosam ex quibusdam facere
+      repellendus ullam voluptas vel neque. Vero sint, nostrum corporis, magni laudantium accusamus, earum aliquam natus
+      repudiandae aliquid nam ratione eum recusandae molestias dolore non exercitationem quas. Dolor aliquid doloremque,
+      dignissimos voluptatem, distinctio voluptas quod dicta mollitia nisi natus asperiores, ratione sapiente porro rem.
+      Perferendis dicta error ut veritatis ratione nobis quis a, iusto impedit, ab natus laudantium necessitatibus
+      inventore nostrum totam officiis voluptatum? Eius perspiciatis voluptates, corrupti placeat veniam hic facilis,
+      omnis vero sit, itaque corporis id consequuntur aspernatur fugit ipsum quasi doloribus beatae! Quasi, ducimus
+      labore, quia ex libero, quos commodi distinctio tenetur illo blanditiis molestiae dicta sed dolore dignissimos?
+      Veritatis rem perferendis beatae a reiciendis, enim maiores ipsum ducimus eaque. Obcaecati natus facere quae quis
+      amet aspernatur accusantium totam soluta repellendus nostrum repudiandae corporis odio eaque reiciendis fugit
+      repellat saepe ipsa, vel aperiam facilis distinctio? Officiis praesentium velit, in consectetur doloribus error
+      optio, accusantium quaerat, alias neque consequuntur eum incidunt possimus adipisci hic aperiam commodi tempora
+      voluptatem at fugiat! Repellendus beatae soluta, voluptatum iusto ipsum error blanditiis quam aut, illum ipsam id,
+      earum praesentium adipisci voluptate ea magni facere laborum porro maiores commodi vero tempora incidunt. Unde
+      sint dolorem quasi in eaque excepturi repellendus ex voluptatum asperiores, aliquam, repellat mollitia labore
+      nihil numquam sit commodi explicabo magni fugit a? Repellendus, temporibus vel? Voluptate quos dolores, eaque
+      incidunt provident eveniet quis omnis consequatur ex est dicta soluta pariatur deleniti totam ea quod explicabo
+      quae vero iste quia hic adipisci. Sint quibusdam dolore blanditiis vel, dignissimos iste fugit ea? Necessitatibus
+      dolor accusantium debitis, commodi in deleniti enim eos facilis delectus, sit id excepturi optio veritatis eveniet
+      eaque animi sunt? Earum necessitatibus distinctio veniam quod nobis repudiandae dignissimos debitis dolores
+      suscipit, amet, illum harum et! Voluptatum exercitationem quas voluptatem veniam fugit, eum ratione nesciunt
+      doloribus ipsa amet minima consequatur, mollitia esse cupiditate itaque soluta asperiores eos iure inventore!
+      Esse, ratione. Ea hic consequatur quam, odio rerum commodi sint pariatur fuga voluptatibus aspernatur itaque ipsa
+      doloremque quod atque sunt eum similique dignissimos? Ab quia cum aut neque ratione necessitatibus suscipit, at
+      culpa enim voluptatibus, soluta quasi officiis est mollitia qui dolorum iste ipsam, perferendis pariatur placeat
+      officia! Itaque optio quas necessitatibus quia cupiditate et incidunt vel sequi ipsam voluptates nihil facere
+      vitae deleniti tenetur eveniet architecto, odit iusto consequuntur rem nostrum placeat, fugit ipsum officia
+      perspiciatis! Esse nam neque repellendus enim voluptates omnis saepe aut hic eos? Possimus, doloribus odit fuga at
+      quos, aliquid velit quis voluptate repellendus cumque dolor harum minus voluptas non facere, asperiores ab
+      blanditiis! Ea, amet iure maiores sed aliquam numquam dicta, eum alias, fugiat impedit neque? Fugit facere tempora
+      odio repellendus tenetur aliquid deleniti, corporis possimus magnam, sequi reiciendis distinctio ipsa maiores
+      beatae laboriosam placeat? Incidunt ducimus consectetur doloremque temporibus quod quae atque a quia laboriosam
+      fugit pariatur ullam fugiat iure, natus maiores vero porro non cum soluta, praesentium debitis quidem qui
+      voluptatibus ut? Accusantium, molestiae? Iusto ratione velit magni optio atque? Id dolorum aspernatur eaque
+      placeat quae sed accusamus voluptatum, delectus et, error atque corporis doloribus. Modi optio dicta officiis est
+      inventore facilis quisquam ipsum iusto facere debitis iure cumque quo perferendis sed harum nesciunt, sequi,
+      excepturi cum consequuntur necessitatibus veniam maiores odio aspernatur? Molestiae maiores perspiciatis ex porro
+      aliquam nobis neque autem a minus delectus modi, ut tenetur ab quae numquam vero. Nesciunt doloribus, fuga omnis
+      rem vitae exercitationem! Rerum omnis, consequuntur aliquam suscipit minus velit illum fugiat et optio ab
+      reprehenderit illo aspernatur eveniet soluta, blanditiis praesentium. Voluptatem mollitia rerum libero tempora
+      repudiandae cum qui omnis est ipsam nemo quas provident totam consequuntur molestias laudantium rem repellendus
+      facilis eaque perferendis possimus placeat, sequi sunt quo reiciendis? Soluta asperiores repellat sequi expedita
+      numquam quam quia obcaecati ad praesentium deserunt consequuntur, sunt aut nobis dolores pariatur, voluptates ab
+      iusto animi esse, nostrum assumenda! Illo quibusdam eaque, est, quod sapiente quo animi praesentium nihil impedit
+      minus illum asperiores. Vel quis enim quo quibusdam atque, maxime quidem earum nemo dolores, iusto assumenda
+      magnam dignissimos aperiam pariatur minima rerum eveniet dicta doloremque, cupiditate iste quae dolorum.
+      Laboriosam hic vitae sapiente maxime deleniti magnam cupiditate fuga repellendus incidunt. Odit maiores nobis
+      cumque reprehenderit. Non tempore quia odio facilis voluptatibus porro tempora quibusdam sapiente repellendus
+      eveniet, excepturi minima, culpa maiores dolores laudantium quo asperiores consequatur fugiat explicabo. Aut
+      quidem, ipsam sequi reiciendis enim fuga blanditiis harum inventore quasi qui facere illum unde quo error, hic
+      incidunt nemo sit rerum odio voluptatum reprehenderit veniam nihil voluptatem! Voluptas facilis fugiat at saepe
+      earum doloremque ad similique nobis laboriosam! Delectus explicabo error sint fugiat maxime sunt ex? Optio ducimus
+      earum recusandae, perspiciatis facilis ullam corporis adipisci, illum autem ratione hic eligendi, alias saepe
+      officia enim. Consequuntur inventore voluptatibus accusamus deleniti cum natus labore rem, dolores laboriosam, a
+      omnis consequatur illo magnam suscipit corporis esse illum sit obcaecati, soluta veritatis voluptas architecto?
+      Libero repellat nemo, expedita nesciunt dolorum ratione, odit unde vel excepturi ipsam, porro dolore assumenda
+      dicta. Ipsa blanditiis eos dicta facere, quam saepe est. Laboriosam, voluptate nostrum? Ullam recusandae officia
+      nihil. Facere quia sit recusandae quam debitis doloribus tempora harum aliquid magnam, iste voluptates, velit vero
+      reprehenderit atque labore est ex saepe et minus explicabo dolore corrupti, quidem sint. Qui libero nihil sed
+      corporis voluptatibus minus accusamus pariatur. Eos, error pariatur officia ipsum dolorum voluptates recusandae
+      consectetur quam porro ipsam, rem voluptas exercitationem eius? Amet itaque laborum voluptas iste quod doloremque
+      omnis veritatis distinctio ad necessitatibus fugiat, exercitationem aut neque odit obcaecati adipisci assumenda ex
+      rem nesciunt aperiam, expedita molestias accusantium laudantium. Facilis, ducimus? Eaque cupiditate voluptatum
+      numquam dignissimos est ullam eius quo tempore sint quibusdam. Quibusdam, tempore omnis. Alias corrupti aliquam
+      doloremque fugiat consectetur aperiam excepturi fuga ratione, magni eos in, dicta velit corporis! Sint
+      consequuntur fuga itaque id quibusdam molestias similique repellat. Assumenda culpa quo veritatis recusandae
+      praesentium asperiores quae natus corporis similique minima. Minus, ratione, sequi minima mollitia, maxime sint
+      perspiciatis culpa voluptatem veniam at hic nemo blanditiis! Tempora, blanditiis eius. Molestiae natus quidem
+      perspiciatis ut numquam ipsa repellat inventore rerum, voluptatum sit aut doloribus asperiores cum? Eveniet dolore
+      necessitatibus expedita ullam cumque assumenda quas, quis excepturi molestiae deleniti provident numquam magni
+      fugit maiores maxime tempore eos earum nam minima et quidem soluta? Voluptates placeat sapiente doloremque, iusto
+      deleniti temporibus consectetur asperiores itaque perferendis, corrupti, perspiciatis cum harum. Deserunt in magni
+      eaque totam omnis blanditiis beatae earum, cumque, nulla suscipit voluptas quidem illum repellat. Possimus dolores
+      nesciunt, maxime voluptate nulla ad eaque quisquam odit illum quas esse error officiis repellendus corporis
+      aliquid qui amet non? Voluptatem, suscipit eveniet. Ad et itaque ipsa repellat laboriosam facere? Suscipit quasi
+      qui a deserunt, facilis similique beatae ipsam impedit. Numquam iure, sint facere molestiae culpa, dolores quod
+      necessitatibus repellat aliquam ad voluptatum enim accusantium aperiam. Totam similique dolorem cum provident?
+      Reiciendis, animi cumque sequi inventore ipsam tempora neque officia quibusdam consequatur voluptates consequuntur
+      accusantium qui magni saepe? Illo nulla, saepe, veritatis aspernatur assumenda repellendus voluptate adipisci
+      perferendis quo recusandae vitae facilis sit, labore excepturi suscipit eaque earum. Sint voluptatem suscipit
+      commodi ducimus ea ratione eligendi in recusandae expedita autem minima amet possimus, consequuntur nihil vero
+      voluptatum adipisci modi quis quasi. Doloribus aspernatur magnam et cupiditate? Placeat nulla cum modi sint animi
+      deserunt quaerat rem reprehenderit sapiente optio, sunt neque accusantium, ratione, ducimus cupiditate sed
+      delectus repellendus? Nobis, ducimus quo. Maxime itaque, numquam atque voluptate eligendi, voluptates vitae fugit
+      iste dignissimos molestiae incidunt tenetur repellat. Unde ut quibusdam minus saepe eveniet amet accusantium
+      cupiditate error. Vitae, quis provident quos ipsam officia totam minus iure rerum possimus tenetur! Molestiae
+      dolor exercitationem magni accusamus cupiditate. Exercitationem omnis asperiores, illo quae voluptas soluta
+      aperiam ducimus vel sed praesentium incidunt excepturi recusandae. Minus accusamus placeat, deleniti officiis eius
+      esse earum saepe a corrupti architecto debitis omnis molestias iure odit magnam aliquam dolores ad sit, maxime
+      voluptates! Veritatis quia nulla adipisci facilis incidunt obcaecati id dicta quisquam. Adipisci vitae velit
+      necessitatibus. Labore repellat aliquid delectus, deserunt vero consequatur accusamus dolores eos molestias dicta
+      hic? Fugit laborum tempore sequi, quos dolore, consequatur et pariatur voluptates dolores corrupti sed dignissimos
+      amet magni ut assumenda autem recusandae quibusdam quidem. Porro iusto aspernatur consequatur vel. Nihil
+      exercitationem odio dolor consequatur libero porro officia animi molestias sunt sequi, ad omnis, quaerat voluptas.
+      Nemo, maiores? Dolore nobis, placeat, magnam eaque itaque laudantium totam sit, delectus similique nulla qui id.
+      Consequuntur quo itaque laborum rerum explicabo quae aut ab tempore harum provident. Delectus, reiciendis
+      temporibus harum, sint neque voluptate quis earum laboriosam nihil molestias tempore aut. Dignissimos recusandae
+      inventore aspernatur quisquam ut modi corrupti culpa, beatae accusantium sapiente, quidem corporis nesciunt! Nulla
+      iste dicta cum sint ab at, similique itaque laudantium! Perspiciatis est ipsam quisquam harum eveniet ducimus
+      saepe quaerat temporibus expedita itaque assumenda velit ab, commodi eaque magni modi reprehenderit sequi aliquam
+      eos dolores recusandae sint. Ab laudantium praesentium consequuntur facere quae minima ipsum veritatis voluptatem
+      iste perspiciatis? Accusamus pariatur, id quas qui voluptas quidem consequuntur ipsa, deleniti sequi aut aperiam
+      explicabo, sed veritatis ea necessitatibus odit inventore itaque a ratione nulla voluptatibus? Doloremque, fugiat
+      ab. Molestias ex quia adipisci vel vero, animi omnis distinctio voluptate ipsum totam nam. Blanditiis, impedit
+      libero, temporibus nisi reprehenderit qui, error dolorem vel ab magnam hic. Sint praesentium possimus tempore
+      voluptates adipisci ipsam! Repellendus ipsum, velit molestias assumenda optio eius dolores temporibus voluptatem
+      quidem maiores ipsa aliquam quod. Distinctio laborum facilis maxime, perspiciatis atque laboriosam sed,
+      reprehenderit ducimus illo quisquam dignissimos sint. Ipsam quis nihil ut, fugit recusandae illo excepturi
+      repellendus quos tempora ducimus? Nulla explicabo corporis quo, iste laboriosam quidem molestias pariatur esse
+      magnam recusandae! Atque quia numquam dolores adipisci eaque aperiam autem excepturi facilis provident doloribus
+      eum temporibus, tempora, veritatis quam a harum sint quisquam magni, cumque eos ipsa labore voluptas? Magni
+      dolores expedita, praesentium nobis blanditiis facere placeat illum explicabo aperiam, iusto ad, quos sapiente
+      voluptatibus soluta optio porro unde provident sequi maiores nulla. Veniam facere porro nisi? Quam iusto dolores
+      perferendis repellat necessitatibus minus eos amet voluptate impedit nam dolorum, corrupti, natus pariatur quidem
+      rem soluta! Numquam molestias repellat cum accusantium in accusamus veniam deserunt unde et! Officiis aliquam
+      officia accusantium distinctio, quas inventore tempore, sequi porro doloremque eius, perspiciatis nobis! Dolor eum
+      eaque rem quidem aperiam, ab, repellat vero eius culpa quibusdam optio error quo distinctio vel eos velit pariatur
+      voluptate fugiat repellendus ut unde incidunt? Molestias ducimus dolorem deleniti nemo iste placeat corporis!
+      Harum, officia beatae eligendi consequatur officiis eaque nulla? Neque obcaecati vel illo beatae aliquam natus in
+      eveniet totam quisquam voluptatum. Ducimus itaque laudantium autem, consequatur iste dolores unde. Nihil dicta quo
+      repudiandae odio labore tempore commodi aliquid animi sequi cupiditate excepturi, laborum sed voluptatem nemo
+      explicabo aperiam. In error sint aut, voluptate neque laudantium molestiae quaerat nobis obcaecati veritatis hic
+      ipsam accusamus magni alias quos voluptatum illo commodi maxime debitis temporibus architecto. Dolore excepturi
+      eveniet repellendus magnam sed exercitationem id, similique aperiam voluptatibus enim deleniti doloremque quaerat
+      quos aliquid odio placeat, porro animi, illo voluptate blanditiis saepe! Modi, maiores qui culpa nobis
+      perspiciatis officia deserunt. Provident, atque nulla! Aliquid libero asperiores numquam provident atque
+      cupiditate doloribus quibusdam? Quibusdam consectetur nesciunt deserunt praesentium iusto illum! Maiores nemo
+      tempora ex, ullam fuga voluptatem totam obcaecati aut et enim nisi voluptates expedita id animi reiciendis neque
+      ea, officiis provident sint quas aliquam! Dolores veniam impedit doloribus officia consequuntur, laudantium
+      architecto enim aliquam ipsam reiciendis assumenda recusandae? Quidem inventore aspernatur quam maiores quaerat
+      voluptates unde iusto cum, sapiente, quia accusantium natus veritatis error non sit dolore perferendis! Id quos
+      aliquid quod neque architecto similique itaque velit labore eligendi ratione iure, cupiditate natus qui sit
+      consectetur quia. Iure, animi sed officiis dolorum saepe nihil neque quaerat autem earum minus explicabo labore
+      eaque ab omnis voluptas ut excepturi laboriosam, dolorem nemo mollitia facilis ratione, placeat ipsa quisquam!
+      Adipisci, ipsa harum aspernatur sit iure magni? Blanditiis possimus itaque ipsum minus, debitis quas vel
+      doloremque ipsam cupiditate amet delectus ipsa eos libero excepturi dolor iusto! Perferendis dignissimos corporis
+      illo dolor unde dolorum doloremque molestiae hic, magni quod error rem, ea, nesciunt quisquam asperiores impedit
+      eius quidem dicta eaque odit quasi nostrum alias. Voluptate totam accusamus inventore optio. Similique earum sunt
+      ut harum. Doloremque corrupti possimus odit soluta maxime dolores minima aliquam temporibus illum minus, obcaecati
+      nam quasi animi, quam reiciendis consequuntur dignissimos aut incidunt quia aspernatur totam illo dicta. Maiores
+      blanditiis saepe quas consectetur quis illo id molestias. Itaque vitae voluptatibus eveniet perferendis voluptas!
+      Unde alias enim facilis quod numquam, nisi ducimus labore, sed ad incidunt ex aperiam tempora. Minima neque
+      repellendus autem unde necessitatibus, voluptas quaerat, aperiam provident assumenda excepturi, magnam illo
+      dolorem itaque ullam accusamus eveniet. Porro illo debitis odit atque neque in eum temporibus quidem excepturi,
+      molestiae aliquid nam veritatis labore ea officia quas tempora qui repellendus, necessitatibus maiores doloremque.
+      Error hic, explicabo provident nesciunt rem itaque nulla laborum distinctio reprehenderit, delectus deserunt
+      officiis minus quis molestias soluta labore. Accusamus in ipsum corporis nostrum laudantium aliquid consequuntur,
+      error repellat reprehenderit laboriosam nihil natus culpa consectetur commodi corrupti possimus eos ullam
+      obcaecati earum inventore. Laudantium dolorum dicta, minima blanditiis incidunt aspernatur magni alias fugit
+      voluptas repellat, nesciunt fugiat nam officia! Vel nulla ad labore quasi error perspiciatis placeat beatae
+      suscipit. Ad in voluptatem illo, necessitatibus maiores labore aut aliquid. Laborum excepturi eos aliquam vitae
+      laboriosam? Repellat, earum voluptate in porro maxime quidem provident animi, laboriosam quasi quod vero
+      consectetur dolor! Reiciendis expedita, nostrum dolores ipsam sit accusamus quis quas tempore fuga obcaecati iste,
+      magni tenetur ratione voluptatem molestiae consectetur eaque nihil repellat repudiandae perspiciatis distinctio
+      pariatur id. Voluptatem qui voluptate architecto repellat sequi consequatur corporis sit veritatis saepe expedita
+      ab praesentium tempore eligendi suscipit iure, et quis nemo iusto totam dolorum. Sunt voluptatem ad maiores fuga
+      cumque ex nihil doloremque. Aliquid illo, inventore laudantium, minima officiis ducimus accusamus qui veniam
+      error, voluptatum eius quaerat praesentium cupiditate beatae dicta. A ad incidunt sit sunt veritatis dignissimos,
+      numquam ut unde impedit sint velit error adipisci sed maiores molestiae est voluptas vel et. Assumenda similique
+      ipsam corporis numquam. Repellendus esse assumenda iusto? Ullam voluptatibus consectetur nostrum dolorem ut
+      sapiente cupiditate, amet rem ipsam cum nemo excepturi similique modi consequatur blanditiis ab culpa? Tempore,
+      dicta voluptatibus! Dicta error provident facilis laudantium nostrum repudiandae commodi nesciunt architecto
+      labore tempore illo pariatur consequuntur maxime non nam ad ullam nemo quas, velit aut exercitationem quia,
+      officia asperiores laborum. Voluptatem tempora optio iusto aspernatur! Corrupti, provident expedita omnis aliquam
+      architecto temporibus vitae, repellat ipsam autem minus numquam deserunt veniam alias eveniet officia inventore
+      exercitationem praesentium ex nam. Odio laborum voluptatem, libero nemo quasi sed magni, officiis omnis vel
+      aliquam hic sint ratione est magnam quae unde repellendus fuga nihil assumenda nostrum facere? Excepturi nam
+      pariatur voluptate? Blanditiis porro velit minus! Optio, magnam? Dolor suscipit assumenda ab placeat sapiente
+      aspernatur commodi ea laboriosam amet earum id tempore, nam, error non quos maiores rerum et molestiae ipsum enim.
+      Id accusamus quae quos natus quas harum! Laborum vero, omnis illo eaque corporis consequatur qui ipsa nam saepe
+      vitae fuga eius ipsam impedit explicabo voluptate molestiae, dolor alias expedita iusto, voluptatem magnam ex quas
+      magni suscipit. In nisi, cum totam tempora ut quidem a animi enim debitis quibusdam assumenda, est, minima id. Ex
+      nihil, in officia quibusdam aperiam aut iusto expedita quos. Impedit assumenda iusto magni possimus beatae,
+      incidunt doloremque, illum mollitia similique, repudiandae nam! Qui error molestias numquam at. Magni magnam,
+      tenetur beatae temporibus dolores eligendi officiis debitis eaque iure ipsum veritatis odio ratione suscipit nisi
+      corporis quia voluptatibus! Qui, sint tenetur sed voluptate mollitia ad optio odio perspiciatis incidunt quisquam,
+      doloribus quibusdam neque iure animi quas natus. Qui praesentium, magni ea a quam ducimus, aliquid reprehenderit,
+      eius explicabo blanditiis optio recusandae eaque consequatur! Assumenda nemo aspernatur ipsa molestiae cum
+      veritatis fugiat odio mollitia, maxime quia at vel suscipit, quod animi delectus. Vel earum nesciunt reprehenderit
+      id ratione quis, modi ex aliquid quam aspernatur magni! Iusto est ratione pariatur? Necessitatibus ea nobis
+      voluptas iure doloribus possimus tenetur atque voluptatibus ratione, quisquam nostrum aliquam facilis modi
+      perferendis ex saepe accusantium molestiae id aperiam eligendi voluptatem! Eveniet, minima rerum? Minus deserunt
+      ad nemo aliquam necessitatibus praesentium facere sapiente deleniti! Soluta saepe nisi accusantium? Voluptates
+      velit minima dignissimos assumenda corrupti perferendis quasi ut rem, asperiores tempora necessitatibus vitae
+      magnam ad ullam. Enim nesciunt fugiat tempore non, quod, doloribus beatae dolorem quibusdam corporis accusantium
+      iusto maxime facere quas! Facere itaque harum earum vitae id, ullam, molestiae quas totam ex, placeat ipsam! In ut
+      corrupti dignissimos quaerat odio modi aperiam. Similique vel adipisci eum, eligendi magni totam quos atque
+      impedit ab. Est, aut natus? Molestiae sapiente tenetur distinctio alias aperiam, atque illo dignissimos porro
+      accusantium numquam omnis quia est rerum optio temporibus officiis repellat sed totam facere veniam, voluptates
+      corrupti, sequi minus nesciunt! Doloribus ea voluptatem quas fuga pariatur ullam, voluptas quod at debitis
+      molestiae quae distinctio. Odit autem fugit blanditiis officia accusamus voluptatibus doloribus quis accusantium
+      aliquam quod fugiat perspiciatis eos iusto, neque aspernatur sunt voluptatem? Iure, sit fugiat illo explicabo,
+      numquam voluptatibus dolorum accusantium nesciunt reiciendis sed architecto distinctio doloribus. Doloremque
+      deserunt accusamus laudantium aut illum. Quia quod dolore id quis minima soluta magnam iusto veritatis
+      reprehenderit maxime perspiciatis consectetur, animi esse nesciunt itaque delectus possimus nam, alias enim beatae
+      officiis doloribus adipisci ipsa obcaecati. Distinctio at, hic nobis ducimus sunt blanditiis laborum illo
+      provident inventore commodi quasi perferendis autem officiis eligendi doloremque explicabo numquam soluta vitae
+      voluptas reprehenderit unde eaque accusamus voluptate. Odio maxime, reprehenderit corporis laudantium totam ullam
+      beatae molestias illo veniam quaerat laborum iure expedita obcaecati culpa? Ullam neque facere doloribus nisi.
+      Placeat perferendis recusandae necessitatibus tempora exercitationem nemo, dolorum enim. Praesentium ipsum,
+      assumenda delectus commodi aliquid nesciunt, perferendis accusantium cumque iste nobis, id tempora sed aspernatur
+      dolor inventore hic quo. Quisquam voluptate ipsam vero quibusdam. Dicta praesentium quod perspiciatis ipsam cumque
+      vitae corporis obcaecati odit quae est voluptates commodi esse enim ad minima sint sit, sed odio dignissimos
+      officiis porro! Non fuga eveniet qui sit facere temporibus quas esse facilis laboriosam recusandae nisi quasi
+      adipisci tenetur unde inventore quos, eligendi quidem consequatur illum? Provident sint, esse saepe optio suscipit
+      repellat et iusto natus quaerat quis iste blanditiis aperiam velit sit rerum autem accusamus neque voluptas
+      deserunt nihil nisi soluta atque? Id ullam quas magni dolorem, quae quisquam similique, fugiat officiis deserunt
+      provident error, deleniti quibusdam beatae illo quidem eligendi cumque numquam natus iste? Magni ratione aperiam
+      fugiat at error quis quasi rerum repellendus, blanditiis eum officiis veritatis nam amet fuga sapiente libero,
+      repellat, nemo a atque! Obcaecati accusantium sunt dolore impedit labore reiciendis neque nulla corrupti alias id
+      error soluta ratione repudiandae similique, temporibus ducimus blanditiis ipsa saepe. Aliquam perspiciatis
+      molestias, tempore cumque obcaecati recusandae, cum excepturi unde eveniet quaerat ab voluptate quasi earum veniam
+      quis impedit maiores dolor! Sequi eum molestias officia voluptatem eveniet quis soluta nesciunt! Magni sit amet
+      cum velit officiis sint quas, eum, ratione, quam excepturi optio asperiores quia eligendi quae nihil placeat
+      magnam quidem rerum voluptatum neque? Vel reiciendis numquam voluptatibus neque mollitia ad officiis dolorem
+      cupiditate eum, id dicta dolore dolorum at distinctio, a aliquam iusto. Consequuntur repellat nemo aperiam
+      voluptas vel molestias sint quas fugiat facere perferendis, at molestiae! Quod possimus qui sint ullam distinctio
+      pariatur ipsam voluptate in! Animi fugit, nostrum at, odio dicta culpa magni magnam doloribus illum, consequatur
+      aperiam eos libero consequuntur minima et mollitia asperiores dolores atque enim porro sed ad ex est ut.
+      Perferendis veniam ad voluptate non inventore, suscipit ipsam corporis dignissimos. Molestias, repellat pariatur
+      exercitationem vel illo, odio velit atque autem dolorum itaque repellendus asperiores! Magni, corporis tenetur
+      nesciunt in tempore et. Non consequuntur magnam sint ipsa harum illo ratione numquam nam voluptatum aut! Quibusdam
+      molestias fugiat numquam totam voluptatum error repellat nihil tenetur, nesciunt modi! Expedita laboriosam sit
+      quae ab quaerat placeat omnis perferendis distinctio aliquid! Corporis et dolore voluptatibus ut? Quia voluptas
+      accusantium nulla consequatur magni, itaque dignissimos ipsam, amet molestiae mollitia reiciendis ducimus
+      repudiandae odit doloremque maiores aperiam tempore exercitationem?
     </div>
   </section>
 
