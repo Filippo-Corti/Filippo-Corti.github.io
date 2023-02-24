@@ -3,759 +3,531 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briccola S.p.A.</title>
-  <script type="module" crossorigin src="/assets/index-0eb9059a.js"></script>
-  <link rel="stylesheet" href="/assets/index-7162f779.css">
+  <script type="module" crossorigin src="/assets/index-62b93707.js"></script>
+  <link rel="stylesheet" href="/assets/index-4bb5d321.css">
 </head>
 
 <body class="h-full font-sans bg-neutral-50">
-  <!-- Header -->
-  <header
-    class="container mx-auto flex items-center mt-4 lg:mt-6 pb-2 mb-2 md:gap-4 px-4 lg:border-0 border-b-[7px] border-light_gray">
-    <div class="w-10 sm:w-14 lg:w-20">
-      <a href="#">
-        <img src="/img/logo.jpg" alt="Briccola-SPA">
-      </a>
-    </div>
-    <div class="ml-2 md:ml-5 flex-1 flex flex-col gap-2">
-      <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
-      <h1 class="text-black/70 font-normal text-fluid-lg uppercase">Plastic Sheets And Rolls Since 1967</h1>
-    </div>
-    <div class="lg:hidden" id="mobile-menu-on">
-      <button type="button"
-        class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        <span class="sr-only">Open Menu</span>
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-    </div>
-    <div class="hidden lg:flex flex-col justify-center items-center gap-3">
-      <div>
-        <ul class="flex text-3xl">
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
-            data-active>
-            <a href="#">IT</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">EN</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">FR</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">ES</a>
-          </li>
-          <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">DE</a>
-          </li>
-        </ul>
+
+
+    <!-- Header -->
+    <header
+      class="container mx-auto flex items-center mt-5 lg:mt-6 pb-4 lg:pb-2 md:gap-4 px-3 lg:border-0 border-b-[7px] border-light_gray">
+      <div class="w-10 sm:w-14 lg:w-20">
+        <a href="#">
+          <img src="/img/logo.jpg" alt="Briccola-SPA">
+        </a>
       </div>
-      <div>
-        <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
-          <a class="" href="#">
-            <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contatti</span>
-          </a>
-        </button>
+      <div class="ml-2 md:ml-5 flex-1 flex flex-col gap-2">
+        <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
+        <h1 class="text-black/70 font-normal text-fluid-lg-to-sm uppercase">Plastic Sheets And Rolls Since 1967</h1>
       </div>
-    </div>
-  </header>
-  <!-- PC Navigation Mega Menu -->
-  <nav class="hidden lg:block w-full bg-light_gray px-4 py-3">
-    <ul class="container mx-auto flex justify-evenly items-center">
-      <li class="group megamenu-item" tabindex="0" data-active>
-        <div class="relative">
-          <a href="#">
-            <button class="flex gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Azienda</span>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="#">
-            <button class="flex gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Sostenibilità</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Ambiente</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Riciclo e Riutilizzo di prodotti</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Energia</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Impianto Voltaico da 400kW</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="#">
-            <button class="flex gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Produzione</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Produzione</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Qualità, Consegne e Garanzie</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Proprietà</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Alti-Batterico, Resistenza a Impatto </p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Qualità</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  I nostri strumenti: Spettrofotometro</p>
-              </a>
-            </div>
-          </div>
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Goffrature</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Frozen, Sand, Grain A, B, C</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Colore</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Gamma RAL, Pantone e campionamento</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="#">
-            <button class="flex gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Materiali</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">ABS</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">ABS/PMMA</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">ABS + Film</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-          </div>
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">HIPS</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  High Impact PolyStryene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">HDPE</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  High Density Polyethylene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-xl text-black">Materiali Speciali</h3>
-                <p
-                  class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  ABS/TPU, ASA, PC, PPO, ...</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="#">
-            <button class="flex gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Informazioni</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Contatti</h3>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Privacy</h3>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-6">
-              <a href="#">
-                <h3 class="uppercase font-semibold text-2xl text-black">Condizioni di Vendita</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- Mobile Navigation Menu -->
-  <div class="relative">
-    <nav id="mobile-menu"
-      class="transform translate-x-full fixed min-h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll overflow-x-hidden transition duration-400 ease-in-out preload overscroll-contain">
-      <div class="absolute top-12 right-8" id="mobile-menu-off">
+      <div class="lg:hidden" id="mobile-menu-on">
         <button type="button"
-          class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          <span class="sr-only">Close Menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
+          class="inline-flex items-center justify-center rounded-md bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 mr-1">
+          <span class="sr-only">Open Menu</span>
+          <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
             stroke="currentColor">
-            <path
-              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>
-      <ul class="my-24">
-        <li class="border-b-2 border-light_gray group ">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Azienda</span>
-          </a>
-        </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Sostenibilità</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Ambiente
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Energia
-                </a>
-              </li>
-            </ul>
+      <div class="hidden lg:flex flex-col justify-center items-center gap-3">
+        <div>
+          <ul class="flex text-3xl">
+            <li
+              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
+              data-active>
+              <a href="#">IT</a>
+            </li>
+            <li
+              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+              <a href="#">EN</a>
+            </li>
+            <li
+              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+              <a href="#">FR</a>
+            </li>
+            <li
+              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+              <a href="#">ES</a>
+            </li>
+            <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+              <a href="#">DE</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
+            <a class="" href="#">
+              <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contatti</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- PC Navigation Mega Menu -->
+    <nav class="hidden lg:block w-full bg-light_gray px-4 py-3">
+      <ul class="container mx-auto flex justify-evenly items-center">
+        <li class="group megamenu-item" tabindex="0" data-active>
+          <div class="relative">
+            <a href="#">
+              <button class="flex gap-2 items-center" tabindex="-1">
+                <span
+                  class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Azienda</span>
+              </button>
+              <div
+                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+              </div>
+            </a>
           </div>
         </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Produzione</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Produzione
+        <li class="group megamenu-item with-submenu" tabindex="0">
+          <div class="relative">
+            <a href="#">
+              <button class="flex gap-2 items-center" tabindex="-1">
+                <span
+                  class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Sostenibilità</span>
+                <svg fill="transparent"
+                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                  <g fill-rule="evenodd">
+                    <path d="M1 1l4 4-4 4"></path>
+                  </g>
+                </svg>
+              </button>
+              <div
+                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+              </div>
+            </a>
+          </div>
+          <div
+            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Ambiente</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Riciclo e Riutilizzo di prodotti</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Proprietà
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Energia</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Impianto Voltaico da 400kW</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Qualità
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Goffrature
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Colore
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Materiali</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  ABS
+        <li class="group megamenu-item with-submenu" tabindex="0">
+          <div class="relative">
+            <a href="#">
+              <button class="flex gap-2 items-center" tabindex="-1">
+                <span
+                  class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Produzione</span>
+                <svg fill="transparent"
+                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                  <g fill-rule="evenodd">
+                    <path d="M1 1l4 4-4 4"></path>
+                  </g>
+                </svg>
+              </button>
+              <div
+                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+              </div>
+            </a>
+          </div>
+          <div
+            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Produzione</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Qualità, Consegne e Garanzie</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  ABS/PMMA
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Proprietà</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Alti-Batterico, Resistenza a Impatto </p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  ABS + Film
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Qualità</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    I nostri strumenti: Spettrofotometro</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  HIPS
+              </div>
+            </div>
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Goffrature</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Frozen, Sand, Grain A, B, C</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  HDPE
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Colore</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Gamma RAL, Pantone e campionamento</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Materiali Speciali
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Informazioni</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Contatti
+        <li class="group megamenu-item with-submenu" tabindex="0">
+          <div class="relative">
+            <a href="#">
+              <button class="flex gap-2 items-center" tabindex="-1">
+                <span
+                  class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Materiali</span>
+                <svg fill="transparent"
+                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                  <g fill-rule="evenodd">
+                    <path d="M1 1l4 4-4 4"></path>
+                  </g>
+                </svg>
+              </button>
+              <div
+                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+              </div>
+            </a>
+          </div>
+          <div
+            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">ABS</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Acrilonitrile-Butadiene-Stirene</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Privacy
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">ABS/PMMA</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Acrilonitrile-Butadiene-Stirene</p>
                 </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="#" class="pl-12 py-2 w-full block">
-                  Condizioni di Vendita
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">ABS + Film</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    Acrilonitrile-Butadiene-Stirene</p>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">HIPS</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    High Impact PolyStryene</p>
+                </a>
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">HDPE</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    High Density Polyethylene</p>
+                </a>
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-xl text-black">Materiali Speciali</h3>
+                  <p
+                    class="mt-2 font-normal text-black/70 text-base text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                    ABS/TPU, ASA, PC, PPO, ...</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="group megamenu-item with-submenu" tabindex="0">
+          <div class="relative">
+            <a href="#">
+              <button class="flex gap-2 items-center" tabindex="-1">
+                <span
+                  class="text-black font-semibold text-xl xl:text-3xl uppercase group-data-[active]:text-bright_red">Informazioni</span>
+                <svg fill="transparent"
+                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                  <g fill-rule="evenodd">
+                    <path d="M1 1l4 4-4 4"></path>
+                  </g>
+                </svg>
+              </button>
+              <div
+                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+              </div>
+            </a>
+          </div>
+          <div
+            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Contatti</h3>
+                </a>
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Privacy</h3>
+                </a>
+              </div>
+              <div class="rounded-md hover:bg-gray-100 p-6">
+                <a href="#">
+                  <h3 class="uppercase font-semibold text-2xl text-black">Condizioni di Vendita</h3>
+                </a>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
     </nav>
-    <div id="mobile-menu-blur" class="transform translate-x-full fixed min-h-screen w-screen bg-black/60 inset-0 z-10">
+    <!-- Mobile Navigation Menu -->
+    <div class="relative">
+      <nav id="mobile-menu"
+        class="transform translate-x-full fixed min-h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll overflow-x-hidden transition duration-400 ease-in-out preload overscroll-contain">
+        <div class="absolute top-12 right-8" id="mobile-menu-off">
+          <button type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <span class="sr-only">Close Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
+              stroke="currentColor">
+              <path
+                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+            </svg>
+          </button>
+        </div>
+        <ul class="my-24">
+          <li class="border-b-2 border-light_gray group ">
+            <a href="#" class="pl-7 py-4 flex justify-start items-center">
+              <span class="uppercase text-black font-semibold text-fluid-md">Azienda</span>
+            </a>
+          </li>
+          <li class="border-b-2 border-light_gray group with-submenu">
+            <a href="#" class="pl-7 py-4 flex justify-start items-center">
+              <span class="uppercase text-black font-semibold text-fluid-md">Sostenibilità</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+              <ul class="py-2">
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Ambiente
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Energia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-b-2 border-light_gray group with-submenu">
+            <a href="#" class="pl-7 py-4 flex justify-start items-center">
+              <span class="uppercase text-black font-semibold text-fluid-md">Produzione</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+              <ul class="py-2">
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Produzione
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Proprietà
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Qualità
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Goffrature
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Colore
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-b-2 border-light_gray group with-submenu">
+            <a href="#" class="pl-7 py-4 flex justify-start items-center">
+              <span class="uppercase text-black font-semibold text-fluid-md">Materiali</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+              <ul class="py-2">
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    ABS
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    ABS/PMMA
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    ABS + Film
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    HIPS
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    HDPE
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Materiali Speciali
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-b-2 border-light_gray group with-submenu">
+            <a href="#" class="pl-7 py-4 flex justify-start items-center">
+              <span class="uppercase text-black font-semibold text-fluid-md">Informazioni</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+              <ul class="py-2">
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Contatti
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Privacy
+                  </a>
+                </li>
+                <li class="text-black font-semibold text-fluid-md">
+                  <a href="#" class="pl-12 py-2 w-full block">
+                    Condizioni di Vendita
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-blur"
+        class="transform translate-x-full fixed min-h-screen w-screen bg-black/60 inset-0 z-10">
+      </div>
     </div>
-  </div>
 
-  <section>
-    <div>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima iure mollitia praesentium quia, consectetur
-      dolor? Necessitatibus saepe, nihil at porro hic modi maxime doloribus veniam, deleniti voluptatibus molestiae
-      culpa. Tempore, consectetur minima rerum placeat modi officia assumenda officiis ad numquam amet cupiditate maxime
-      veniam in dolores magni. Animi corrupti officiis laboriosam nihil illo consectetur? Reprehenderit ea, mollitia
-      commodi eveniet sint nostrum earum maxime, odio quibusdam nobis cumque enim voluptatum fuga consequatur culpa quod
-      suscipit natus quae placeat. Hic, voluptatum fugiat nulla inventore necessitatibus distinctio ab tempora placeat
-      illum commodi amet aliquid veniam reiciendis dicta, explicabo dignissimos odit atque alias blanditiis voluptatibus
-      in repellendus tenetur optio. Quasi, inventore necessitatibus culpa doloremque maiores nobis consequatur nostrum.
-      At maiores veniam consequatur repellat nobis ipsum, quidem voluptatum alias doloribus doloremque dolore
-      necessitatibus enim vero adipisci dolor consequuntur rem ut ab impedit. Molestias voluptatibus praesentium, quasi
-      quaerat exercitationem vitae alias nemo ipsa iste eligendi unde veritatis doloremque ad reprehenderit ab accusamus
-      ratione dolor, fugit quae dolores veniam animi! Officia iure asperiores rerum consequatur ea placeat sed alias
-      temporibus sequi omnis, quidem quasi, ipsa harum molestiae odit, amet aperiam vel unde laudantium facere aliquid
-      assumenda. Fugit ipsam, ad ex voluptatem similique provident, non iste, deleniti qui cum placeat obcaecati autem
-      quo amet fuga temporibus dolore quas dolor saepe eum distinctio voluptates. Deserunt maiores beatae perspiciatis?
-      Rem, officia nulla dolor fugiat facere hic quod itaque! Repudiandae nam modi sint, exercitationem tenetur dicta
-      magnam totam, unde cumque odit eum ratione, ut architecto et praesentium. Architecto dolore quas quisquam
-      incidunt, corrupti provident sed qui minima, ducimus saepe aliquid commodi praesentium perspiciatis eos ab ad
-      nostrum distinctio optio omnis eligendi aut, id non? Aliquam fugit, quod sint ullam, distinctio possimus
-      repellendus ipsam ut quisquam praesentium exercitationem officia animi odio velit, sapiente accusantium? Autem
-      debitis architecto, molestiae modi praesentium facilis illum pariatur nemo repellat quaerat hic ad ratione
-      excepturi reprehenderit dignissimos. Delectus accusantium at dolore nisi fuga odio deleniti rerum eveniet facere
-      sit ab repellat itaque eius culpa doloribus alias possimus, architecto tempora, libero iure blanditiis suscipit
-      magnam tenetur? Ipsum ab aliquam nisi iste voluptatum dicta nam cum saepe aperiam iure sequi suscipit, quasi
-      nostrum odio expedita molestiae rem totam. Neque, voluptas! Sapiente, laboriosam nemo aliquid quisquam quidem
-      dolorem perferendis magni maiores unde consequuntur, numquam hic deserunt molestias. Iusto aliquid maxime eum
-      placeat facere similique doloribus eligendi natus at magnam, deserunt delectus adipisci dolorem dolorum.
-      Aspernatur, sequi. Porro reprehenderit culpa doloremque alias quae quas voluptatibus deleniti omnis deserunt
-      error, enim quam, doloribus saepe. Eveniet recusandae assumenda id? Labore ipsa, reiciendis ducimus, ad ipsum
-      fugiat, perferendis rerum vitae doloremque possimus quam dolor impedit ratione. Eveniet quam debitis ipsa
-      voluptatibus labore molestias fugit necessitatibus velit autem dolor? Corrupti sit repudiandae obcaecati molestias
-      exercitationem suscipit hic corporis, ducimus impedit, aspernatur blanditiis alias praesentium maiores sint
-      incidunt, commodi dolorem! Molestiae asperiores vitae deserunt enim velit quis labore iste repellat, provident
-      natus reprehenderit. Harum dolore et unde ut voluptas natus, sequi ipsam quo fugiat odit cumque tempora
-      consequatur ipsa laboriosam eos quis quidem vitae! Libero ipsa, provident adipisci minus reiciendis porro
-      repellendus velit quibusdam delectus magni rerum. Possimus sunt quasi dolor, nam eum odio, at veniam, ut atque
-      accusamus tempore cum repudiandae tempora? Unde, laudantium? Reiciendis impedit eos quidem expedita architecto
-      veniam? Cum, accusantium natus exercitationem autem eveniet nesciunt voluptas itaque molestiae in tenetur quae
-      quaerat adipisci ullam facere. Illum magnam voluptates ipsam sunt, assumenda excepturi aspernatur nulla?
-      Consequuntur hic fuga natus enim expedita, nam ex quo unde, aperiam velit cumque, perferendis vero a atque in
-      nobis laborum excepturi possimus. Ipsum rem quos esse suscipit! Iure dolore non perspiciatis veritatis, facilis at
-      eaque nemo vel, minima quas provident cum sint earum in expedita dolorum laborum quis libero aperiam! Maxime, illo
-      expedita provident corrupti optio perspiciatis eveniet quidem quae nobis alias repudiandae debitis esse,
-      consequuntur repellendus velit voluptatibus dolorem aperiam fugiat quis dignissimos eum nulla. Nesciunt incidunt
-      delectus dignissimos fuga impedit debitis veniam perferendis animi illum quam quas sed amet magnam exercitationem
-      vel, autem voluptates! Ea exercitationem est dolorum vero asperiores, et optio officia veniam rem natus temporibus
-      iure nobis error voluptates deserunt necessitatibus, ad nihil cupiditate obcaecati! Aspernatur minima magnam
-      delectus molestiae maxime inventore consequatur corrupti, doloribus et illo praesentium at eaque, laboriosam
-      asperiores pariatur? Nulla, enim, nostrum, praesentium doloremque esse provident laboriosam ex quibusdam facere
-      repellendus ullam voluptas vel neque. Vero sint, nostrum corporis, magni laudantium accusamus, earum aliquam natus
-      repudiandae aliquid nam ratione eum recusandae molestias dolore non exercitationem quas. Dolor aliquid doloremque,
-      dignissimos voluptatem, distinctio voluptas quod dicta mollitia nisi natus asperiores, ratione sapiente porro rem.
-      Perferendis dicta error ut veritatis ratione nobis quis a, iusto impedit, ab natus laudantium necessitatibus
-      inventore nostrum totam officiis voluptatum? Eius perspiciatis voluptates, corrupti placeat veniam hic facilis,
-      omnis vero sit, itaque corporis id consequuntur aspernatur fugit ipsum quasi doloribus beatae! Quasi, ducimus
-      labore, quia ex libero, quos commodi distinctio tenetur illo blanditiis molestiae dicta sed dolore dignissimos?
-      Veritatis rem perferendis beatae a reiciendis, enim maiores ipsum ducimus eaque. Obcaecati natus facere quae quis
-      amet aspernatur accusantium totam soluta repellendus nostrum repudiandae corporis odio eaque reiciendis fugit
-      repellat saepe ipsa, vel aperiam facilis distinctio? Officiis praesentium velit, in consectetur doloribus error
-      optio, accusantium quaerat, alias neque consequuntur eum incidunt possimus adipisci hic aperiam commodi tempora
-      voluptatem at fugiat! Repellendus beatae soluta, voluptatum iusto ipsum error blanditiis quam aut, illum ipsam id,
-      earum praesentium adipisci voluptate ea magni facere laborum porro maiores commodi vero tempora incidunt. Unde
-      sint dolorem quasi in eaque excepturi repellendus ex voluptatum asperiores, aliquam, repellat mollitia labore
-      nihil numquam sit commodi explicabo magni fugit a? Repellendus, temporibus vel? Voluptate quos dolores, eaque
-      incidunt provident eveniet quis omnis consequatur ex est dicta soluta pariatur deleniti totam ea quod explicabo
-      quae vero iste quia hic adipisci. Sint quibusdam dolore blanditiis vel, dignissimos iste fugit ea? Necessitatibus
-      dolor accusantium debitis, commodi in deleniti enim eos facilis delectus, sit id excepturi optio veritatis eveniet
-      eaque animi sunt? Earum necessitatibus distinctio veniam quod nobis repudiandae dignissimos debitis dolores
-      suscipit, amet, illum harum et! Voluptatum exercitationem quas voluptatem veniam fugit, eum ratione nesciunt
-      doloribus ipsa amet minima consequatur, mollitia esse cupiditate itaque soluta asperiores eos iure inventore!
-      Esse, ratione. Ea hic consequatur quam, odio rerum commodi sint pariatur fuga voluptatibus aspernatur itaque ipsa
-      doloremque quod atque sunt eum similique dignissimos? Ab quia cum aut neque ratione necessitatibus suscipit, at
-      culpa enim voluptatibus, soluta quasi officiis est mollitia qui dolorum iste ipsam, perferendis pariatur placeat
-      officia! Itaque optio quas necessitatibus quia cupiditate et incidunt vel sequi ipsam voluptates nihil facere
-      vitae deleniti tenetur eveniet architecto, odit iusto consequuntur rem nostrum placeat, fugit ipsum officia
-      perspiciatis! Esse nam neque repellendus enim voluptates omnis saepe aut hic eos? Possimus, doloribus odit fuga at
-      quos, aliquid velit quis voluptate repellendus cumque dolor harum minus voluptas non facere, asperiores ab
-      blanditiis! Ea, amet iure maiores sed aliquam numquam dicta, eum alias, fugiat impedit neque? Fugit facere tempora
-      odio repellendus tenetur aliquid deleniti, corporis possimus magnam, sequi reiciendis distinctio ipsa maiores
-      beatae laboriosam placeat? Incidunt ducimus consectetur doloremque temporibus quod quae atque a quia laboriosam
-      fugit pariatur ullam fugiat iure, natus maiores vero porro non cum soluta, praesentium debitis quidem qui
-      voluptatibus ut? Accusantium, molestiae? Iusto ratione velit magni optio atque? Id dolorum aspernatur eaque
-      placeat quae sed accusamus voluptatum, delectus et, error atque corporis doloribus. Modi optio dicta officiis est
-      inventore facilis quisquam ipsum iusto facere debitis iure cumque quo perferendis sed harum nesciunt, sequi,
-      excepturi cum consequuntur necessitatibus veniam maiores odio aspernatur? Molestiae maiores perspiciatis ex porro
-      aliquam nobis neque autem a minus delectus modi, ut tenetur ab quae numquam vero. Nesciunt doloribus, fuga omnis
-      rem vitae exercitationem! Rerum omnis, consequuntur aliquam suscipit minus velit illum fugiat et optio ab
-      reprehenderit illo aspernatur eveniet soluta, blanditiis praesentium. Voluptatem mollitia rerum libero tempora
-      repudiandae cum qui omnis est ipsam nemo quas provident totam consequuntur molestias laudantium rem repellendus
-      facilis eaque perferendis possimus placeat, sequi sunt quo reiciendis? Soluta asperiores repellat sequi expedita
-      numquam quam quia obcaecati ad praesentium deserunt consequuntur, sunt aut nobis dolores pariatur, voluptates ab
-      iusto animi esse, nostrum assumenda! Illo quibusdam eaque, est, quod sapiente quo animi praesentium nihil impedit
-      minus illum asperiores. Vel quis enim quo quibusdam atque, maxime quidem earum nemo dolores, iusto assumenda
-      magnam dignissimos aperiam pariatur minima rerum eveniet dicta doloremque, cupiditate iste quae dolorum.
-      Laboriosam hic vitae sapiente maxime deleniti magnam cupiditate fuga repellendus incidunt. Odit maiores nobis
-      cumque reprehenderit. Non tempore quia odio facilis voluptatibus porro tempora quibusdam sapiente repellendus
-      eveniet, excepturi minima, culpa maiores dolores laudantium quo asperiores consequatur fugiat explicabo. Aut
-      quidem, ipsam sequi reiciendis enim fuga blanditiis harum inventore quasi qui facere illum unde quo error, hic
-      incidunt nemo sit rerum odio voluptatum reprehenderit veniam nihil voluptatem! Voluptas facilis fugiat at saepe
-      earum doloremque ad similique nobis laboriosam! Delectus explicabo error sint fugiat maxime sunt ex? Optio ducimus
-      earum recusandae, perspiciatis facilis ullam corporis adipisci, illum autem ratione hic eligendi, alias saepe
-      officia enim. Consequuntur inventore voluptatibus accusamus deleniti cum natus labore rem, dolores laboriosam, a
-      omnis consequatur illo magnam suscipit corporis esse illum sit obcaecati, soluta veritatis voluptas architecto?
-      Libero repellat nemo, expedita nesciunt dolorum ratione, odit unde vel excepturi ipsam, porro dolore assumenda
-      dicta. Ipsa blanditiis eos dicta facere, quam saepe est. Laboriosam, voluptate nostrum? Ullam recusandae officia
-      nihil. Facere quia sit recusandae quam debitis doloribus tempora harum aliquid magnam, iste voluptates, velit vero
-      reprehenderit atque labore est ex saepe et minus explicabo dolore corrupti, quidem sint. Qui libero nihil sed
-      corporis voluptatibus minus accusamus pariatur. Eos, error pariatur officia ipsum dolorum voluptates recusandae
-      consectetur quam porro ipsam, rem voluptas exercitationem eius? Amet itaque laborum voluptas iste quod doloremque
-      omnis veritatis distinctio ad necessitatibus fugiat, exercitationem aut neque odit obcaecati adipisci assumenda ex
-      rem nesciunt aperiam, expedita molestias accusantium laudantium. Facilis, ducimus? Eaque cupiditate voluptatum
-      numquam dignissimos est ullam eius quo tempore sint quibusdam. Quibusdam, tempore omnis. Alias corrupti aliquam
-      doloremque fugiat consectetur aperiam excepturi fuga ratione, magni eos in, dicta velit corporis! Sint
-      consequuntur fuga itaque id quibusdam molestias similique repellat. Assumenda culpa quo veritatis recusandae
-      praesentium asperiores quae natus corporis similique minima. Minus, ratione, sequi minima mollitia, maxime sint
-      perspiciatis culpa voluptatem veniam at hic nemo blanditiis! Tempora, blanditiis eius. Molestiae natus quidem
-      perspiciatis ut numquam ipsa repellat inventore rerum, voluptatum sit aut doloribus asperiores cum? Eveniet dolore
-      necessitatibus expedita ullam cumque assumenda quas, quis excepturi molestiae deleniti provident numquam magni
-      fugit maiores maxime tempore eos earum nam minima et quidem soluta? Voluptates placeat sapiente doloremque, iusto
-      deleniti temporibus consectetur asperiores itaque perferendis, corrupti, perspiciatis cum harum. Deserunt in magni
-      eaque totam omnis blanditiis beatae earum, cumque, nulla suscipit voluptas quidem illum repellat. Possimus dolores
-      nesciunt, maxime voluptate nulla ad eaque quisquam odit illum quas esse error officiis repellendus corporis
-      aliquid qui amet non? Voluptatem, suscipit eveniet. Ad et itaque ipsa repellat laboriosam facere? Suscipit quasi
-      qui a deserunt, facilis similique beatae ipsam impedit. Numquam iure, sint facere molestiae culpa, dolores quod
-      necessitatibus repellat aliquam ad voluptatum enim accusantium aperiam. Totam similique dolorem cum provident?
-      Reiciendis, animi cumque sequi inventore ipsam tempora neque officia quibusdam consequatur voluptates consequuntur
-      accusantium qui magni saepe? Illo nulla, saepe, veritatis aspernatur assumenda repellendus voluptate adipisci
-      perferendis quo recusandae vitae facilis sit, labore excepturi suscipit eaque earum. Sint voluptatem suscipit
-      commodi ducimus ea ratione eligendi in recusandae expedita autem minima amet possimus, consequuntur nihil vero
-      voluptatum adipisci modi quis quasi. Doloribus aspernatur magnam et cupiditate? Placeat nulla cum modi sint animi
-      deserunt quaerat rem reprehenderit sapiente optio, sunt neque accusantium, ratione, ducimus cupiditate sed
-      delectus repellendus? Nobis, ducimus quo. Maxime itaque, numquam atque voluptate eligendi, voluptates vitae fugit
-      iste dignissimos molestiae incidunt tenetur repellat. Unde ut quibusdam minus saepe eveniet amet accusantium
-      cupiditate error. Vitae, quis provident quos ipsam officia totam minus iure rerum possimus tenetur! Molestiae
-      dolor exercitationem magni accusamus cupiditate. Exercitationem omnis asperiores, illo quae voluptas soluta
-      aperiam ducimus vel sed praesentium incidunt excepturi recusandae. Minus accusamus placeat, deleniti officiis eius
-      esse earum saepe a corrupti architecto debitis omnis molestias iure odit magnam aliquam dolores ad sit, maxime
-      voluptates! Veritatis quia nulla adipisci facilis incidunt obcaecati id dicta quisquam. Adipisci vitae velit
-      necessitatibus. Labore repellat aliquid delectus, deserunt vero consequatur accusamus dolores eos molestias dicta
-      hic? Fugit laborum tempore sequi, quos dolore, consequatur et pariatur voluptates dolores corrupti sed dignissimos
-      amet magni ut assumenda autem recusandae quibusdam quidem. Porro iusto aspernatur consequatur vel. Nihil
-      exercitationem odio dolor consequatur libero porro officia animi molestias sunt sequi, ad omnis, quaerat voluptas.
-      Nemo, maiores? Dolore nobis, placeat, magnam eaque itaque laudantium totam sit, delectus similique nulla qui id.
-      Consequuntur quo itaque laborum rerum explicabo quae aut ab tempore harum provident. Delectus, reiciendis
-      temporibus harum, sint neque voluptate quis earum laboriosam nihil molestias tempore aut. Dignissimos recusandae
-      inventore aspernatur quisquam ut modi corrupti culpa, beatae accusantium sapiente, quidem corporis nesciunt! Nulla
-      iste dicta cum sint ab at, similique itaque laudantium! Perspiciatis est ipsam quisquam harum eveniet ducimus
-      saepe quaerat temporibus expedita itaque assumenda velit ab, commodi eaque magni modi reprehenderit sequi aliquam
-      eos dolores recusandae sint. Ab laudantium praesentium consequuntur facere quae minima ipsum veritatis voluptatem
-      iste perspiciatis? Accusamus pariatur, id quas qui voluptas quidem consequuntur ipsa, deleniti sequi aut aperiam
-      explicabo, sed veritatis ea necessitatibus odit inventore itaque a ratione nulla voluptatibus? Doloremque, fugiat
-      ab. Molestias ex quia adipisci vel vero, animi omnis distinctio voluptate ipsum totam nam. Blanditiis, impedit
-      libero, temporibus nisi reprehenderit qui, error dolorem vel ab magnam hic. Sint praesentium possimus tempore
-      voluptates adipisci ipsam! Repellendus ipsum, velit molestias assumenda optio eius dolores temporibus voluptatem
-      quidem maiores ipsa aliquam quod. Distinctio laborum facilis maxime, perspiciatis atque laboriosam sed,
-      reprehenderit ducimus illo quisquam dignissimos sint. Ipsam quis nihil ut, fugit recusandae illo excepturi
-      repellendus quos tempora ducimus? Nulla explicabo corporis quo, iste laboriosam quidem molestias pariatur esse
-      magnam recusandae! Atque quia numquam dolores adipisci eaque aperiam autem excepturi facilis provident doloribus
-      eum temporibus, tempora, veritatis quam a harum sint quisquam magni, cumque eos ipsa labore voluptas? Magni
-      dolores expedita, praesentium nobis blanditiis facere placeat illum explicabo aperiam, iusto ad, quos sapiente
-      voluptatibus soluta optio porro unde provident sequi maiores nulla. Veniam facere porro nisi? Quam iusto dolores
-      perferendis repellat necessitatibus minus eos amet voluptate impedit nam dolorum, corrupti, natus pariatur quidem
-      rem soluta! Numquam molestias repellat cum accusantium in accusamus veniam deserunt unde et! Officiis aliquam
-      officia accusantium distinctio, quas inventore tempore, sequi porro doloremque eius, perspiciatis nobis! Dolor eum
-      eaque rem quidem aperiam, ab, repellat vero eius culpa quibusdam optio error quo distinctio vel eos velit pariatur
-      voluptate fugiat repellendus ut unde incidunt? Molestias ducimus dolorem deleniti nemo iste placeat corporis!
-      Harum, officia beatae eligendi consequatur officiis eaque nulla? Neque obcaecati vel illo beatae aliquam natus in
-      eveniet totam quisquam voluptatum. Ducimus itaque laudantium autem, consequatur iste dolores unde. Nihil dicta quo
-      repudiandae odio labore tempore commodi aliquid animi sequi cupiditate excepturi, laborum sed voluptatem nemo
-      explicabo aperiam. In error sint aut, voluptate neque laudantium molestiae quaerat nobis obcaecati veritatis hic
-      ipsam accusamus magni alias quos voluptatum illo commodi maxime debitis temporibus architecto. Dolore excepturi
-      eveniet repellendus magnam sed exercitationem id, similique aperiam voluptatibus enim deleniti doloremque quaerat
-      quos aliquid odio placeat, porro animi, illo voluptate blanditiis saepe! Modi, maiores qui culpa nobis
-      perspiciatis officia deserunt. Provident, atque nulla! Aliquid libero asperiores numquam provident atque
-      cupiditate doloribus quibusdam? Quibusdam consectetur nesciunt deserunt praesentium iusto illum! Maiores nemo
-      tempora ex, ullam fuga voluptatem totam obcaecati aut et enim nisi voluptates expedita id animi reiciendis neque
-      ea, officiis provident sint quas aliquam! Dolores veniam impedit doloribus officia consequuntur, laudantium
-      architecto enim aliquam ipsam reiciendis assumenda recusandae? Quidem inventore aspernatur quam maiores quaerat
-      voluptates unde iusto cum, sapiente, quia accusantium natus veritatis error non sit dolore perferendis! Id quos
-      aliquid quod neque architecto similique itaque velit labore eligendi ratione iure, cupiditate natus qui sit
-      consectetur quia. Iure, animi sed officiis dolorum saepe nihil neque quaerat autem earum minus explicabo labore
-      eaque ab omnis voluptas ut excepturi laboriosam, dolorem nemo mollitia facilis ratione, placeat ipsa quisquam!
-      Adipisci, ipsa harum aspernatur sit iure magni? Blanditiis possimus itaque ipsum minus, debitis quas vel
-      doloremque ipsam cupiditate amet delectus ipsa eos libero excepturi dolor iusto! Perferendis dignissimos corporis
-      illo dolor unde dolorum doloremque molestiae hic, magni quod error rem, ea, nesciunt quisquam asperiores impedit
-      eius quidem dicta eaque odit quasi nostrum alias. Voluptate totam accusamus inventore optio. Similique earum sunt
-      ut harum. Doloremque corrupti possimus odit soluta maxime dolores minima aliquam temporibus illum minus, obcaecati
-      nam quasi animi, quam reiciendis consequuntur dignissimos aut incidunt quia aspernatur totam illo dicta. Maiores
-      blanditiis saepe quas consectetur quis illo id molestias. Itaque vitae voluptatibus eveniet perferendis voluptas!
-      Unde alias enim facilis quod numquam, nisi ducimus labore, sed ad incidunt ex aperiam tempora. Minima neque
-      repellendus autem unde necessitatibus, voluptas quaerat, aperiam provident assumenda excepturi, magnam illo
-      dolorem itaque ullam accusamus eveniet. Porro illo debitis odit atque neque in eum temporibus quidem excepturi,
-      molestiae aliquid nam veritatis labore ea officia quas tempora qui repellendus, necessitatibus maiores doloremque.
-      Error hic, explicabo provident nesciunt rem itaque nulla laborum distinctio reprehenderit, delectus deserunt
-      officiis minus quis molestias soluta labore. Accusamus in ipsum corporis nostrum laudantium aliquid consequuntur,
-      error repellat reprehenderit laboriosam nihil natus culpa consectetur commodi corrupti possimus eos ullam
-      obcaecati earum inventore. Laudantium dolorum dicta, minima blanditiis incidunt aspernatur magni alias fugit
-      voluptas repellat, nesciunt fugiat nam officia! Vel nulla ad labore quasi error perspiciatis placeat beatae
-      suscipit. Ad in voluptatem illo, necessitatibus maiores labore aut aliquid. Laborum excepturi eos aliquam vitae
-      laboriosam? Repellat, earum voluptate in porro maxime quidem provident animi, laboriosam quasi quod vero
-      consectetur dolor! Reiciendis expedita, nostrum dolores ipsam sit accusamus quis quas tempore fuga obcaecati iste,
-      magni tenetur ratione voluptatem molestiae consectetur eaque nihil repellat repudiandae perspiciatis distinctio
-      pariatur id. Voluptatem qui voluptate architecto repellat sequi consequatur corporis sit veritatis saepe expedita
-      ab praesentium tempore eligendi suscipit iure, et quis nemo iusto totam dolorum. Sunt voluptatem ad maiores fuga
-      cumque ex nihil doloremque. Aliquid illo, inventore laudantium, minima officiis ducimus accusamus qui veniam
-      error, voluptatum eius quaerat praesentium cupiditate beatae dicta. A ad incidunt sit sunt veritatis dignissimos,
-      numquam ut unde impedit sint velit error adipisci sed maiores molestiae est voluptas vel et. Assumenda similique
-      ipsam corporis numquam. Repellendus esse assumenda iusto? Ullam voluptatibus consectetur nostrum dolorem ut
-      sapiente cupiditate, amet rem ipsam cum nemo excepturi similique modi consequatur blanditiis ab culpa? Tempore,
-      dicta voluptatibus! Dicta error provident facilis laudantium nostrum repudiandae commodi nesciunt architecto
-      labore tempore illo pariatur consequuntur maxime non nam ad ullam nemo quas, velit aut exercitationem quia,
-      officia asperiores laborum. Voluptatem tempora optio iusto aspernatur! Corrupti, provident expedita omnis aliquam
-      architecto temporibus vitae, repellat ipsam autem minus numquam deserunt veniam alias eveniet officia inventore
-      exercitationem praesentium ex nam. Odio laborum voluptatem, libero nemo quasi sed magni, officiis omnis vel
-      aliquam hic sint ratione est magnam quae unde repellendus fuga nihil assumenda nostrum facere? Excepturi nam
-      pariatur voluptate? Blanditiis porro velit minus! Optio, magnam? Dolor suscipit assumenda ab placeat sapiente
-      aspernatur commodi ea laboriosam amet earum id tempore, nam, error non quos maiores rerum et molestiae ipsum enim.
-      Id accusamus quae quos natus quas harum! Laborum vero, omnis illo eaque corporis consequatur qui ipsa nam saepe
-      vitae fuga eius ipsam impedit explicabo voluptate molestiae, dolor alias expedita iusto, voluptatem magnam ex quas
-      magni suscipit. In nisi, cum totam tempora ut quidem a animi enim debitis quibusdam assumenda, est, minima id. Ex
-      nihil, in officia quibusdam aperiam aut iusto expedita quos. Impedit assumenda iusto magni possimus beatae,
-      incidunt doloremque, illum mollitia similique, repudiandae nam! Qui error molestias numquam at. Magni magnam,
-      tenetur beatae temporibus dolores eligendi officiis debitis eaque iure ipsum veritatis odio ratione suscipit nisi
-      corporis quia voluptatibus! Qui, sint tenetur sed voluptate mollitia ad optio odio perspiciatis incidunt quisquam,
-      doloribus quibusdam neque iure animi quas natus. Qui praesentium, magni ea a quam ducimus, aliquid reprehenderit,
-      eius explicabo blanditiis optio recusandae eaque consequatur! Assumenda nemo aspernatur ipsa molestiae cum
-      veritatis fugiat odio mollitia, maxime quia at vel suscipit, quod animi delectus. Vel earum nesciunt reprehenderit
-      id ratione quis, modi ex aliquid quam aspernatur magni! Iusto est ratione pariatur? Necessitatibus ea nobis
-      voluptas iure doloribus possimus tenetur atque voluptatibus ratione, quisquam nostrum aliquam facilis modi
-      perferendis ex saepe accusantium molestiae id aperiam eligendi voluptatem! Eveniet, minima rerum? Minus deserunt
-      ad nemo aliquam necessitatibus praesentium facere sapiente deleniti! Soluta saepe nisi accusantium? Voluptates
-      velit minima dignissimos assumenda corrupti perferendis quasi ut rem, asperiores tempora necessitatibus vitae
-      magnam ad ullam. Enim nesciunt fugiat tempore non, quod, doloribus beatae dolorem quibusdam corporis accusantium
-      iusto maxime facere quas! Facere itaque harum earum vitae id, ullam, molestiae quas totam ex, placeat ipsam! In ut
-      corrupti dignissimos quaerat odio modi aperiam. Similique vel adipisci eum, eligendi magni totam quos atque
-      impedit ab. Est, aut natus? Molestiae sapiente tenetur distinctio alias aperiam, atque illo dignissimos porro
-      accusantium numquam omnis quia est rerum optio temporibus officiis repellat sed totam facere veniam, voluptates
-      corrupti, sequi minus nesciunt! Doloribus ea voluptatem quas fuga pariatur ullam, voluptas quod at debitis
-      molestiae quae distinctio. Odit autem fugit blanditiis officia accusamus voluptatibus doloribus quis accusantium
-      aliquam quod fugiat perspiciatis eos iusto, neque aspernatur sunt voluptatem? Iure, sit fugiat illo explicabo,
-      numquam voluptatibus dolorum accusantium nesciunt reiciendis sed architecto distinctio doloribus. Doloremque
-      deserunt accusamus laudantium aut illum. Quia quod dolore id quis minima soluta magnam iusto veritatis
-      reprehenderit maxime perspiciatis consectetur, animi esse nesciunt itaque delectus possimus nam, alias enim beatae
-      officiis doloribus adipisci ipsa obcaecati. Distinctio at, hic nobis ducimus sunt blanditiis laborum illo
-      provident inventore commodi quasi perferendis autem officiis eligendi doloremque explicabo numquam soluta vitae
-      voluptas reprehenderit unde eaque accusamus voluptate. Odio maxime, reprehenderit corporis laudantium totam ullam
-      beatae molestias illo veniam quaerat laborum iure expedita obcaecati culpa? Ullam neque facere doloribus nisi.
-      Placeat perferendis recusandae necessitatibus tempora exercitationem nemo, dolorum enim. Praesentium ipsum,
-      assumenda delectus commodi aliquid nesciunt, perferendis accusantium cumque iste nobis, id tempora sed aspernatur
-      dolor inventore hic quo. Quisquam voluptate ipsam vero quibusdam. Dicta praesentium quod perspiciatis ipsam cumque
-      vitae corporis obcaecati odit quae est voluptates commodi esse enim ad minima sint sit, sed odio dignissimos
-      officiis porro! Non fuga eveniet qui sit facere temporibus quas esse facilis laboriosam recusandae nisi quasi
-      adipisci tenetur unde inventore quos, eligendi quidem consequatur illum? Provident sint, esse saepe optio suscipit
-      repellat et iusto natus quaerat quis iste blanditiis aperiam velit sit rerum autem accusamus neque voluptas
-      deserunt nihil nisi soluta atque? Id ullam quas magni dolorem, quae quisquam similique, fugiat officiis deserunt
-      provident error, deleniti quibusdam beatae illo quidem eligendi cumque numquam natus iste? Magni ratione aperiam
-      fugiat at error quis quasi rerum repellendus, blanditiis eum officiis veritatis nam amet fuga sapiente libero,
-      repellat, nemo a atque! Obcaecati accusantium sunt dolore impedit labore reiciendis neque nulla corrupti alias id
-      error soluta ratione repudiandae similique, temporibus ducimus blanditiis ipsa saepe. Aliquam perspiciatis
-      molestias, tempore cumque obcaecati recusandae, cum excepturi unde eveniet quaerat ab voluptate quasi earum veniam
-      quis impedit maiores dolor! Sequi eum molestias officia voluptatem eveniet quis soluta nesciunt! Magni sit amet
-      cum velit officiis sint quas, eum, ratione, quam excepturi optio asperiores quia eligendi quae nihil placeat
-      magnam quidem rerum voluptatum neque? Vel reiciendis numquam voluptatibus neque mollitia ad officiis dolorem
-      cupiditate eum, id dicta dolore dolorum at distinctio, a aliquam iusto. Consequuntur repellat nemo aperiam
-      voluptas vel molestias sint quas fugiat facere perferendis, at molestiae! Quod possimus qui sint ullam distinctio
-      pariatur ipsam voluptate in! Animi fugit, nostrum at, odio dicta culpa magni magnam doloribus illum, consequatur
-      aperiam eos libero consequuntur minima et mollitia asperiores dolores atque enim porro sed ad ex est ut.
-      Perferendis veniam ad voluptate non inventore, suscipit ipsam corporis dignissimos. Molestias, repellat pariatur
-      exercitationem vel illo, odio velit atque autem dolorum itaque repellendus asperiores! Magni, corporis tenetur
-      nesciunt in tempore et. Non consequuntur magnam sint ipsa harum illo ratione numquam nam voluptatum aut! Quibusdam
-      molestias fugiat numquam totam voluptatum error repellat nihil tenetur, nesciunt modi! Expedita laboriosam sit
-      quae ab quaerat placeat omnis perferendis distinctio aliquid! Corporis et dolore voluptatibus ut? Quia voluptas
-      accusantium nulla consequatur magni, itaque dignissimos ipsam, amet molestiae mollitia reiciendis ducimus
-      repudiandae odit doloremque maiores aperiam tempore exercitationem?
+    <!-- Hero Section -->
+    <section class="container mx-auto bg-neutral-50 md:my-6 py-6 flex items-center">
+      <div class="grid place-items-center text-center md:grid-cols-2 md:px-7 md:text-left h-full">
+        <div class="w-full md:w-auto h-full">
+          <img class="w-full md:w-auto h-full object-cover" src="img/view.jpg" alt="Foto Aerea dell'Azienda">
+        </div>
+        <div class="px-3 py-5 md:-order-1">
+          <p class="uppercase text-bright_red font-bold text-fluid-sm mb-1">Chi siamo</p>
+          <h2 class="text-fluid-lg-to-md font-semibold leading-tight mb-3 md:max-w-[45ch]">Un'azienda a conduzione
+            familiare fondata nel <span class="text-bright_red">1967</span> dall'Ing. Italo Briccola nella provincia di
+            Como.</h2>
+          <h3 class="text-fluid-md text-black/80 md:max-w-[45ch]">La nostra capacità produttiva eccede le <span
+              class="text-bright_red">7000</span> tonnellate/anno. Esportiamo in tutta Europa e Nazioni
+            adiacenti. </h3>
+        </div>
+      </div>
+    </section>
+
+  <!-- About Us Section -->
+  <section class="bg-light_gray py-3 md:py-10 relative before:absolute before:content-[''] before:inline-block before:top-0 before:left-1/2 before:-translate-x-[50%] before:bg-light_gray before:w-20 before:h-6 before:border-x-[5rem] before:border-x-transparent before:border-t-[1.5rem] before:border-t-neutral-50">
+    <div class="container mx-auto px-5 py-8 md:flex md:gap-10">
+      <div class="mb-6">
+        <p class="uppercase text-bright_red font-bold text-fluid-sm mb-1">Cosa produciamo</p>
+        <p class="text-fluid-md">
+          Produciamo lastre e bobine in termoplastici per la termoformatura. <br>
+          Tecnologia all'avanguardia e alta qualità hanno da sempre caratterizzato la nostra azienda.
+        </p>
+      </div>
+      <div>
+        <p class="uppercase text-bright_red font-bold text-fluid-sm mb-1">Le nostre caratteristiche</p>
+        <p class="text-fluid-md">Il nostro orientamento verso il cliente ci permette di garantire la sua totale
+          soddisfazione attraverso:
+        <ul class="pl-2 text-fluid-md marker:inline-block marker:content-['\25C6'] ml-5 marker:transform marker:text-bright_red ">
+          <li class="pl-3">Vasta esperienza</li>
+          <li class="pl-3">Supporto prima e dopo la vendita</li>
+          <li class="pl-3">Velocità, flessibilità e ridotta burocrazia interna</li>
+          <li class="pl-3">Supporto alla produzione</li>
+          <li class="pl-3">Consegna "just in time"</li>
+        </ul>
+        </p>
+      </div>
     </div>
+  </section>
+
+  <section >
+    <img class="w-full object-cover min-h-[6rem]" src="/img/banner.jpg" alt="Esempi di prodotti realizzati dai nostri clienti con le nostre lastre">
   </section>
 
   
