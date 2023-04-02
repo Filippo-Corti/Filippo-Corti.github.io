@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Briccola S.p.A. | Produzione</title>
+    <title>Briccola S.p.A. | Goffrature</title>
   <script type="module" crossorigin src="/assets/main-fec27e9a.js"></script>
+  <script type="module" crossorigin src="/assets/index.min-2617a225.js"></script>
   <link rel="stylesheet" href="/assets/main-36e5b8fe.css">
 </head>
 
@@ -579,8 +580,7 @@
                         class="group-data-[expanded]:mt-3 h-0 lg:h-auto group-data-[expanded]:h-auto transition-all duration-500 ease-in-out opacity-0 group-data-[expanded]:opacity-100 preload overflow-y-hidden lg:opacity-100 lg:mt-3 ml-3">
                         <ul class="text-lg">
                             <a href="../production/">
-                                <li class="py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline"
-                                    data-active>
+                                <li class="py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline">
                                     Produzione
                                 </li>
                             </a>
@@ -598,7 +598,8 @@
                             </a>
                             <a href="../textures/">
                                 <li
-                                    class="py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline">
+                                    class="py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline"
+                                    data-active>
                                     Goffrature
                                 </li>
                             </a>
@@ -616,27 +617,221 @@
 
         <!-- Page Content -->
         <div class="lg:flex-1 mt-5 mb-8 xl:pl-10 mx-4">
-            <h1 class="text-fluid-lg-to-md font-semibold my-4 ml-2 mt-5">Produzione</h1>
-            <p class="text-fluid-md max-w-[70ch]">
-                La nostra ampia gamma di prodotti può soddisfare qualsiasi necessità del cliente, mentre il continuo
-                sviluppo di nuovi prodotti aiuta a promuovere l' uso delle materie plastiche in nuovi campi applicativi.
-            </p>
-            <p class="text-fluid-md max-w-[70ch] mt-4">
-                Sviluppiamo continuamente prodotti con:
-            <ul
-                class="mt-2 pl-4 text-fluid-md marker:inline-block marker:content-['\25C6'] ml-5 marker:transform marker:text-bright_red marker:text-[1.4rem]">
-                <li class="pl-3 py-1">Nuovi interessanti aspetti della superficie</li>
-                <li class="pl-3 py-1">Caratteristiche tecniche specifiche per nuovi campi di applicazione</li>
-                <li class="pl-3 py-1">Nuove combinazioni di prodotti diversi per creare nuovi effetti</li>
-            </ul>
-            </p>
+            <h1 class="text-fluid-lg-to-md font-semibold my-4 ml-2 mt-5">Goffrature</h1>
+
+            <!-- PC Carousel -->
+            <div class="mt-6 mb-10 hidden lg:block">
+                <div id="carouselPC" class="relative" data-te-carousel-init data-te-carousel-slide>
+                    <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 translate-y-12"
+                        data-te-carousel-indicators>
+                        <button type="button" data-te-target="#carouselPC" data-te-slide-to="0" data-te-carousel-active
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-400 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-te-target="#carouselPC" data-te-slide-to="1"
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-400  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-te-target="#carouselPC" data-te-slide-to="2"
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-400  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-te-target="#carouselPC" data-te-slide-to="3"
+                            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-400  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                        <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                            <div class="flex justify-center gap-4">
+                                <div>
+                                    <img src="/img/textures/A.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type A" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/B.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type B" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/C.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type C" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <div class="flex justify-center gap-4">
+                                <div>
+                                    <img src="/img/textures/E.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type E" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/F.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type F" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/MAT.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type MAT" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <div class="flex justify-center gap-4">
+                                <div>
+                                    <img src="/img/textures/FrozenA.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type FrozenA" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/FrozenB.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type FrozenB" />
+                                </div>
+                                <div>
+                                    <img src="/img/textures/XType.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type XType" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <div class="flex justify-center gap-4">
+                                <div>
+                                    <img src="/img/textures/SAND.jpg" class="block h-72 w-auto mx-auto"
+                                        alt="Texture Type Sand" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="absolute top-0 bottom-0 left-0 z-[1] flex w-[20%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button" data-te-target="#carouselPC" data-te-slide="prev">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#ffffff" class="h-8 w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                    </button>
+                    <button
+                        class="absolute top-0 bottom-0 right-0 z-[1] flex w-[20%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none  focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button" data-te-target="#carouselPC" data-te-slide="next">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#ffffff" class="h-8 w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Carousel -->
+            <div class="mt-6 mb-14 block lg:hidden">
+                <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-carousel-slide>
+                    <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 translate-y-10"
+                        data-te-carousel-indicators>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0"
+                            data-te-carousel-active
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="3"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="4"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="5"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="6"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="7"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="8"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 9"></button>
+                        <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="9"
+                            class="mx-[3px] box-content h-[3px] w-[14px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-neutral-500 bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                            aria-label="Slide 10"></button>
+                    </div>
+                    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                        <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/A.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/B.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/C.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/E.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/F.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/FrozenA.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/FrozenB.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/MAT.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/SAND.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                        <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-te-carousel-item style="backface-visibility: hidden">
+                            <img src="/img/textures/XType.jpg" class="block w-52 mx-auto" alt="..." />
+                        </div>
+                    </div>
+                    <button
+                        class="absolute top-0 bottom-0 left-0 z-[1] flex w-[20%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none -translate-x-3"
+                        type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#FFFFFF" class="h-8 w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                    </button>
+                    <button
+                        class="absolute top-0 bottom-0 right-0 z-[1] flex w-[20%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none translate-x-3"
+                        type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+                        <span class="inline-block h-8 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#FFFFFF" class="h-8 w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- Image Banner -->
-    <div
-        class="mx-auto h-[12rem] lg:h-[25rem] xl:h-[30rem] w-full bg-[url(/img/banner2.jpg)] bg-cover overflow-hidden bg-center">
-    </div>
 
     <!-- Footer -->
     <footer class="relative border-t-[7px] border-light_gray">
@@ -790,6 +985,7 @@
         </div>
     </footer>
 
+    
     
 </body>
 
