@@ -1,957 +1,440 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-
-  <!-- More Meta Tags-->
-  <meta name="description" content="Briccola SPA - Lastre e Rotoli di Plastica dal 1967">
-  <meta name="keywords" content="Briccola, Briccola SPA, Italo Briccola, Materie plastiche, Plastica, Termoformatura, Termoformatura Como, Termoformatura Italia, Plastic Sheets and Rolls, Lastre e Rotoli di Platica, Termoformatura Europa, ABS + PMMA, ABS, HIPS, HDPE">
-  <meta name="author" content="Briccola SpA">
-
-  <!-- OG Meta Tags -->
-    <meta name="msapplication-TileImage" content="https://filippo-0.github.io/img/favicon.png">
-
-    <meta property="og:site_name" content="Ing. Italo Briccola S.p.A.">
-    <meta property="og:title" content="Briccola S.p.A." />
-    <meta property="og:description" content="Plastic Sheets and Rolls Since 1967" />
-    <meta property="og:url" content="https://filippo-0.github.io" /> <!-- HAS TO BE CHANGED !!!! -->
-
-    <meta property="og:image:secure_url" itemprop="image" content="https://filippo-0.github.io/img/favicon.png" />
-    <!-- HAS TO BE CHANGED !!!! -->
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="256">
-    <meta property="og:image:height" content="256">
-
-    <meta property="og:type" content="website" />
-     <meta property='og:locale' content='it_IT' />
-    <meta property="og:updated_time" content="2023-04-16T12:00:00+00:00" />
-
-    <meta name="twitter:description" property="og:description" itemprop="description"
-        content="Plastic Sheets and Rolls Since 1967" />
-
-  <link rel="icon" type="image/png" href="/img/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Briccola S.p.A.</title>
-  <script type="module" crossorigin src="/assets/main-b48c89ec.js"></script>
-  <link rel="stylesheet" href="/assets/main-e38e2c5d.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/my-colors.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="h-full font-sans bg-neutral-50">
+<body class="overflow-x-hidden">
 
-  <!-- Header -->
-  <header
-    class="container mx-auto flex items-center mt-4 pb-5 lg:pb-2 md:gap-3 px-3 lg:border-0 border-b-[7px] border-light_gray">
-    <div class="w-10 sm:w-12 lg:w-14">
-      <a href="/">
-        <img src="/img/logo.jpg" alt="Briccola-SPA">
-      </a>
-    </div>
-    <div class="ml-1 md:ml-5 flex-1 flex flex-col gap-1">
-      <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
-      <h1 class="text-black/70 font-normal text-fluid-lg-to-sm uppercase leading-none">Plastic Sheets And Rolls Since 1967</h1>
-    </div>
-    <div class="lg:hidden" id="mobile-menu-on">
-      <button type="button"
-        class="inline-flex items-center justify-center rounded-md bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 mr-1">
-        <span class="sr-only">Open Menu</span>
-        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-    </div>
-    <div class="hidden lg:flex flex-col justify-center items-center gap-3">
-      <div>
-        <ul class="flex text-2xl">
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
-            data-active>
-            <a href="#">IT</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">EN</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">FR</a>
-          </li>
-          <li
-            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">ES</a>
-          </li>
-          <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-            <a href="#">DE</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <a class="" href="pages/contacts/">
-          <button type="button" class="border-4 border-bright_red px-8 py-2 group hover:bg-bright_red">
-            <span class="uppercase text-bright_red font-bold text-xl group-hover:text-white">Contacts</span>
-          </button>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- PC Navigation Mega Menu -->
-  <nav class="hidden lg:block w-full bg-light_gray px-4 py-3">
-    <ul class="container mx-auto flex justify-center items-center gap-12 xl:gap-20">
-      <li class="group megamenu-item" tabindex="0" data-active>
-        <div class="relative">
-          <a href="/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Azienda</span>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="/pages/products/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Prodotti</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/products/">
-                <h3 class="uppercase font-semibold text-xl text-black">Prodotti</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Qualità, Consegne e Garanzie</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/properties/">
-                <h3 class="uppercase font-semibold text-xl text-black">Proprietà</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Proprietà dei Materiali </p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/quality/">
-                <h3 class="uppercase font-semibold text-xl text-black">Qualità</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  I nostri strumenti: Spettrofotometro</p>
-              </a>
-            </div>
-          </div>
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/textures/">
-                <h3 class="uppercase font-semibold text-xl text-black">Goffrature</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Frozen, Sand, Grain A, B, C</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/colors/">
-                <h3 class="uppercase font-semibold text-xl text-black">Colore</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Gamma RAL, Pantone e campionamento</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="/pages/materials/hips/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Materiali</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/abs/">
-                <h3 class="uppercase font-semibold text-xl text-black">ABS</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/abs_pmma/">
-                <h3 class="uppercase font-semibold text-xl text-black">ABS + PMMA</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/abs_film/">
-                <h3 class="uppercase font-semibold text-xl text-black">ABS + Film</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Acrilonitrile-Butadiene-Stirene</p>
-              </a>
-            </div>
-          </div>
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/hips/">
-                <h3 class="uppercase font-semibold text-xl text-black">HIPS</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  High Impact PolyStryene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/hdpe/">
-                <h3 class="uppercase font-semibold text-xl text-black">HDPE</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  High Density Polyethylene</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/materials/special_materials/">
-                <h3 class="uppercase font-semibold text-base text-black">Materiali Speciali</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  ABS/TPU, ASA, PC, PPO, ...</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item" tabindex="0">
-        <div class="relative">
-          <a href="/pages/quality/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Qualità</span>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="/pages/environment/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Sostenibilità</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/environment/">
-                <h3 class="uppercase font-semibold text-xl text-black">Ambiente</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Riciclo e Riutilizzo di prodotti</p>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/energy/">
-                <h3 class="uppercase font-semibold text-xl text-black">Energia</h3>
-                <p
-                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                  Impianto Voltaico da 400kW</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="group megamenu-item with-submenu" tabindex="0">
-        <div class="relative">
-          <a href="/pages/contacts/">
-            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-              <span
-                class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Informazioni</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </button>
-            <div
-              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-            </div>
-          </a>
-        </div>
-        <div
-          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a href="/pages/contacts/">
-                <h3 class="uppercase font-semibold text-xl text-black">Contatti</h3>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
-                <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
-                  Privacy
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                  </svg>
-                </h3>
-              </a>
-            </div>
-            <div class="rounded-md hover:bg-gray-100 p-4">
-              <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
-                <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
-                  Condizioni di Vendita
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                  </svg>
-                </h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- Mobile Navigation Menu -->
-  <div class="relative">
-    <nav id="mobile-menu"
-      class="transform translate-x-full fixed min-h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll overflow-x-hidden transition duration-400 ease-in-out preload overscroll-contain">
-      <div class="absolute top-12 right-8" id="mobile-menu-off">
-        <button type="button"
-          class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          <span class="sr-only">Close Menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
-            stroke="currentColor">
-            <path
-              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
-          </svg>
-        </button>
-      </div>
-      <ul class="mt-24">
-        <li class="border-b-2 border-light_gray group ">
-          <a href="/" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Azienda</span>
-          </a>
-        </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Prodotti</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/products/" class="pl-12 py-2 w-full block">
-                  Prodotti
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/properties/" class="pl-12 py-2 w-full block">
-                  Proprietà dei Materiali
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/quality/" class="pl-12 py-2 w-full block">
-                  Qualità
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/textures/" class="pl-12 py-2 w-full block">
-                  Goffrature
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/colors/" class="pl-12 py-2 w-full block">
-                  Colore
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Materiali</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/abs/" class="pl-12 py-2 w-full block">
-                  ABS
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/abs_pmma/" class="pl-12 py-2 w-full block">
-                  ABS + PMMA
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/abs_film/" class="pl-12 py-2 w-full block">
-                  ABS + Film
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/hips/" class="pl-12 py-2 w-full block">
-                  HIPS
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/hdpe/" class="pl-12 py-2 w-full block">
-                  HDPE
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/materials/special_materials/" class="pl-12 py-2 w-full block">
-                  Materiali Speciali
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="border-b-2 border-light_gray group ">
-          <a href="/pages/quality/" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Qualità</span>
-          </a>
-        </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Sostenibilità</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/environment/" class="pl-12 py-2 w-full block">
-                  Ambiente
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/energy/" class="pl-12 py-2 w-full block">
-                  Energia
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="border-b-2 border-light_gray group with-submenu">
-          <a href="#" class="pl-7 py-4 flex justify-start items-center">
-            <span class="uppercase text-black font-semibold text-fluid-md">Informazioni</span>
-            <svg fill="transparent"
-              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-              <g fill-rule="evenodd">
-                <path d="M1 1l4 4-4 4"></path>
-              </g>
-            </svg>
-          </a>
-          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-            <ul class="py-2">
-              <li class="text-black font-semibold text-fluid-md">
-                <a href="/pages/contacts/" class="pl-12 py-2 w-full block">
-                  Contatti
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf" class="pl-12 py-2 w-full flex items-center gap-2">
-                  Privacy
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="text-black font-semibold text-fluid-md">
-                <a target="_blank" href="/pdfs/SalesConditions_EN.pdf" class="pl-12 py-2 w-full flex items-center gap-2">
-                  Condizioni di Vendita
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <div class="flex flex-col justify-center items-center gap-3 px-4 py-6 mb-24">
-        <div>
-          <ul class="flex text-fluid-lg-to-md">
-            <li
-              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
-              data-active>
-              <a href="#">IT</a>
-            </li>
-            <li
-              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="#">EN</a>
-            </li>
-            <li
-              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="#">FR</a>
-            </li>
-            <li
-              class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="#">ES</a>
-            </li>
-            <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="#">DE</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
-            <a class="" href="pages/contacts/">
-              <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contacts</span>
-            </a>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <div id="mobile-menu-blur" class="transform translate-x-full fixed min-h-screen w-screen bg-black/60 inset-0 z-10">
-    </div>
+  <!-- Background Stripe -->
+  <div class="background-stripe">
   </div>
 
-  <!-- Hero Section -->
-  <section class="container mx-auto bg-neutral-50 md:my-6 py-4 lg:py-24 flex items-center">
-    <div class="grid place-items-center text-center md:grid-cols-2 md:px-7 md:text-left h-full">
-      <div class="w-full md:w-auto h-full">
-        <img class="w-full md:w-auto h-full object-cover" src="img/view.jpg" alt="Foto Aerea dell'Azienda">
+  <!-- Background Grid-->
+  <div class="grid">
+    <div class="d-none grid-col"></div>
+    <div class="d-none grid-row"></div>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+    <div class="container-xxl pt-4 pt-md-5 px-3 px-md-3">
+      <!-- Logo -->
+      <div class="logo | d-flex align-items-baseline gap-1">
+        <img class="tint-primary" src="assets/img/chef.png" alt="PGRC Logo">
+        <h1 class="h-0 text-primary">PGRC</h1>
       </div>
-      <div class="px-4 py-8 lg:py-24 md:-order-1">
-        <h2 class="text-fluid-lg-to-md font-semibold leading-tight mb-4 md:max-w-[30ch] px-2 lg:px-0">La Ing. Italo
-          Briccola S.p.A. è
-          un'azienda di estrusione di materie plastiche che opera dal <span class="text-bright_red">1967</span> nella
-          provincia di Como.</h2>
-        <h3 class="text-fluid-md text-black/80 md:max-w-[55ch]">La nostra capacità produttiva eccede le <span
-            class="text-bright_red">7000</span> tonnellate/anno, ed esportiamo in tutta Europa e Nazioni
-          adiacenti. </h3>
+      <!-- Mobile Menu Button-->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header justify-content-end px-5 mt-3 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav align-items-center gap-2">
+            <li class="nav-item">
+              <h5 class="text-center border-top border-bottom py-4 d-lg-none">
+                Sign in for more functionalities!
+              </h5>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-secondary fs-4">
+                SIGN IN
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary fs-4">
+                LOGIN
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Recipe -->
+  <section class="container-xxl my-4 mx-auto px-5">
+    <!-- Recipe Preview -->
+    <div class="row align-items-end gap-4">
+      <div class="col-lg">
+        <!-- Stats -->
+        <div>
+          <div class="row">
+            <div class="col flex-grow-0">
+              <img width="24" src="assets/img/star.png" alt="Taste Score">
+            </div>
+            <div class="col">
+              <h4>Taste: <span class="ms-1">3.7</span>/5</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col flex-grow-0">
+              <img width="24" class="tint-danger" src="assets/img/chef.png" alt="Difficulty Score">
+            </div>
+            <div class="col">
+              <h4>Difficulty: <span class="ms-1">4.2</span>/5</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col flex-grow-0">
+              <img width="24" src="assets/img/comment.png" alt="Number of Reviews">
+            </div>
+            <div class="col">
+              <h4>Reviews: <span class="ms-1">6</span></h4>
+            </div>
+          </div>
+        </div>
+        <!-- Title & Tags -->
+        <div>
+          <h1 class="display-2 my-3">Sticky Toffee Pudding Ultimate</h1>
+          <div>
+            <button class="btn btn-outline-success fs-5">Indian</button>
+            <button class="btn btn-outline-info fs-5">Seafood</button>
+            <button class="btn btn-outline-danger fs-5">Chicken</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg order-first order-lg-0">
+        <!-- Image -->
+        <img id="recipe_image" class="rounded-5" src="https://www.themealdb.com/images/media/meals/xrptpq1483909204.jpg"
+          alt="Sticky Toffee Pudding Ultimate">
+      </div>
+    </div>
+    <!-- Recipe Details -->
+    <div class="row gap-4 mt-5 border-top border-black border-opacity-25">
+      <!-- Recipe Ingredients -->
+      <div class="col-md-5 border-md-end border-black border-opacity-25 pt-5">
+        <h3>INGREDIENTS</h3>
+        <div>
+          <div class="row justify-content-center align-items-center">
+            <img class="col-3" src="https://www.themealdb.com/images/ingredients/Medjool%20dates.png"
+              alt="Medjool Dates">
+            <p class="col fs-5 text-decoration-underline">Medjool dates</p>
+            <p class="col-3 text-secondary fs-5">255g</p>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <img class="col-3" src="https://www.themealdb.com/images/ingredients/Medjool%20dates.png"
+              alt="Medjool Dates">
+            <p class="col fs-5 text-decoration-underline">Medjool dates</p>
+            <p class="col-3 text-secondary fs-5">255g</p>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <img class="col-3" src="https://www.themealdb.com/images/ingredients/Medjool%20dates.png"
+              alt="Medjool Dates">
+            <p class="col fs-5 text-decoration-underline">Medjool dates</p>
+            <p class="col-3 text-secondary fs-5">255g</p>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Instructions -->
+      <div class="col-md pt-5">
+        <div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 1</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 2</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 3</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 4</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 5</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+          <div>
+            <p class="fs-5 text-secondary mb-1">STEP 6</p>
+            <p class="fs-5">Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section
-    class="bg-light_gray py-10 md:py-16 relative before:absolute before:content-[''] before:inline-block before:top-0 before:left-1/2 before:-translate-x-[50%] before:bg-light_gray before:w-20 before:h-6 before:border-x-[5rem] before:border-x-transparent before:border-t-[1.5rem] before:border-t-neutral-50">
-    <div class="container mx-auto px-5 py-8 md:flex md:gap-14">
-      <div class="mb-6">
-        <p class="uppercase text-bright_red font-bold text-fluid-sm mb-1">Cosa produciamo</p>
-        <p class="text-fluid-md pl-2 mt-4">
-          Produciamo lastre e bobine per termoformatura ed altre applicazioni. <br>
-          Tecnologia all'avanguardia, alta qualità e servizio ai clienti hanno da sempre caratterizzato l'azienda.
-        </p>
+  <!-- Reviews -->
+  <section class="container-xxl my-4 mx-auto px-5">
+    <h3>REVIEWS</h3>
+    <div class="w-100 d-flex flex-column align-items-center">
+      <!-- Review Card -->
+      <div class="card m-3 p-3 rounded-5 shadow border-0" style="max-width: 900px;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <!-- Username & Picture -->
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary rounded-5" style="width:fit-content">
+                  <img src="assets/img/anon.png" alt="Profile Picture">
+                </div>
+                <p class="card-text">Filippo</p>
+              </div>
+              <!-- Taste -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Taste:
+                </p>
+                <div class="review_score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img class="tint-black" src="assets/img/star.png" alt="Taste Score">
+                </div>
+              </div>
+              <!-- Difficulty -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Difficulty:
+                </p>
+                <div class="review_score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <!-- Review Date -->
+              <p class="text-secondary mb-2">24-10-2023</p>
+              <!-- Review Content -->
+              <p class="card-text fs-5">My first and only mala order on Etsy, and I’m beyond delighted! I requested a
+                custom
+                mala based on two stones I was called to invite together in this kind of creation. The fun and genuine
+                joy I invite together in this kind of creation.
+                The fun and genuine joy.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="card m-3 p-3 rounded-5 shadow border-0" style="max-width: 900px;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <!-- Username & Picture -->
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary rounded-5" style="width:fit-content">
+                  <img src="assets/img/anon.png" alt="Profile Picture">
+                </div>
+                <p class="card-text">Filippo</p>
+              </div>
+              <!-- Taste -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Taste:
+                </p>
+                <div class="review_score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img class="tint-black" src="assets/img/star.png" alt="Taste Score">
+                </div>
+              </div>
+              <!-- Difficulty -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Difficulty:
+                </p>
+                <div class="review_score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <!-- Review Date -->
+              <p class="text-secondary mb-2">24-10-2023</p>
+              <!-- Review Content -->
+              <p class="card-text fs-5">My first and only mala order on Etsy, and I’m beyond delighted! I requested a
+                custom
+                mala based on two stones I was called to invite together in this kind of creation. The fun and genuine
+                joy I invite together in this kind of creation.
+                The fun and genuine joy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3 p-3 rounded-5 shadow border-0" style="max-width: 900px;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <!-- Username & Picture -->
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary rounded-5" style="width:fit-content">
+                  <img src="assets/img/anon.png" alt="Profile Picture">
+                </div>
+                <p class="card-text">Filippo</p>
+              </div>
+              <!-- Taste -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Taste:
+                </p>
+                <div class="review_score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img class="tint-black" src="assets/img/star.png" alt="Taste Score">
+                </div>
+              </div>
+              <!-- Difficulty -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Difficulty:
+                </p>
+                <div class="review_score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <!-- Review Date -->
+              <p class="text-secondary mb-2">24-10-2023</p>
+              <!-- Review Content -->
+              <p class="card-text fs-5">My first and only mala order on Etsy, and I’m beyond delighted! I requested a
+                custom
+                mala based on two stones I was called to invite together in this kind of creation. The fun and genuine
+                joy I invite together in this kind of creation.
+                The fun and genuine joy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3 p-3 rounded-5 shadow border-0" style="max-width: 900px;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card-body">
+              <!-- Username & Picture -->
+              <div class="d-flex align-items-center gap-2">
+                <div class="bg-primary rounded-5" style="width:fit-content">
+                  <img src="assets/img/anon.png" alt="Profile Picture">
+                </div>
+                <p class="card-text">Filippo</p>
+              </div>
+              <!-- Taste -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Taste:
+                </p>
+                <div class="review_score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img src="assets/img/star.png" alt="Taste Score">
+                  <img class="tint-black" src="assets/img/star.png" alt="Taste Score">
+                </div>
+              </div>
+              <!-- Difficulty -->
+              <div class>
+                <p class="card-text my-0 pt-3">
+                  Difficulty:
+                </p>
+                <div class="review_score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img class="tint-primary" src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                  <img src="assets/img/chef.png" alt="Taste Score">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <!-- Review Date -->
+              <p class="text-secondary mb-2">24-10-2023</p>
+              <!-- Review Content -->
+              <p class="card-text fs-5">My first and only mala order on Etsy, and I’m beyond delighted! I requested a
+                custom
+                mala based on two stones I was called to invite together in this kind of creation. The fun and genuine
+                joy I invite together in this kind of creation.
+                The fun and genuine joy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="border-top border-black border-opacity-25">
+    <div class="container-xxl d-flex my-5 mx-auto px-3 justify-content-between">
+      <!-- Logo -->
+      <div class="logo | d-flex align-items-baseline gap-1">
+        <img class="tint-primary" src="assets/img/chef.png" alt="PGRC Logo">
+        <h1 class="h-0 text-primary">PGRC</h1>
+      </div>
+      <!-- Demo Buttons -->
       <div>
-        <p class="uppercase text-bright_red font-bold text-fluid-sm mb-1">Le nostre caratteristiche</p>
-        <p class="text-fluid-md pl-2 mt-4">La nostra dedizione alla "totale soddisfazione del cliente" si sviluppa secondo i
-          seguenti punti:
-        <ul
-          class="pl-4 text-fluid-md marker:inline-block marker:content-['\25C6'] ml-5 marker:transform marker:text-bright_red marker:text-[1.4rem]">
-          <li class="pl-3">Esperienza pluridecennale nel settore</li>
-          <li class="pl-3">Supporto al cliente prima e dopo la vendita</li>
-          <li class="pl-3">Ridotti tempi di consegna, flessibilità e ridotta burocrazia interna</li>
-          <li class="pl-3">Supporto alla necessità della produzione "just in time"</li>
+        <ul class="list-group list-unstyled list-group-horizontal d-flex gap-2">
+          <li>
+            <button class="btn btn-outline-secondary fs-4">
+              Reset Data
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-outline-secondary fs-4">
+              Load Demo Data
+            </button>
+          </li>
         </ul>
-        </p>
       </div>
     </div>
-  </section>
-
-  <!-- Image Banner -->
-  <section
-    class="pb-1 bg-light_gray relative before:absolute before:content-[''] before:inline-block before:top-full before:left-1/2 before:-translate-x-[50%] before:bg-neutral-50 before:w-20 before:h-6 before:border-x-[5rem] before:border-x-transparent before:border-t-[1.5rem] before:border-t-light_gray">
-    <img class="w-full object-cover min-h-[6rem]" src="/img/banner.jpg"
-      alt="Esempi di prodotti realizzati dai nostri clienti con le nostre lastre">
-  </section>
-
-  <!-- Quality Cards -->
-  <section class="container mx-auto my-10 lg:my-24 py-6 px-3 flex lg:flex-row flex-col justify-center gap-8 items-center">
-    <div class="flex gap-2 md:gap-8 h-[14rem]">
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-14 h-20 text-dark_red mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-            clip-rule="evenodd" viewBox="0 0 365 511.41">
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="0%" stop-color="#9B1D1D" />
-                <stop offset="100%" stop-color="#D60F22" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path fill="url(#red-gradient)"
-                d="M312.22 319.17 365 442.58l-66.17-.77-54.38 44.12-47.7-116.25c13.79-3.35 27.44-10.32 41.22-21.13l1.66-1.22-.03-.04.9-.7-.04-.06c1.75-1.4 3.55-2.83 5.15-4.05 3.33.21 6.93.34 11.42.13 6.19-.28 12.83-1.26 20.17-3.62 6.46-2.08 12.45-4.63 17.95-7.67a92.904 92.904 0 0 0 15.92-11.07l-.04-.05 1.19-1.03zM176.94.02c6.61-.18 12.52.85 18.01 2.74 5.06 1.74 9.7 4.23 14.27 7.13 4.64 2.88 9.01 6.59 13.68 10.59 4.47 3.82 9.4 8.02 14.35 10.85l.32.19c2.04.78 7.25.99 12.7 1.18 18.99.7 39.48 1.46 54.86 24.29l.84 1.35c11.01 16.92 11.83 29.59 12.62 41.99l.04.87c.25 3.82.69 7.41 1.89 10.96 1.32 3.75 3.64 8.07 7.74 13.5 11.11 14.68 17.97 27.55 20.79 40.04 3.34 14.82 1.15 28.02-6.3 41.3-5.31 9.44-12.4 15.52-18.65 20.87-2.26 1.93-3.38 1.55-3.83 2.61l-.46 1.01c-1.07 3.17-1.14 7.07-1.19 11.04-.15 10.2-.33 20.77-7.49 34.9-4.49 8.84-10.36 16.31-17.53 22.41-7.04 6.06-15.27 10.57-24.61 13.58-9.57 3.08-17.24 2.54-24.49 2.02-2.77-.19-4.74-.67-5.07-.53-5.2 2.25-10.72 6.69-15.91 10.84l-1.2.9c-32.39 25.86-61.07 23.86-91.96-.9-5.18-4.15-10.71-8.58-15.92-10.76-.52-.23-4.25.39-5.06.45-7.26.52-14.93 1.06-24.49-2.02-9.35-3.01-17.57-7.52-24.61-13.5-7.13-6.06-12.99-13.56-17.53-22.49-7.18-14.14-7.34-24.71-7.49-34.91-.06-4.41-.14-8.72-1.57-12.04-.5-1.17-1.57-.61-3.91-2.61-6.24-5.34-13.35-11.41-18.66-20.87-7.45-13.28-9.63-26.48-6.29-41.3 2.81-12.5 9.67-25.36 20.78-40.04 4.1-5.43 6.43-9.75 7.72-13.51l.25-.7c1.03-3.31 1.43-6.68 1.65-10.25l.09-1.36c.81-12.58 1.77-25.45 13.42-42.77 15.37-22.9 35.87-23.67 54.87-24.37 5.79-.21 11.31-.43 13.04-1.33 4.94-2.87 9.86-7.07 14.35-10.91l1.22-.97c4.21-3.57 8.18-6.91 12.37-9.56 4.46-2.89 9.11-5.38 14.33-7.17C164.41.87 170.29-.16 176.94.02zm.01 17.56c8.32-.36 14.88 2.54 21.5 6.75 8.4 5.33 17.86 15.85 29.53 22.53 16.43 9.38 46.85-3.57 62.43 19.58 9.09 13.49 9.51 24.08 10.19 34.53.73 11.28 2.71 21.65 14.25 36.92 19.11 25.27 23.09 42.09 13.25 59.62-6.72 11.95-20.85 18.59-24.12 26.16-6.96 16.1.74 28.24-8.79 47.01-6.61 13.03-16.82 21.61-30.42 25.99-11.46 3.69-22.96-1.65-32.14 2.21-16.13 6.77-28.03 22.53-40.86 26.51-4.95 1.53-9.89 2.29-14.82 2.26-4.93.03-9.87-.73-14.82-2.26-12.84-3.98-24.73-19.74-40.86-26.51-9.18-3.86-20.68 1.48-32.15-2.21-13.59-4.38-23.8-12.96-30.41-25.99-9.53-18.77-1.83-30.91-8.79-47.01-3.27-7.57-17.41-14.21-24.12-26.16-9.85-17.53-5.86-34.35 13.24-59.62 11.54-15.27 13.52-25.64 14.25-36.92.68-10.45 1.11-21.04 10.19-34.53 15.58-23.15 46.01-10.2 62.43-19.58 11.68-6.68 21.13-17.2 29.54-22.53 6.62-4.21 13.18-7.11 21.5-6.75zm1.92 110.29 12.5 29.27 31.71 2.84a2.53 2.53 0 0 1 2.31 2.75 2.55 2.55 0 0 1-.86 1.7l-23.98 20.94 7.09 31.05a2.543 2.543 0 0 1-3.87 2.7l-27.25-16.29-27.33 16.34c-1.21.72-2.77.33-3.49-.88a2.53 2.53 0 0 1-.3-1.87l7.1-31.05-23.99-20.94a2.538 2.538 0 0 1-.24-3.59c.47-.54 1.12-.83 1.78-.87l31.62-2.83 12.51-29.29c.55-1.3 2.04-1.9 3.34-1.35.64.27 1.1.78 1.35 1.37zm-2.35-52.98c55.04 0 99.67 44.63 99.67 99.67 0 55.05-44.63 99.67-99.67 99.67-55.05 0-99.67-44.62-99.67-99.67 0-55.04 44.62-99.67 99.67-99.67zm0 16.83c45.75 0 82.84 37.09 82.84 82.84 0 45.76-37.09 82.84-82.84 82.84-45.76 0-82.84-37.08-82.84-82.84 0-45.75 37.08-82.84 82.84-82.84zm-.33 280.31-55.64 139.38-54.38-44.11-66.17.76 57.72-137.29 1.05.59c5.5 3.01 11.49 5.57 17.91 7.63 7.33 2.36 13.97 3.34 20.16 3.62 4.44.21 8.02.08 11.33-.12 1.63 1.23 3.51 2.73 5.31 4.18l.04.03c20.08 16.08 40.24 24.8 61.63 25.32l1.04.01z" />
-            </g>
-          </svg>
-        </div>
-        <p class="max-w-[15ch] text-center mt-6 px-2">Lastre di Alta Qualità</p>
-      </div>
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-20 h-20 text-dark_red mb-2 place-items-center grid">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 122.88 74.34" style="enable-background:new 0 0 122.88 74.34"
-            xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill-rule: evenodd;
-                clip-rule: evenodd;
-              }
-            </style>
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="0%" stop-color="#9B1D1D" />
-                <stop offset="100%" stop-color="#D60F22" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path class="st0"
-                d="M94.42,18.73l-17.98-0.1V6.53c0-1.8-0.73-3.43-1.92-4.61C73.34,0.73,71.71,0,69.91,0H20.07 c-1.8,0-3.43,0.73-4.61,1.92c-1.18,1.18-1.92,2.81-1.92,4.61c0,0.98,0.79,1.77,1.77,1.77c0.98,0,1.77-0.79,1.77-1.77 c0-0.82,0.34-1.57,0.88-2.11c0.54-0.54,1.29-0.88,2.11-0.88h49.84c0.82,0,1.57,0.34,2.11,0.88c0.54,0.54,0.88,1.29,0.88,2.11v55.41 h-9.98c-0.98,0-1.77,0.79-1.77,1.77c0,0.98,0.79,1.77,1.77,1.77h11.75c0.98,0,1.77-0.79,1.77-1.77v-2.01h10.68 c0.81-18.42,27.26-20.96,29.95,0h5.81l-1.79-19.22l-19.07-7.3L94.42,18.73L94.42,18.73z M2.65,37.54c-1.47,0-2.65-0.8-2.65-1.78 c0-0.98,1.19-1.78,2.65-1.78h23.89c1.47,0,2.65,0.8,2.65,1.78c0,0.98-1.19,1.78-2.65,1.78H2.65L2.65,37.54z M8.12,27.96 c-1.1,0-1.99-0.79-1.99-1.77c0-0.98,0.89-1.77,1.99-1.77h18.43c1.1,0,1.99,0.79,1.99,1.77c0,0.98-0.89,1.77-1.99,1.77H8.12 L8.12,27.96z M10.65,18.38c-1.1,0-1.99-0.79-1.99-1.77c0-0.98,0.89-1.77,1.99-1.77h15.89c1.1,0,1.99,0.79,1.99,1.77 c0,0.98-0.89,1.77-1.99,1.77H10.65L10.65,18.38z M26.46,61.93c0.98,0,1.77,0.79,1.77,1.77c0,0.98-0.79,1.77-1.77,1.77h-6.39 c-1.79,0-3.42-0.78-4.61-2.01c-1.18-1.23-1.92-2.91-1.92-4.69v-13c0-0.98,0.79-1.77,1.77-1.77c0.98,0,1.77,0.79,1.77,1.77v13 c0,0.85,0.35,1.66,0.92,2.25c0.54,0.56,1.27,0.92,2.06,0.92H26.46L26.46,61.93z M44.46,50.37c-6.62,0-11.99,5.37-11.99,11.99 c0,6.62,5.37,11.99,11.99,11.99c6.62,0,11.99-5.37,11.99-11.99C56.44,55.74,51.08,50.37,44.46,50.37L44.46,50.37z M44.46,57.75 c-2.54,0-4.61,2.06-4.61,4.61c0,2.54,2.06,4.61,4.61,4.61c2.54,0,4.61-2.06,4.61-4.61C49.06,59.81,47,57.75,44.46,57.75 L44.46,57.75z M102.06,50.37c-6.62,0-11.99,5.37-11.99,11.99c0,6.62,5.37,11.99,11.99,11.99s11.99-5.37,11.99-11.99 C114.05,55.74,108.68,50.37,102.06,50.37L102.06,50.37z M102.06,57.75c-2.54,0-4.61,2.06-4.61,4.61c0,2.54,2.06,4.61,4.61,4.61 s4.61-2.06,4.61-4.61C106.67,59.81,104.61,57.75,102.06,57.75L102.06,57.75z M89.79,23.81l-8.93-0.1V35.2h14.97L89.79,23.81 L89.79,23.81z" />
-            </g>
-          </svg>
-        </div>
-        <p class="max-w-[15ch] text-center mt-6 px-2">Brevi Tempi di Consegna</p>
-      </div>
-    </div>
-    <div class="flex gap-2 md:gap-8 h-[14rem]">
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-16 h-20 text-dark_red mb-2 place-items-center grid">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 120.98 122.88" style="enable-background:new 0 0 120.98 122.88"
-            xml:space="preserve">
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="0%" stop-color="#9B1D1D" />
-                <stop offset="100%" stop-color="#D60F22" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path
-                d="M30.07,65.39l-0.71,20.73l-7.81-5.32l-7.81,4.41l1.61-22.22L4.29,61.47v46.58l40.74,4.63V67.05L30.07,65.39L30.07,65.39z M97.89,5.95c0.42-0.08,0.85,0,1.21,0.22c0.61,0.25,1.04,0.85,1.05,1.56l0.35,47.99l17.89,2.35v0c0.42-0.08,0.85,0,1.21,0.22 c0.61,0.25,1.04,0.85,1.05,1.56l0.35,49.19c0.03,0.6-0.27,1.2-0.82,1.53l-20.09,11.98c-0.28,0.21-0.64,0.34-1.02,0.34 c-0.09,0-0.19-0.01-0.27-0.02l-52.13-5.8c-0.13-0.01-0.25-0.03-0.37-0.06l-44.67-5.74c-0.9-0.04-1.61-0.79-1.61-1.69V59.55h0 c-0.02-0.67,0.36-1.32,1.01-1.6L24.55,47.6V13.24h0c-0.02-0.67,0.36-1.32,1.01-1.6l26.15-11.5l0,0c0.27-0.12,0.58-0.17,0.9-0.13 L97.89,5.95L97.89,5.95L97.89,5.95z M98.88,58.92l-15.72,9.38l15.61,1.99l14.95-9.42L98.88,58.92L98.88,58.92z M24.55,55.64V51.3 L7.87,58.63l9.57,1.22L24.55,55.64L24.55,55.64z M80.26,21.83v44.26l15.01-8.96l1.83-1.55l-0.32-44.16L80.26,21.83L80.26,21.83 L80.26,21.83z M75.96,67.18V21.4l-21.33-2.84L53.9,39.81l-7.81-5.32l-7.81,4.41l1.61-22.22l-11.96-1.53v46.58L75.96,67.18 L75.96,67.18L75.96,67.18z M73.35,6.15l-16.4,9.31l21.33,2.72l14.95-9.42L73.35,6.15L73.35,6.15L73.35,6.15z M41.99,13.54 l15.9-9.43l-5.24-0.69l-20.23,8.89L41.99,13.54L41.99,13.54z M100.75,73.94v44.26l16.85-10.05l-0.33-44.62L100.75,73.94 L100.75,73.94L100.75,73.94z M96.45,119.29V73.51l-21.33-2.84l-0.73,21.25l-7.81-5.32l-7.81,4.41l1.61-22.22l-11.06-1.08v46.58 L96.45,119.29L96.45,119.29L96.45,119.29z" />
-            </g>
-          </svg>
-
-        </div>
-        <p class="max-w-[15ch] text-center mt-4 px-2">Basse Quantità Minime Richieste</p>
-      </div>
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-[4.5rem] h-20 text-dark_red mb-2">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 96 85.88" style="enable-background:new 0 0 96 85.88" xml:space="preserve"
-            class="-rotate-45">
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="0%" stop-color="#9B1D1D" />
-                <stop offset="100%" stop-color="#D60F22" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path
-                d="M90.21,50.93c-1.87,9.92-7.16,18.64-14.59,24.89c-7.47,6.28-17.1,10.06-27.6,10.06c-9.87,0-18.97-3.34-26.23-8.95 C14.38,71.2,8.89,63.1,6.46,53.76l5.36-1.39c2.11,8.13,6.89,15.19,13.35,20.18c6.31,4.88,14.23,7.78,22.84,7.78 c9.17,0,17.55-3.29,24.04-8.74c6.21-5.22,10.7-12.43,12.49-20.65h-5.72l8.59-10.46L96,50.93L90.21,50.93L90.21,50.93L90.21,50.93z M61.35,27.23c-0.05-0.05-0.09-0.08-0.13-0.11c-0.04-0.03-0.09-0.05-0.13-0.07l-0.01-0.01c-0.03-0.02-0.07-0.03-0.12-0.04l0,0 C60.92,27,60.87,27,60.81,27c-0.06,0-0.12,0-0.17,0.01c-0.05,0.01-0.09,0.02-0.12,0.04l-0.02,0.01c-0.03,0.02-0.07,0.04-0.11,0.06 c-0.04,0.03-0.08,0.06-0.13,0.11l-2.32,2.32c-0.24,0.24-0.54,0.37-0.85,0.4c-0.31,0.03-0.63-0.05-0.9-0.24 c-0.12-0.08-0.26-0.16-0.4-0.24l0,0c-0.17-0.1-0.31-0.18-0.43-0.24l-0.02-0.01c-0.14-0.08-0.29-0.16-0.44-0.23 c-0.15-0.08-0.31-0.15-0.46-0.21l-0.01-0.01c-0.14-0.07-0.3-0.14-0.47-0.21c-0.17-0.07-0.33-0.13-0.49-0.19l-0.03-0.01 c-0.2-0.08-0.45-0.16-0.71-0.25L52.47,28c-0.28-0.09-0.51-0.27-0.66-0.49c-0.17-0.23-0.26-0.52-0.26-0.81v-3.55 c0-0.06,0-0.12-0.01-0.17l0-0.01c-0.01-0.04-0.02-0.08-0.03-0.12c-0.02-0.04-0.04-0.09-0.07-0.13c-0.03-0.04-0.06-0.08-0.1-0.12 s-0.08-0.07-0.12-0.1c-0.04-0.03-0.08-0.05-0.13-0.07l0,0c-0.04-0.02-0.08-0.03-0.13-0.04c-0.05-0.01-0.1-0.01-0.17-0.01h-4.45 c-0.06,0-0.11,0-0.16,0.01c-0.04,0.01-0.08,0.02-0.12,0.04l-0.02,0.01c-0.04,0.02-0.08,0.04-0.11,0.06 c-0.04,0.03-0.09,0.06-0.13,0.11c-0.04,0.04-0.07,0.08-0.1,0.12c-0.03,0.04-0.05,0.08-0.07,0.13c-0.02,0.04-0.03,0.08-0.04,0.12 c-0.01,0.05-0.01,0.1-0.01,0.17v3.24c0,0.33-0.12,0.64-0.32,0.88c-0.2,0.24-0.49,0.42-0.81,0.47c-0.27,0.06-0.52,0.13-0.75,0.2 l-0.22,0.06c-0.31,0.09-0.63,0.21-0.95,0.33l-0.03,0.01c-0.02,0.01-0.04,0.01-0.07,0.02c-0.17,0.06-0.34,0.14-0.52,0.22 c-0.12,0.05-0.23,0.1-0.35,0.15c-0.31,0.14-0.6,0.29-0.86,0.43c-0.27,0.15-0.57,0.2-0.85,0.16c-0.29-0.04-0.57-0.17-0.78-0.39 c-0.8-0.86-1.74-1.72-2.58-2.56c-0.04-0.04-0.09-0.08-0.13-0.11l-0.02-0.01c-0.02-0.01-0.04-0.02-0.05-0.03 c-0.02-0.01-0.03-0.01-0.05-0.02l0,0c-0.02-0.01-0.06-0.02-0.09-0.03c-0.04-0.01-0.1-0.01-0.15-0.01c-0.06,0-0.11,0-0.16,0.01 l-0.01,0c-0.04,0.01-0.08,0.02-0.11,0.03l-0.01,0.01c-0.04,0.02-0.08,0.04-0.12,0.07c-0.05,0.04-0.1,0.08-0.16,0.14l-3.09,3.11 c-0.05,0.05-0.1,0.1-0.13,0.14c-0.03,0.04-0.05,0.08-0.07,0.12l-0.01,0.02c-0.01,0.03-0.02,0.07-0.03,0.11l0,0 c-0.01,0.05-0.01,0.1-0.01,0.16c0,0.12,0.02,0.21,0.05,0.29c0.04,0.08,0.1,0.17,0.19,0.26l2.32,2.32c0.24,0.24,0.37,0.54,0.4,0.85 c0.03,0.31-0.05,0.63-0.24,0.9c-0.08,0.13-0.16,0.26-0.24,0.4l0,0c-0.1,0.17-0.18,0.31-0.24,0.43l-0.01,0.02 c-0.08,0.14-0.16,0.29-0.23,0.44c-0.08,0.15-0.14,0.31-0.21,0.46l-0.01,0.01c-0.07,0.14-0.14,0.3-0.21,0.47 c-0.07,0.17-0.13,0.33-0.19,0.49l-0.01,0.03c-0.08,0.2-0.16,0.45-0.25,0.71l-0.09,0.26c-0.09,0.29-0.27,0.52-0.5,0.68 c-0.23,0.17-0.52,0.26-0.81,0.26h-3.55c-0.07,0-0.12,0-0.17,0.01c-0.04,0.01-0.09,0.02-0.13,0.04c-0.04,0.02-0.09,0.04-0.13,0.07 c-0.04,0.03-0.08,0.06-0.12,0.1c-0.04,0.04-0.07,0.08-0.1,0.12c-0.03,0.04-0.05,0.08-0.07,0.12c-0.02,0.05-0.03,0.09-0.04,0.14 c-0.01,0.05-0.01,0.1-0.01,0.17v4.45c0,0.1,0.02,0.2,0.05,0.27c0.02,0.04,0.04,0.09,0.08,0.14h0c0.03,0.05,0.07,0.09,0.11,0.13h0 c0.04,0.04,0.08,0.07,0.12,0.1c0.04,0.03,0.08,0.05,0.13,0.07c0.04,0.02,0.08,0.03,0.12,0.04l0.01,0c0.05,0.01,0.1,0.01,0.16,0.01 h3.24c0.33,0,0.64,0.12,0.88,0.32c0.24,0.2,0.42,0.49,0.47,0.81c0.06,0.27,0.13,0.52,0.2,0.75l0.06,0.21 c0.04,0.14,0.09,0.3,0.15,0.46c0.07,0.19,0.12,0.34,0.18,0.48c0.06,0.16,0.13,0.31,0.19,0.48c0.06,0.16,0.14,0.32,0.21,0.5 c0.1,0.23,0.2,0.44,0.3,0.63l0.16,0.32c0.13,0.26,0.17,0.55,0.13,0.82c-0.04,0.29-0.18,0.55-0.39,0.76 c-0.79,0.73-1.82,1.74-2.54,2.53c-0.05,0.05-0.09,0.09-0.12,0.13c-0.02,0.03-0.04,0.05-0.04,0.07c-0.01,0.02-0.01,0.03-0.02,0.05 c-0.01,0.02-0.02,0.05-0.03,0.09l-0.01,0.02c-0.01,0.04-0.01,0.08-0.01,0.13c0,0.06,0,0.11,0.01,0.16l0,0.01 c0.01,0.04,0.02,0.07,0.03,0.11l0.01,0.02c0.01,0.03,0.04,0.07,0.07,0.11c0.04,0.05,0.08,0.11,0.14,0.17l3.06,3.11 c0.05,0.04,0.1,0.08,0.14,0.11c0.04,0.03,0.09,0.05,0.13,0.07l0,0c0.05,0.02,0.09,0.03,0.14,0.04c0.05,0.01,0.11,0.01,0.17,0.01 c0.07,0,0.13,0,0.18-0.01l0.01,0c0.04-0.01,0.08-0.02,0.11-0.03c0.04-0.02,0.09-0.04,0.14-0.07c0.04-0.03,0.08-0.06,0.13-0.1 l2.28-2.32c0.23-0.24,0.54-0.38,0.85-0.41c0.32-0.03,0.64,0.05,0.91,0.24c0.13,0.08,0.26,0.16,0.4,0.24l0,0 c0.17,0.1,0.31,0.18,0.43,0.24l0.02,0.01c0.29,0.17,0.59,0.31,0.9,0.44l0.03,0.01c0.14,0.07,0.29,0.13,0.45,0.2 c0.17,0.07,0.33,0.13,0.49,0.19l0.03,0.01c0.2,0.08,0.45,0.17,0.71,0.25l0.25,0.09c0.29,0.09,0.52,0.27,0.68,0.5 c0.17,0.23,0.26,0.52,0.26,0.81v3.55c0,0.12,0.02,0.22,0.05,0.31c0.02,0.04,0.04,0.08,0.07,0.12c0.03,0.04,0.06,0.08,0.1,0.12 c0.08,0.08,0.16,0.13,0.24,0.17c0.09,0.04,0.19,0.05,0.3,0.05h4.45c0.1,0,0.2-0.02,0.27-0.05c0.04-0.02,0.09-0.04,0.14-0.08 c0.04-0.03,0.09-0.06,0.13-0.11c0.04-0.04,0.07-0.08,0.1-0.12c0.03-0.04,0.05-0.08,0.07-0.13c0.02-0.04,0.03-0.08,0.04-0.12 c0.01-0.05,0.01-0.1,0.01-0.17v-3.24c0-0.33,0.12-0.64,0.32-0.88c0.2-0.24,0.49-0.42,0.81-0.48c0.27-0.06,0.52-0.13,0.75-0.2 l0.21-0.06c0.31-0.09,0.63-0.21,0.95-0.33c0.31-0.12,0.63-0.26,0.97-0.41c0.23-0.1,0.44-0.2,0.63-0.3l0.32-0.16 c0.26-0.13,0.55-0.17,0.82-0.13c0.29,0.04,0.55,0.18,0.76,0.39c0.73,0.79,1.74,1.82,2.53,2.54c0.05,0.05,0.09,0.09,0.13,0.12 c0.03,0.02,0.05,0.04,0.07,0.04c0.02,0.01,0.03,0.01,0.05,0.02c0.02,0.01,0.05,0.02,0.09,0.03c0.05,0.01,0.1,0.01,0.17,0.01 c0.06,0,0.12,0,0.17-0.01c0.04-0.01,0.07-0.02,0.09-0.03l0.02-0.01c0.03-0.02,0.07-0.04,0.1-0.06v0c0.04-0.03,0.08-0.07,0.12-0.1 c0,0,2.88-2.84,3.15-3.11c0.04-0.05,0.08-0.1,0.11-0.14c0.03-0.04,0.05-0.09,0.07-0.13l0,0c0.02-0.05,0.03-0.09,0.04-0.14 c0.01-0.05,0.01-0.11,0.01-0.17c0-0.12-0.02-0.23-0.05-0.3c-0.02-0.04-0.04-0.09-0.07-0.14c-0.03-0.04-0.06-0.08-0.1-0.13 l-2.32-2.28c-0.24-0.23-0.38-0.54-0.41-0.85c-0.03-0.32,0.05-0.64,0.24-0.91c0.08-0.13,0.16-0.26,0.24-0.4 c0.09-0.15,0.17-0.3,0.24-0.43l0.01-0.02c0.17-0.29,0.31-0.59,0.44-0.9l0.01-0.03c0.07-0.14,0.13-0.29,0.2-0.45 c0.07-0.17,0.13-0.33,0.19-0.49l0.01-0.03c0.08-0.2,0.16-0.45,0.25-0.71l0.09-0.26c0.09-0.29,0.27-0.52,0.5-0.68 c0.23-0.17,0.52-0.26,0.81-0.26h3.55c0.12,0,0.22-0.02,0.31-0.05c0.04-0.02,0.08-0.04,0.12-0.07c0.04-0.03,0.08-0.06,0.12-0.1 c0.04-0.04,0.07-0.08,0.1-0.12c0.03-0.04,0.05-0.08,0.07-0.13l0,0c0.02-0.04,0.03-0.08,0.04-0.12l0,0c0.01-0.05,0.01-0.1,0.01-0.17 v-4.45c0-0.06,0-0.11-0.01-0.16c-0.01-0.04-0.02-0.08-0.03-0.12l-0.01-0.02c-0.02-0.04-0.04-0.08-0.07-0.12l-0.01-0.02 c-0.03-0.04-0.06-0.07-0.1-0.11c-0.04-0.04-0.08-0.07-0.12-0.1c-0.04-0.03-0.08-0.05-0.13-0.07c-0.04-0.02-0.08-0.03-0.12-0.04 c-0.05-0.01-0.1-0.01-0.17-0.01h-3.24c-0.34,0-0.65-0.13-0.89-0.33c-0.24-0.21-0.41-0.49-0.47-0.81c-0.08-0.31-0.16-0.62-0.25-0.93 c-0.04-0.13-0.09-0.29-0.15-0.47c-0.06-0.17-0.12-0.33-0.18-0.49l-0.01-0.03c-0.01-0.02-0.02-0.05-0.02-0.08 c-0.1-0.26-0.22-0.53-0.33-0.79l-0.04-0.09c-0.13-0.3-0.27-0.58-0.43-0.86l-0.01-0.02c-0.14-0.27-0.19-0.56-0.15-0.84 c0.04-0.29,0.17-0.57,0.39-0.78c0.85-0.86,1.7-1.73,2.56-2.58c0.05-0.05,0.09-0.09,0.12-0.13l0.01-0.02 c0.01-0.02,0.02-0.04,0.03-0.05c0.01-0.02,0.01-0.03,0.02-0.05c0.01-0.02,0.02-0.05,0.03-0.09c0.01-0.04,0.01-0.1,0.01-0.15 c0-0.06,0-0.11-0.01-0.16l0-0.01c-0.01-0.04-0.02-0.07-0.03-0.11l-0.01-0.01c-0.02-0.04-0.04-0.08-0.07-0.12 c-0.04-0.05-0.08-0.1-0.14-0.16L61.35,27.23L61.35,27.23z M62.16,24.5c0.21,0.09,0.41,0.19,0.6,0.32c0.19,0.13,0.37,0.28,0.54,0.45 l3.13,3.13c0.17,0.17,0.32,0.35,0.45,0.54c0.13,0.19,0.24,0.39,0.32,0.6l0,0.01c0.09,0.21,0.16,0.42,0.2,0.65 c0.05,0.23,0.07,0.46,0.07,0.69c0,0.23-0.02,0.47-0.07,0.7c-0.05,0.23-0.12,0.45-0.21,0.66l0,0c-0.09,0.21-0.2,0.4-0.34,0.59 c-0.13,0.19-0.28,0.36-0.45,0.52L64.6,35.2c0.02,0.05,0.05,0.1,0.07,0.14l0,0c0.14,0.3,0.27,0.61,0.39,0.91l0.04,0.1 c0.03,0.04,0.04,0.09,0.05,0.14l0,0.02c0.06,0.16,0.12,0.33,0.18,0.5c0.06,0.18,0.13,0.38,0.19,0.59c0.01,0.04,0.03,0.08,0.04,0.12 h2.19c0.23,0,0.46,0.02,0.69,0.07c0.23,0.04,0.45,0.11,0.66,0.2c0.21,0.09,0.41,0.19,0.6,0.33c0.19,0.13,0.36,0.28,0.53,0.44 l0.03,0.03l0.02,0.03c0.15,0.16,0.3,0.34,0.42,0.52c0.13,0.19,0.23,0.39,0.31,0.59c0.09,0.21,0.15,0.43,0.2,0.65 c0.04,0.22,0.07,0.44,0.07,0.67v4.45c0,0.24-0.02,0.47-0.07,0.69c-0.04,0.22-0.11,0.44-0.19,0.65l0,0 c-0.09,0.21-0.19,0.41-0.32,0.6c-0.13,0.19-0.28,0.37-0.45,0.54c-0.17,0.17-0.35,0.32-0.54,0.45c-0.19,0.13-0.39,0.24-0.6,0.32 c-0.21,0.08-0.42,0.15-0.65,0.19c-0.23,0.04-0.46,0.07-0.7,0.07h-2.57c-0.02,0.06-0.04,0.11-0.06,0.17 c-0.12,0.31-0.26,0.63-0.4,0.95c-0.07,0.15-0.14,0.33-0.22,0.47c-0.13,0.27-0.25,0.53-0.39,0.79l-0.05,0.09 c0.54,0.53,1.09,1.06,1.62,1.6c0.16,0.17,0.3,0.34,0.42,0.53c0.13,0.19,0.23,0.39,0.31,0.6c0.08,0.2,0.14,0.42,0.19,0.64 c0.04,0.23,0.06,0.46,0.06,0.68c0,0.23-0.02,0.46-0.06,0.68c-0.04,0.22-0.1,0.44-0.19,0.64c-0.08,0.2-0.18,0.4-0.3,0.59l0,0 c-0.11,0.18-0.25,0.36-0.4,0.52c-0.04,0.06-0.07,0.1-0.13,0.13l-3.06,3.02c-0.16,0.17-0.34,0.33-0.54,0.46 c-0.19,0.13-0.39,0.24-0.6,0.33l-0.01,0c-0.2,0.09-0.42,0.15-0.64,0.2c-0.23,0.05-0.47,0.07-0.71,0.07c-0.23,0-0.47-0.02-0.7-0.07 c-0.23-0.05-0.45-0.12-0.67-0.21c-0.21-0.09-0.42-0.2-0.61-0.34l0,0c-0.18-0.13-0.36-0.28-0.52-0.44l-1.81-1.81l-0.15,0.07v0 c-0.34,0.15-0.71,0.3-1.1,0.46l-0.03,0.01c-0.18,0.07-0.36,0.13-0.54,0.2c-0.21,0.07-0.41,0.14-0.59,0.19l-0.11,0.04v2.19 c0,0.23-0.02,0.46-0.07,0.69c-0.04,0.23-0.11,0.45-0.2,0.66c-0.09,0.21-0.19,0.41-0.33,0.6c-0.13,0.19-0.28,0.36-0.44,0.53 l-0.05,0.05c-0.16,0.15-0.34,0.29-0.52,0.41c-0.19,0.12-0.38,0.23-0.58,0.32l0,0c-0.21,0.09-0.43,0.15-0.65,0.2 c-0.22,0.04-0.44,0.07-0.67,0.07h-4.45c-0.49,0-0.94-0.09-1.36-0.26c-0.42-0.17-0.79-0.43-1.13-0.77 c-0.17-0.17-0.32-0.35-0.45-0.54c-0.13-0.19-0.24-0.39-0.32-0.6c-0.08-0.21-0.15-0.42-0.19-0.65c-0.04-0.23-0.07-0.46-0.07-0.7 v-2.57c-0.06-0.02-0.11-0.04-0.17-0.06c-0.32-0.12-0.63-0.26-0.95-0.4c-0.16-0.07-0.31-0.14-0.46-0.22l0,0 c-0.27-0.13-0.54-0.25-0.8-0.39L39.25,59c-0.53,0.54-1.06,1.09-1.6,1.62c-0.17,0.16-0.34,0.3-0.53,0.42 c-0.19,0.13-0.39,0.23-0.6,0.31c-0.2,0.08-0.42,0.14-0.64,0.19c-0.23,0.04-0.46,0.06-0.68,0.06s-0.46-0.02-0.68-0.06 c-0.22-0.04-0.44-0.1-0.64-0.19c-0.2-0.08-0.4-0.18-0.59-0.3l-0.03-0.02c-0.18-0.11-0.34-0.24-0.49-0.38 c-0.06-0.04-0.1-0.07-0.13-0.13l-3.04-3.08c-0.17-0.17-0.32-0.35-0.45-0.54c-0.13-0.19-0.24-0.39-0.32-0.6l0-0.01 c-0.09-0.21-0.16-0.42-0.2-0.64c-0.05-0.23-0.07-0.46-0.07-0.7c0-0.23,0.02-0.47,0.07-0.7c0.05-0.23,0.12-0.45,0.21-0.66l0,0 c0.09-0.21,0.2-0.4,0.34-0.59c0.13-0.18,0.28-0.36,0.44-0.51l1.81-1.81l-0.07-0.15h0c-0.08-0.18-0.16-0.36-0.23-0.53l-0.01-0.02 c-0.07-0.18-0.15-0.36-0.22-0.55l-0.01-0.03c-0.07-0.18-0.13-0.36-0.2-0.54c-0.07-0.21-0.14-0.41-0.19-0.59 c-0.01-0.04-0.02-0.07-0.03-0.11h-2.19c-0.23,0-0.46-0.02-0.69-0.07c-0.23-0.04-0.45-0.11-0.66-0.2c-0.21-0.09-0.41-0.2-0.6-0.33 c-0.19-0.13-0.36-0.28-0.53-0.44l-0.03-0.03c-0.16-0.17-0.3-0.35-0.43-0.54c-0.12-0.19-0.23-0.38-0.32-0.58l0,0 c-0.09-0.21-0.15-0.43-0.2-0.65c-0.04-0.22-0.07-0.44-0.07-0.67v-4.45c0-0.24,0.02-0.47,0.07-0.69c0.04-0.22,0.11-0.44,0.19-0.65 l0,0c0.09-0.21,0.19-0.41,0.32-0.6c0.13-0.19,0.28-0.37,0.45-0.54c0.34-0.34,0.72-0.6,1.14-0.77c0.21-0.08,0.42-0.15,0.65-0.19 c0.23-0.04,0.46-0.07,0.7-0.07h2.57c0.02-0.06,0.04-0.11,0.06-0.17c0.12-0.32,0.26-0.63,0.4-0.95c0.07-0.16,0.14-0.31,0.22-0.47 l0,0c0.13-0.27,0.26-0.54,0.39-0.8l0.05-0.09l-1.55-1.55c-0.16-0.16-0.31-0.34-0.44-0.53c-0.13-0.19-0.24-0.39-0.34-0.6l0,0 c-0.09-0.21-0.16-0.43-0.21-0.66c-0.05-0.23-0.07-0.46-0.07-0.69c0-0.23,0.02-0.47,0.07-0.7c0.05-0.23,0.12-0.45,0.21-0.66 c0.09-0.22,0.2-0.42,0.33-0.6c0.13-0.19,0.28-0.36,0.45-0.53c1.03-1.03,2.09-2.17,3.15-3.15c0.16-0.16,0.34-0.31,0.52-0.43 c0.19-0.13,0.39-0.24,0.6-0.32l0.01,0c0.21-0.09,0.42-0.16,0.65-0.2c0.23-0.05,0.46-0.07,0.69-0.07c0.23,0,0.47,0.02,0.7,0.07 c0.23,0.05,0.45,0.12,0.66,0.21c0.21,0.09,0.41,0.21,0.59,0.34l0.02,0.02c0.18,0.13,0.34,0.27,0.5,0.43l1.84,1.8 c0.04-0.02,0.08-0.04,0.15-0.07l0.12-0.06c0.28-0.12,0.57-0.25,0.86-0.37c0.07-0.05,0.12-0.06,0.19-0.07 c0.16-0.06,0.33-0.12,0.5-0.18c0.21-0.07,0.41-0.14,0.59-0.19l0.11-0.04V23.2c0-0.23,0.02-0.46,0.07-0.69 c0.04-0.23,0.11-0.45,0.2-0.66c0.09-0.21,0.19-0.41,0.33-0.6c0.13-0.19,0.28-0.36,0.44-0.53l0.04-0.03 c0.17-0.16,0.35-0.3,0.53-0.43c0.19-0.12,0.38-0.23,0.58-0.32l0,0c0.21-0.09,0.43-0.15,0.65-0.2c0.22-0.04,0.44-0.07,0.67-0.07 h4.45c0.24,0,0.47,0.02,0.69,0.07c0.22,0.04,0.44,0.11,0.65,0.19l0,0c0.21,0.08,0.41,0.19,0.6,0.32c0.19,0.13,0.37,0.28,0.55,0.45 l0.01,0.01c0.17,0.17,0.32,0.35,0.45,0.54c0.13,0.19,0.24,0.39,0.32,0.6c0.08,0.21,0.15,0.42,0.19,0.65 c0.04,0.23,0.07,0.46,0.07,0.7v2.57c0.06,0.02,0.11,0.04,0.17,0.06c0.19,0.07,0.38,0.14,0.57,0.23l0.02,0.01 c0.19,0.08,0.37,0.16,0.55,0.25l0.29,0.14c0.27,0.13,0.53,0.25,0.79,0.39l0.09,0.05l1.55-1.55c0.16-0.16,0.34-0.31,0.53-0.44 c0.19-0.13,0.39-0.24,0.6-0.34l0,0c0.21-0.09,0.43-0.16,0.66-0.21c0.23-0.05,0.46-0.07,0.7-0.07c0.23,0,0.47,0.02,0.69,0.07 c0.15,0.03,0.3,0.07,0.45,0.12C62.05,24.47,62.1,24.48,62.16,24.5L62.16,24.5z M48,32.79c0.33,0,0.67,0.02,1.02,0.05 c0.34,0.03,0.67,0.08,0.99,0.15l0,0c0.32,0.06,0.64,0.15,0.97,0.25c0.32,0.1,0.64,0.22,0.95,0.35l0.02,0.01 c0.3,0.13,0.6,0.27,0.88,0.43c0.28,0.15,0.55,0.32,0.81,0.51l0.01,0.01c0.54,0.36,1.01,0.76,1.46,1.2l0.01,0.01 c0.23,0.23,0.44,0.47,0.64,0.71c0.2,0.25,0.39,0.51,0.57,0.77l0.02,0.03c0.17,0.27,0.34,0.53,0.48,0.8 c0.16,0.28,0.3,0.57,0.44,0.87c0.01,0.02,0.02,0.04,0.03,0.06c0.01,0.02,0.02,0.05,0.02,0.07c0.25,0.6,0.43,1.2,0.54,1.8 c0.06,0.32,0.11,0.65,0.15,0.99c0.03,0.34,0.05,0.68,0.05,1.02c0,0.33-0.02,0.67-0.05,1.02c-0.03,0.34-0.08,0.67-0.15,0.99l0,0 c-0.06,0.32-0.15,0.64-0.25,0.97c-0.1,0.32-0.22,0.64-0.35,0.95l-0.01,0.02c-0.26,0.59-0.57,1.16-0.93,1.69l-0.01,0.02 c-0.18,0.27-0.37,0.52-0.56,0.76c-0.2,0.24-0.41,0.48-0.64,0.71L55.1,50c-0.23,0.23-0.47,0.44-0.71,0.64 c-0.25,0.21-0.51,0.39-0.77,0.57l-0.03,0.02c-0.27,0.17-0.53,0.34-0.8,0.48c-0.28,0.16-0.57,0.3-0.87,0.44l-0.01,0.01 c-0.04,0.02-0.08,0.04-0.13,0.05c-0.6,0.25-1.19,0.42-1.8,0.54c-0.32,0.06-0.65,0.11-0.99,0.15c-0.34,0.03-0.68,0.05-1.02,0.05 c-0.33,0-0.67-0.02-1.02-0.05c-0.34-0.03-0.67-0.08-0.99-0.15l0,0c-0.32-0.06-0.64-0.15-0.97-0.25c-0.32-0.1-0.64-0.22-0.95-0.35 l-0.02-0.01c-0.59-0.26-1.16-0.57-1.69-0.93l-0.02-0.01c-0.27-0.18-0.52-0.37-0.76-0.56c-0.24-0.2-0.48-0.41-0.71-0.64l-0.01-0.01 c-0.23-0.23-0.44-0.47-0.64-0.71c-0.2-0.25-0.39-0.51-0.57-0.77l-0.02-0.03c-0.35-0.53-0.66-1.09-0.92-1.67l-0.01-0.01 c-0.02-0.04-0.04-0.08-0.05-0.13c-0.12-0.29-0.23-0.58-0.31-0.87c-0.09-0.3-0.17-0.61-0.22-0.92c-0.06-0.32-0.11-0.65-0.15-0.99 c-0.03-0.34-0.05-0.68-0.05-1.02c0-0.33,0.02-0.67,0.05-1.02c0.03-0.34,0.08-0.67,0.15-0.99l0,0c0.06-0.32,0.15-0.64,0.25-0.97 c0.1-0.32,0.22-0.64,0.35-0.95l0.01-0.02c0.13-0.29,0.27-0.58,0.42-0.86c0.16-0.29,0.33-0.56,0.51-0.83l0.01-0.02 c0.36-0.54,0.76-1.01,1.2-1.46l0.01-0.01c0.23-0.23,0.47-0.44,0.71-0.64c0.25-0.2,0.51-0.39,0.77-0.57l0.03-0.02 c0.27-0.17,0.53-0.34,0.8-0.48c0.28-0.16,0.57-0.3,0.87-0.44l0.01-0.01c0.04-0.02,0.08-0.04,0.13-0.05 c0.29-0.12,0.57-0.22,0.87-0.31c0.31-0.09,0.61-0.17,0.93-0.23l0,0c0.32-0.06,0.65-0.11,0.99-0.15 C47.33,32.81,47.66,32.79,48,32.79L48,32.79z M49.39,35.67c-0.22-0.04-0.43-0.07-0.65-0.09c-0.23-0.02-0.48-0.04-0.74-0.04 c-0.26,0-0.51,0.01-0.75,0.04c-0.24,0.02-0.49,0.06-0.73,0.11c-0.24,0.05-0.47,0.1-0.68,0.17c-0.2,0.06-0.4,0.13-0.6,0.21 c-0.02,0.01-0.05,0.02-0.07,0.03l-0.02,0.01c-0.22,0.1-0.44,0.2-0.65,0.31l-0.02,0.01c-0.21,0.11-0.41,0.23-0.6,0.36l-0.01,0.01 c-0.19,0.13-0.37,0.26-0.55,0.4v0c-0.19,0.15-0.36,0.3-0.53,0.46c-0.16,0.16-0.31,0.33-0.46,0.51l-0.02,0.02 c-0.14,0.17-0.27,0.35-0.4,0.54l-0.01,0.02c-0.12,0.18-0.24,0.38-0.35,0.59c-0.12,0.22-0.22,0.44-0.32,0.67l0,0.01 c-0.09,0.22-0.17,0.44-0.24,0.66c-0.07,0.23-0.13,0.46-0.17,0.7l0,0c-0.05,0.25-0.08,0.49-0.11,0.74 c-0.02,0.23-0.03,0.48-0.03,0.74c0,0.26,0.01,0.51,0.04,0.75c0.02,0.24,0.06,0.49,0.11,0.73c0.05,0.24,0.1,0.46,0.17,0.68 c0.06,0.21,0.13,0.41,0.21,0.62c0.01,0.02,0.02,0.05,0.03,0.07l0.01,0.02c0.1,0.22,0.2,0.44,0.31,0.65l0.01,0.02 c0.11,0.2,0.23,0.41,0.36,0.6l0.01,0.01c0.13,0.19,0.26,0.37,0.41,0.55c0.15,0.18,0.3,0.35,0.47,0.52 c0.17,0.17,0.35,0.33,0.53,0.47c0.18,0.14,0.36,0.28,0.55,0.4l0.02,0.01c0.18,0.12,0.38,0.24,0.59,0.35 c0.22,0.12,0.44,0.22,0.67,0.32l0.01,0.01c0.22,0.09,0.44,0.17,0.66,0.24c0.23,0.07,0.46,0.13,0.7,0.17l0,0 c0.25,0.05,0.49,0.08,0.74,0.11c0.23,0.02,0.48,0.03,0.74,0.03c0.26,0,0.51-0.01,0.75-0.04c0.24-0.02,0.49-0.06,0.73-0.11 c0.24-0.05,0.47-0.1,0.68-0.17c0.2-0.06,0.4-0.13,0.59-0.21c0.03-0.02,0.05-0.02,0.07-0.03l0.02-0.01c0.22-0.1,0.44-0.2,0.65-0.31 l0.02-0.01c0.2-0.11,0.41-0.23,0.6-0.36l0.01-0.01c0.19-0.13,0.37-0.26,0.55-0.4v0c0.19-0.15,0.36-0.3,0.53-0.46 c0.16-0.16,0.31-0.33,0.46-0.51l0.02-0.02c0.14-0.17,0.27-0.35,0.4-0.54L54.12,47c0.12-0.18,0.24-0.38,0.35-0.59l0,0 c0.12-0.22,0.22-0.44,0.32-0.67l0.01-0.01c0.09-0.22,0.17-0.44,0.24-0.66c0.07-0.23,0.13-0.46,0.17-0.7l0,0 c0.05-0.25,0.08-0.49,0.11-0.74c0.02-0.23,0.03-0.48,0.03-0.74c0-0.26-0.01-0.51-0.04-0.75c-0.02-0.24-0.06-0.49-0.11-0.73 c-0.05-0.24-0.1-0.47-0.17-0.68c-0.06-0.2-0.13-0.4-0.21-0.6c-0.02-0.03-0.02-0.05-0.03-0.07l-0.01-0.02 c-0.1-0.22-0.2-0.44-0.31-0.65l-0.01-0.02c-0.11-0.21-0.23-0.41-0.36-0.6l-0.01-0.01c-0.13-0.19-0.26-0.37-0.41-0.55 c-0.15-0.18-0.3-0.35-0.47-0.52c-0.17-0.17-0.35-0.33-0.53-0.47c-0.18-0.14-0.36-0.28-0.55-0.4l-0.02-0.01 c-0.18-0.13-0.38-0.24-0.59-0.35l0,0c-0.22-0.12-0.44-0.22-0.67-0.32l-0.01-0.01c-0.22-0.09-0.44-0.17-0.66-0.24 c-0.23-0.07-0.46-0.13-0.7-0.17C49.45,35.7,49.42,35.69,49.39,35.67L49.39,35.67z M5.83,34.95c1.85-9.83,7.06-18.48,14.38-24.71 C27.71,3.85,37.42,0,48.02,0C57.34,0,65.96,2.97,73,8.02c7.22,5.18,12.78,12.55,15.69,21.14l-2.63,0.89l-2.63,0.89 c-0.07-0.22-0.15-0.44-0.23-0.65c-2.59-7.19-7.33-13.37-13.44-17.75c-6.13-4.39-13.64-6.97-21.75-6.97 c-9.25,0-17.71,3.35-24.22,8.89c-6.12,5.21-10.54,12.36-12.31,20.5h5.69L8.59,45.41L0,34.95L5.83,34.95L5.83,34.95L5.83,34.95z" />
-            </g>
-          </svg>
-        </div>
-        <p class="max-w-[15ch] text-center mt-4 px-2">Rilavorazione degli Sfridi dei Clienti</p>
-      </div>
-    </div>
-    <div class="flex gap-2 md:gap-8 h-[14rem]">
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-12 h-20 text-dark_red mb-2 grid place-items-center">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.44 122.88">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="100%" stop-color="#D60F22" />
-                <stop offset="0%" stop-color="#9B1D1D" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path class="cls-1"
-                d="M89.62,36.27l-1-1,5.74-5.75a14,14,0,0,0,0-19.77L88.7,4.08a14,14,0,0,0-19.77,0L63.18,9.82l-1-1a3.59,3.59,0,0,0-5.07,0l-2,2a3.6,3.6,0,0,0,0,5.08l3.34,3.34-39,39.05c-4.47,4.47-3.86,3.82-5.47,10C12.25,74.61,11.18,79,11.06,82L9.35,89.4C8.81,91.76,6.76,95,4.87,97.93,2.33,101.9,0,105.54,0,109a13.15,13.15,0,0,0,7.4,12.31,14.9,14.9,0,0,0,5.91,1.55,15.47,15.47,0,0,0,6-.88,13.1,13.1,0,0,0,8.82-11.24l0-.25c.3-4.89-2.35-8.92-5.14-13.18h0c-1.74-2.65-3.57-5.43-4.15-7.92L18.3,87c2.86-.35,6.66-1.19,11.59-2.3,7.15-1.59,6.06-.86,11.22-6L79.46,40.3l3.07,3.06a3.59,3.59,0,0,0,5.07,0l2-2a3.59,3.59,0,0,0,0-5.07ZM50.77,62.11,36.52,47.86,57.27,27.11,71.52,41.36,50.77,62.11ZM14.11,90.48c1.71,7.33,9.53,13.64,9.16,19.72C22.08,121,4.89,120.59,4.89,109c0-4.13,7.75-12.15,9.22-18.52Z" />
-            </g>
-          </svg>
-        </div>
-        <p class="max-w-[15ch] text-center mt-6">Rapido Campionamento Colori</p>
-      </div>
-      <div class="flex flex-col align-center border-[7px] border-light_gray py-5">
-        <div class="mx-auto w-[4.5rem] h-20 text-dark_red mb-2 grid place-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-            clip-rule="evenodd" viewBox="0 0 512 377.43">
-            <defs>
-              <linearGradient id="red-gradient" gradientTransform="rotate(45)">
-                <stop offset="0%" stop-color="#9B1D1D" />
-                <stop offset="70%" stop-color="#D60F22" />
-              </linearGradient>
-            </defs>
-            <g fill="url(#red-gradient)">
-              <path fill-rule="nonzero"
-                d="M199.52 0h88.83a718.392 718.392 0 0 0-17.47 17.06l-.29.29h-71.07c-5.28 0-10.08 2.17-13.57 5.65-3.48 3.48-5.64 8.29-5.64 13.56v90.05c0 5.27 2.17 10.07 5.65 13.55 2.89 2.9 6.7 4.89 10.91 5.48v-.32c0-17.52 7.83-28.84 17.86-33.94 4.03-2.06 8.45-3.08 12.89-3.08 4.42 0 8.84 1.04 12.88 3.08 4.57 2.31 8.69 5.89 11.83 10.7-15.34-25.82-25.95-42.63-48.47-60.12l27.68-6.25c8.41 4.85 13.89 8.87 20.41 16.06 16.92-27.22 36.01-43.04 59.88-64.45l2.34-.9h26.12c-35.02 38.89-61.05 69.96-87.22 116.85 3.38 5.68 5.45 12.95 5.45 21.78v.77h53.96c5.09 0 9.75-2.02 13.2-5.29l.35-.37c3.49-3.49 5.66-8.29 5.66-13.55v-82.4c5.23-6.17 10.5-12.27 15.76-18.29a36.06 36.06 0 0 1 1.6 10.64v90.05c0 10.05-4.13 19.19-10.75 25.82l-.53.49c-6.59 6.33-15.51 10.25-25.29 10.25h-53.96v3.71c.56-.15 1.14-.23 1.74-.23h9.14c.53 0 1.04.06 1.53.18 10.97 1.76 16.44 9.08 19.03 18.58a6.65 6.65 0 0 1 3.56-1.03h9.14c.53 0 1.04.06 1.53.18 11.68 1.87 17.12 10.04 19.49 20.43.57-.15 1.16-.24 1.77-.24h9.14c.53 0 1.04.07 1.53.18 25.1 4.02 24.73 36.35 24.49 57.44 0 9.76.42 19.46.51 29.21-1.12 22.76-11.43 40.52-22.04 58.83l-.91 1.57c-4.69 8.2-10.12 14.46-16.31 18.74-6.3 4.35-13.27 6.59-20.92 6.67l-.62.03h-78.4c-7.88.14-14.01-3.31-18.52-10.06-3.62-5.43-6.03-13.04-7.33-22.63l-49.7-75.21c-2.93-3.96-6.81-9.95-9.69-16.48-2.23-5.07-3.93-10.58-4.28-15.99-.42-6.4.47-11.55 2.29-15.58 2.26-5 5.86-8.26 10.21-10.03 4.06-1.65 8.66-1.9 13.28-.98 5.54 1.1 11.26 3.91 16.14 7.94l17.14 14.07 5.41 4.44v-73.83c-9-.65-17.14-4.61-23.18-10.65-6.62-6.62-10.74-15.76-10.74-25.82V36.56c0-10.06 4.12-19.21 10.74-25.83C180.31 4.11 189.45 0 199.52 0zm109.83 286.65c0-2.99 2.43-5.42 5.42-5.42 2.99 0 5.41 2.43 5.41 5.42v24.77c0 2.99-2.42 5.41-5.41 5.41s-5.42-2.42-5.42-5.41v-24.77zm-32.02-10.95c0-2.99 2.43-5.42 5.42-5.42 2.99 0 5.42 2.43 5.42 5.42v35.71c0 2.99-2.43 5.42-5.42 5.42-2.99 0-5.42-2.43-5.42-5.42V275.7zm47.92-57.68c.28 7.05-.14 14.34-.51 20.95-.22 3.91-.43 7.53-.43 10.89 0 3.67-2.96 6.64-6.63 6.64-3.66 0-6.63-2.97-6.63-6.64 0-3.12.23-7.21.48-11.62.93-16.44 2.17-38.42-9.31-40.6h-8.7c-.58 0-1.15-.07-1.68-.21.54 7.92.07 16.3-.36 23.81-.22 3.91-.42 7.54-.42 10.9 0 3.66-2.97 6.63-6.64 6.63-3.66 0-6.63-2.97-6.63-6.63 0-3.12.24-7.21.48-11.62.93-16.44 2.17-38.43-9.31-40.6h-8.7c-.6 0-1.18-.08-1.74-.23v34.23c0 3.66-2.97 6.63-6.63 6.63-3.66 0-6.63-2.97-6.63-6.63v-68.87c0-11.54-4.71-18.82-10.72-21.86-2.2-1.11-4.58-1.68-6.92-1.68-2.33 0-4.69.55-6.89 1.67-5.96 3.01-10.59 10.32-10.59 22.14v120.69a6.634 6.634 0 1 1-13.27 0v-12.26a6.39 6.39 0 0 1-1.02-.67c-3.39-2.71-8.1-6.54-12.76-10.35l-17.22-14.12c-3.2-2.65-6.83-4.47-10.23-5.15-2.18-.43-4.19-.38-5.76.25-1.28.52-2.38 1.56-3.12 3.2-.97 2.14-1.42 5.2-1.15 9.31.23 3.64 1.51 7.65 3.2 11.48 2.53 5.73 5.89 10.9 8.36 14.2l50.8 76.83c.59.89.94 1.88 1.05 2.87 1.01 8.3 2.77 14.51 5.37 18.4 1.88 2.82 4.33 4.27 7.38 4.19 25.1-.4 54.27-1.09 79.12 0 4.9-.08 9.39-1.54 13.46-4.35 4.49-3.11 8.6-7.93 12.32-14.44l.95-1.63c9.79-16.87 19.29-33.24 20.29-52.69l-.51-22.53a6.5 6.5 0 0 1-.07-.99l.07-5.32c.19-16.5.47-41.75-13.25-44.22h-8.9zM36.56 0h62.78c10.05 0 19.2 4.12 25.82 10.74l.49.53c6.33 6.58 10.25 15.52 10.25 25.29v90.05c0 10.05-4.12 19.19-10.75 25.82-6.62 6.62-15.77 10.74-25.81 10.74H36.56c-10.02 0-19.16-4.11-25.79-10.74h-.03C4.12 145.81 0 136.67 0 126.61V36.56C0 26.5 4.11 17.35 10.73 10.73l.53-.48C17.84 3.91 26.77 0 36.56 0zm62.78 17.35H36.56c-5.1 0-9.76 2.01-13.21 5.28L23 23c-3.48 3.48-5.65 8.29-5.65 13.56v90.05c0 5.27 2.17 10.07 5.66 13.55 3.47 3.5 8.28 5.66 13.55 5.66h62.78c5.25 0 10.06-2.17 13.54-5.66 3.49-3.49 5.67-8.29 5.67-13.55V36.56c0-5.09-2.02-9.75-5.29-13.21l-.37-.35c-3.48-3.48-8.28-5.65-13.55-5.65zM412.66 0h62.78c10.05 0 19.2 4.12 25.82 10.74l.49.53C508.08 17.85 512 26.79 512 36.56v90.05c0 10.04-4.12 19.19-10.75 25.82-6.62 6.62-15.77 10.74-25.81 10.74h-62.78c-10.02 0-19.16-4.11-25.79-10.74h-.03c-6.62-6.62-10.74-15.76-10.74-25.82V36.56c0-10.06 4.11-19.21 10.73-25.83l.53-.48C393.94 3.91 402.87 0 412.66 0zm62.78 17.35h-62.78c-5.1 0-9.76 2.01-13.21 5.28l-.35.37c-3.48 3.48-5.65 8.29-5.65 13.56v90.05c0 5.27 2.17 10.07 5.66 13.55 3.47 3.5 8.28 5.66 13.55 5.66h62.78c5.25 0 10.06-2.17 13.55-5.66 3.48-3.49 5.66-8.29 5.66-13.55V36.56c0-5.09-2.02-9.75-5.29-13.21l-.37-.35c-3.48-3.48-8.28-5.65-13.55-5.65z" />
-            </g>
-          </svg>
-        </div>
-        <p class="max-w-[15ch] text-center mt-4 px-2">Ampia Gamma di Prodotti e Finiture</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quality Stripes -->
-  <section class="my-10 lg:my-24 overflow-x-hidden">
-    <div
-      class="my-1 relative container mx-auto h-28 flex items-center translate-x-4 bg-light_gray before:absolute before:content-[''] before:inline-block before:top-1/2 before:left-0 before:-translate-y-[50%] before:bg-neutral-50 before:h-28 before:border-y-[3.5rem] before:border-y-transparent before:border-r-[1.5rem] before:border-r-light_gray">
-      <p
-        class="text-fluid-md lg:text-center w-full after:content-[''] after:inline-block after:absolute after:top-0 after:left-full after:w-screen after:h-full after:bg-light_gray px-6 mx-5">
-        <span class="text-bright_red">55</span> Anni di Esperienza al servizio dell'industria della Termoformatura
-        Europea
-      </p>
-    </div>
-    <div
-      class="-scale-100 my-1 relative container mx-auto h-28 flex items-center -translate-x-4 bg-light_gray before:absolute before:content-[''] before:inline-block before:top-1/2 before:left-0 before:-translate-y-[50%] before:bg-neutral-50 before:h-28 before:border-y-[3.5rem] before:border-y-transparent before:border-r-[1.5rem] before:border-r-light_gray">
-      <div
-        class="text-fluid-md lg:text-center w-full after:content-[''] after:inline-block after:absolute after:top-0 after:left-full after:w-screen after:h-full after:bg-light_gray px-6 mx-5">
-        <p class="-scale-100">
-          Specializzati in <span class="text-bright_red">ABS + PMMA </span> Lucido, opaco. Liscio, goffrato.
-        </p>
-      </div>
-    </div>
-    <div
-      class="my-1 relative container mx-auto h-28 flex items-center translate-x-4 bg-light_gray before:absolute before:content-[''] before:inline-block before:top-1/2 before:left-0 before:-translate-y-[50%] before:bg-neutral-50 before:h-28 before:border-y-[3.5rem] before:border-y-transparent before:border-r-[1.5rem] before:border-r-light_gray">
-      <p
-        class="text-fluid-md lg:text-center w-full after:content-[''] after:inline-block after:absolute after:top-0 after:left-full after:w-screen after:h-full after:bg-light_gray px-6 mx-5">
-        <span class="text-bright_red">Prodotti Speciali </span> per Arredamento, Illuminazione, Espositori
-      </p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="relative border-t-[7px] border-light_gray">
-    <button id="back-up-button"
-      class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 hover:text-dark_red">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse fill="#FFFFFF" cx="12" cy="12" rx="5" ry="5" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11 16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16L13 10.4142L14.2929 11.7071C14.6834 12.0976 15.3166 12.0976 15.7071 11.7071C16.0976 11.3166 16.0976 10.6834 15.7071 10.2929L12.7941 7.37993C12.7791 7.36486 12.7637 7.35031 12.748 7.33627C12.5648 7.12998 12.2976 7 12 7C11.7024 7 11.4352 7.12998 11.252 7.33627C11.2363 7.3503 11.2209 7.36486 11.2059 7.37993L8.29289 10.2929C7.90237 10.6834 7.90237 11.3166 8.29289 11.7071C8.68342 12.0976 9.31658 12.0976 9.70711 11.7071L11 10.4142L11 16Z"
-          fill="currentColor" />
-      </svg>
-    </button>
-    <div class="container mx-auto flex flex-col md:flex-row gap-5 md:gap-0 px-10 md:px-2 justify-evenly my-8">
-      <div>
-        <a href="/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-          AZIENDA
-        </a>
-      </div>
-      <div>
-        <a href="pages/environment/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-          Sostenibilità
-        </a>
-        <nav class="mt-2">
-          <ul class="text-fluid-sm">
-            <a href="pages/environment/">
-              <li class="py-1 hover:text-bright_red">
-                Ambiente
-              </li>
-            </a>
-            <a href="pages/energy/">
-              <li class="py-1 hover:text-bright_red">
-                Energia
-              </li>
-            </a>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <a href="pages/products/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-          Prodotti
-        </a>
-        <nav class="mt-2">
-          <ul class="text-fluid-sm">
-            <a href="pages/products/">
-              <li class="py-1 hover:text-bright_red">
-                Prodotti
-              </li>
-            </a>
-            <a href="pages/properties/">
-              <li class="py-1 hover:text-bright_red">
-                Proprietà dei Materiali
-              </li>
-            </a>
-            <a href="pages/quality/">
-              <li class="py-1 hover:text-bright_red">
-                Qualità
-              </li>
-            </a>
-            <a href="pages/textures/">
-              <li class="py-1 hover:text-bright_red">
-                Goffrature
-              </li>
-            </a>
-            <a href="pages/colors/">
-              <li class="py-1 hover:text-bright_red">
-                Colore
-              </li>
-            </a>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <a href="pages/materials/hips/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-          Materiali
-        </a>
-        <nav class="mt-2">
-          <ul class="text-fluid-sm">
-            <a href="pages/materials/hips/">
-              <li class="py-1 hover:text-bright_red">
-                Hips
-              </li>
-            </a>
-            <a href="pages/materials/abs/">
-              <li class="py-1 hover:text-bright_red">
-                ABS
-              </li>
-            </a>
-            <a href="pages/materials/abs_pmma/">
-              <li class="py-1 hover:text-bright_red">
-                ABS + PMMA
-              </li>
-            </a>
-            <a href="pages/materials/abs_film/">
-              <li class="py-1 hover:text-bright_red">
-                Abs + FILM
-              </li>
-            </a>
-            <a href="pages/materials/hdpe/">
-              <li class="py-1 hover:text-bright_red">
-                HDPE
-              </li>
-            </a>
-            <a href="pages/materials/special_materials/">
-              <li class="py-1 hover:text-bright_red">
-                Materiali Speciali
-              </li>
-            </a>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <a href="pages/contacts/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-          Informazioni
-        </a>
-        <nav class="mt-2">
-          <ul class="text-fluid-sm">
-            <a href="pages/contacts/">
-              <li class="py-1 hover:text-bright_red">
-                Contatti
-              </li>
-            </a>
-            <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
-              <li class="py-1 hover:text-bright_red flex gap-2 items-center">
-                Privacy
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                </svg>
-              </li>
-            </a>
-            <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
-              <li class="py-1 hover:text-bright_red flex gap-2 items-center">
-                Condizioni di Vendita
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M64 464H96v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V288H336V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zm96-112h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368zm32 112h8c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368c0-8.8 7.2-16 16-16z" />
-                </svg>
-              </li>
-            </a>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="w-full bg-light_gray py-5 font-semibold text-fluid-sm text-center leading-[1.2]">
-      <p>Ing. Italo Briccola S.p.A. - <a href="#">commerciale@briccola.it</a></p>
-      <p class="underline">
-        <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">Sales Conditions</a>
-      </p>
     </div>
   </footer>
 
-  
+
+  <script src="assets/js/lib.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
