@@ -302,7 +302,7 @@ function getRecipeReviewStats(id) {
             }
         }
     } else {
-        localStorage.setItem("reviews", JSON.stringify([]));
+        localStorage.setItem("reviews", JSON.stringify({}));
     }
     return {
         taste: '-',
