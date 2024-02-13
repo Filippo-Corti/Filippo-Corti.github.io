@@ -291,17 +291,22 @@ function removeReviewFromStorage(id, email, timestamp) {
 
 //Return average taste score, average difficulty score and number of reviews of the identified recipe
 function getRecipeReviewStats(id) {
-    let reviews = getFromStorage("reviews")[id];
-    if (!reviews || reviews.length == 0) {
-        return {
-            taste: '-',
-            difficulty: '-',
-            reviews: 0,
+    let reviews = getFromStorage("reviews");
+    if (reviews) {
+        let related_reviews = reviews[id];
+        if (related_reviews && related_reviews.length > 0) {
+            return {
+                taste: (related_reviews.map((review) => parseInt(review.taste)).reduce((a, b) => a + b, 0) / related_reviews.length).toFixed(1),
+                difficulty: (related_reviews.map((review) => parseInt(review.difficulty)).reduce((a, b) => a + b, 0) / related_reviews.length).toFixed(1),
+                reviews: related_reviews.length,
+            }
         }
+    } else {
+        localStorage.setItem("reviews", JSON.stringify([]));
     }
     return {
-        taste: (reviews.map((review) => parseInt(review.taste)).reduce((a, b) => a + b, 0) / reviews.length).toFixed(1),
-        difficulty: (reviews.map((review) => parseInt(review.difficulty)).reduce((a, b) => a + b, 0) / reviews.length).toFixed(1),
-        reviews: reviews.length,
+        taste: '-',
+        difficulty: '-',
+        reviews: 0,
     }
 }
