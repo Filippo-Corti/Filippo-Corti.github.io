@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PGRC | Profile </title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/my-colors.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="overflow-x-hidden min-vh-100 d-flex flex-column">
+
+    <!-- Background Stripes -->
+    <div class="background-stripe">
+    </div>
+
+    <!-- Background Grid-->
+    <div class="background-grid">
+        <div class="d-none background-grid-col"></div>
+        <div class="d-none background-grid-row"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+            <div class="container-xxl pt-4 pt-md-5 px-3">
+                <!-- Logo -->
+                <div>
+                    <a class="logo | d-flex align-items-baseline gap-1" href="../index.html">
+                        <img class="tint-primary" src="../assets/img/chef.png" alt="PGRC Logo">
+                        <h1 class="h-0 text-primary">PGRC</h1>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button-->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end px-5 mt-3 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul class="navbar-nav align-items-center gap-2">
+                            <li class="nav-item logged-out-only">
+                                <h5 class="text-center border-top border-bottom py-4 d-lg-none">
+                                    SIGN UP for more functionalities!
+                                </h5>
+                            </li>
+                            <li class="nav-item logged-out-only">
+                                <a href="signup.html">
+                                    <button class="btn btn-outline-secondary fs-4">
+                                        SIGN UP
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item logged-out-only">
+                                <button class="btn btn-primary fs-4" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">
+                                    LOG IN
+                                </button>
+                            </li>
+                            <li class="nav-item logged-in-only">
+                                <a href="#">
+                                    <button class="btn btn-outline-secondary fs-4 d-flex align-items-center gap-2 py-2">
+                                        <!-- Username & Picture -->
+                                        <p class="username card-text bg-transparent mb-0">Username</p>
+                                        <div class="bg-primary rounded-5" style="width:fit-content">
+                                            <img src="../assets/img/anon.png" alt="Profile Picture">
+                                        </div>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fallback if Logged Out -->
+    <div class="container text-center logged-out-only mt-5">
+        <ul class="navbar-nav align-items-center gap-2">
+            <li class="nav-item">
+                <h2 class="text-center border-top border-bottom py-4">
+                    SIGN UP for more functionalities!
+                </h2>
+            </li>
+            <li class="nav-item">
+                <a href="../pages/signup.html">
+                    <button class="btn btn-outline-secondary fs-4">
+                        SIGN UP
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary fs-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    LOG IN
+                </button>
+            </li>
+    </div>
+
+    <!-- Main -->
+    <main class="container my-5 py-4 px-2 px-md-1 py-md-5 mx-auto d-flex flex-column flex-lg-row logged-in-only">
+
+        <!-- Side Nav -->
+        <div class="bg-white rounded-lg-5 rounded-top-5 mx-lg-3 shadow px-2 py-lg-5 py-2 h-100">
+            <nav>
+                <div class="bg-primary rounded-4 p-2 mx-auto d-none d-lg-block" style="width:fit-content">
+                    <img src="../assets/img/anon.png" alt="Profile Picture">
+                </div>
+                <ul class="nav nav-pills list-unstyled my-lg-4 d-flex flex-lg-column flex-row gap-3 position-relative justify-content-around"
+                    id="v-tabs" role="tablist" aria-orientation="vertical">
+                    <!-- Your Cookbook - Button -->
+                    <li>
+                        <button id="cookbook-tab" data-bs-toggle="pill" data-bs-target="#cookbook" type="button"
+                            role="tab" aria-controls="cookbook"
+                            class="d-flex gap-2 align-items-center justify-content-start px-4 py-3 w-100 border-0 bg-transparent active">
+                            <div style="width:24px">
+                                <img src="../assets/img/bookmark.png" alt="Your Cookbook">
+                            </div>
+                            <p class="my-0 fs-5">Cookbook</p>
+                        </button>
+                    </li>
+                    <!-- Your Reviews - Button -->
+                    <li>
+                        <button id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button"
+                            role="tab" aria-controls="reviews"
+                            class="d-flex gap-2 align-items-center justify-content-start px-4 py-3 w-100 border-0 bg-transparent">
+                            <div style="width:24px">
+                                <img src="../assets/img/comment.png" alt="Your Reviews">
+                            </div>
+                            <p class="my-0 fs-5">Reviews</p>
+                        </button>
+                    </li>
+                    <!-- Your Profile - Button -->
+                    <li>
+                        <button id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button"
+                            role="tab" aria-controls="profile"
+                            class="d-flex gap-2 align-items-center justify-content-start px-4 py-3 w-100 border-0 bg-transparent">
+                            <div style="width:24px">
+                                <img src="../assets/img/setting.png" alt="Your Profile">
+                            </div>
+                            <p class="my-0 fs-5">Profile</p>
+                        </button>
+                    </li>
+                    <li class="current-tab rounded-top-5 rounded-lg-5">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Content Tabs -->
+        <div class="tab-content bg-white rounded-bottom-5 rounded-lg-5 mx-auto shadow py-3 px-2 p-xl-4 w-100">
+            <!-- Your Cookbook -->
+            <div id="cookbook" class="tab-pane px-4 py-3 active" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Your Cookbook</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sort by
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item fs-5" onclick="">Difficulty (Easiest First)</button></li>
+                            <li><button class="dropdown-item fs-5" onclick="">Taste (Tastiest First)</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="saved_recipes_container" class="py-3 d-flex flex-column gap-3">
+                </div>
+                <div class="fs-5 text-secondary text-center mt-2">
+                    Looking for new recipes? <br>
+                    Check them out on our <a href="../index.html" class="text-decoration-underline">Home Page</a>
+                </div>
+            </div>
+            <!-- Your Reviews -->
+            <div id="reviews" class="tab-pane px-4 py-3" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>Your Reviews</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sort by
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item fs-5" onclick="">Date (Latest First)</button></li>
+                            <li><button class="dropdown-item fs-5" onclick="">Difficulty (Easiest First)</button></li>
+                            <li><button class="dropdown-item fs-5" onclick="">Taste (Tastiest First)</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="reviews_container" class="py-3 d-flex flex-column gap-3">
+                    <!-- Recipe Review Cards ... -->
+                </div>
+                <div class="fs-5 text-secondary text-center mt-2">
+                    Looking for new recipes? <br>
+                    Check them out on our <a href="../index.html" class="text-decoration-underline">Home Page</a>
+                </div>
+            </div>
+            <!-- Your Profile -->
+            <div id="profile" class="tab-pane px-4 py-3" role="tabpanel">
+                <h1>Your Profile</h1>
+                <div class="pt-2">
+                    <div
+                        class="d-flex flex-column mt-4 border-bottom border-black pb-3 border-opacity-50 position-relative">
+                        <label class="fs-5 text-secondary" for="email">Email</label>
+                        <input class="form-control rounded-2 border-2 fs-4 text-black p-0 text-body-secondary"
+                            type="email" autocomplete="username" name="email" id="email" value="your@email.com" disabled
+                            required>
+                    </div>
+                    <div
+                        class="d-flex flex-column mt-4 border-bottom border-black pb-3 border-opacity-50 position-relative">
+                        <label class="fs-5 text-secondary" for="username">Username</label>
+                        <input class="editable | form-control rounded-2 border-2 fs-4 text-black p-0" type="text"
+                            name="username" id="username" pattern=".{3,}" value="Your Username" disabled>
+                        <div class="invalid-feedback">Your Username should be at least 3 characters long</div>
+                        <div class="edit-button | position-absolute" style="cursor:pointer; top: 40%; right: 4%"
+                            onclick="enableEdit(this)">
+                            <img width="24" src="../assets/img/edit.png" alt="Edit Note">
+                        </div>
+                        <button class="save-button | btn btn-outline-secondary rounded-5 mt-1 ms-auto d-none"
+                            style="width: fit-content;" onclick="saveAndDisableEdit(this)">
+                            Save
+                        </button>
+                    </div>
+                    <div
+                        class="d-flex flex-column mt-4 border-bottom border-black pb-3 border-opacity-50 position-relative">
+                        <label class="fs-5 text-secondary" for="password">Password</label>
+                        <input class="editable | toggle-visibility form-control rounded-2 border-2 fs-4 text-black p-0"
+                            type="password" autocomplete="new-password" name="password" id="password"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+                            value="password123!" disabled required>
+                        <div class="invalid-feedback">
+                            Your Password doesn't match requirements.
+                            Password must be at least 8 characters long and include a letter, a
+                            number and a special character.
+                        </div>
+                        <div class="edit-button | position-absolute" style="cursor:pointer; top: 40%; right: 4%"
+                            onclick="enableEdit(this)">
+                            <img width="24" src="../assets/img/edit.png" alt="Edit Note">
+                        </div>
+                        <img style="cursor: pointer;" class="visible-on-edit d-none position-absolute top-0 end-0"
+                            src="../assets/img/view.png" alt="Show Password" width="25" onclick="toggleShowPassword()">
+                        <div class="visible-on-edit d-none mt-1">
+                            <label class="fs-5 text-secondary" for="password_confirm">Confirm New Password</label>
+                            <input class="toggle-visibility | form-control rounded-2 border-2 fs-4 text-black p-0"
+                                type="password" autocomplete="new-password" id="password_confirm" value="password123!"
+                                required>
+                            <div class="invalid-feedback">Your Passwords are different</div>
+                        </div>
+                        <button class="save-button | btn btn-outline-secondary rounded-5 mt-1 ms-auto d-none"
+                            style="width: fit-content;" onclick="saveAndConfirmPasswordEdit(this)">
+                            Save
+                        </button>
+                    </div>
+                    <div
+                        class="d-flex flex-column mt-4 border-bottom border-black pb-4 border-opacity-50 position-relative">
+                        <label class="fs-5 text-secondary" for="preferences">Favourite Tags:</label>
+                        <input class=" rounded-2 border-2 fs-4 text-black px-2" type="text" id="preferences"
+                            oninput="searchTags(this.value)">
+                        <div class="m-3 overflow-hidden shadow-sm" style="height: 200px">
+                            <div class="custom-scrollbar overflow-y-auto overflow-x-hidden d-flex flex-column gap-2"
+                                style="max-height: 100%;">
+                                <!-- Favourite Area Tags -->
+                                <div id="preferences_area_container" class="row gap-2 mx-3">
+                                </div>
+                                <!-- Favourite Category Tags -->
+                                <div id="preferences_category_container" class="row gap-2 mx-3">
+                                </div>
+                                <!-- Favourite Ingredient Tags -->
+                                <div id="preferences_ingredient_container" class="row gap-2 mx-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fs-5 text-secondary text-center mt-4">
+                        <span style="cursor: pointer" class="text-decoration-underline" onclick="logout()">Log
+                            out</span> <br>
+                        Do you want to delete your account? <span style="cursor: pointer"
+                            class="text-decoration-underline" data-bs-toggle="modal"
+                            data-bs-target="#deleteAccountModal">click here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top border-black border-opacity-25 mt-auto">
+        <div class="container-xxl d-flex flex-column flex-md-row my-5 mx-auto px-3 px-md-5 justify-content-between">
+            <!-- Logo -->
+            <div class="logo | d-flex align-items-baseline gap-1 mx-auto ms-md-0">
+                <img class="tint-primary" src="../assets/img/chef.png" alt="PGRC Logo">
+                <h1 class="h-0 text-primary">PGRC</h1>
+            </div>
+            <!-- Demo Buttons -->
+            <div>
+                <ul
+                    class="list-group list-unstyled list-group-horizontal-md justify-content-center align-items-center d-flex gap-2 mt-2 mt-md-0">
+                    <li>
+                        <button class="btn btn-outline-secondary fs-4">
+                            Reset Data
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline-secondary fs-4">
+                            Load Demo Data
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Login Modal -->
+    <modal class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="Modal For Login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 rounded-5">
+                <div class="modal-header border-0 row align-items-baseline">
+                    <div class="line | col-3 bg-primary rounded-5 ms-1 d-none d-md-block"></div>
+                    <h1 class="col-md-3 modal-title fs-4 text-center" id="exampleModalLabel">LOG IN</h1>
+                    <div class="line | col bg-primary rounded-5 me-3 d-none d-md-block"></div>
+                    <button type="button" class="col-1 btn-close mb-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-1">
+                    <div class="invalid-credentials | d-none text-center text-danger fs-6 mt-2">
+                        <p>Credentials are wrong! Try again</p>
+                    </div>
+                    <form method="GET" action="profile.html" onsubmit="return checkCredentialsAndLogin(this)">
+                        <div class="col-12">
+                            <div class="d-flex flex-column mt-2">
+                                <label class="fs-5 text-dark" for="login_email">Email</label>
+                                <input class="form-control rounded-2 p-2 border-2" type="email" name="email"
+                                    id="login_email" autocomplete="username" required>
+                            </div>
+                            <div class="d-flex flex-column my-3 position-relative">
+                                <label class="fs-5 text-dark" for="login_password">Password</label>
+                                <img style="cursor: pointer;" class="position-absolute top-0 end-0"
+                                    src="../assets/img/view.png" alt="Show Password" width="25"
+                                    onclick="toggleShowPassword()">
+                                <input class="toggle-visibility | form-control rounded-2 p-2 border-2" type="password"
+                                    name="password" id="login_password" autocomplete="current-password" required>
+                            </div>
+                            <button type="submit" class="w-100 btn btn-primary fs-5 mt-4 mb-2">Log In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-block border-0 text-center pt-0">
+                    <p class="text-secondary mt-0 pt-0">Don't have an account? <a class="text-decoration-underline"
+                            href="signup.html">Register
+                            here</a></p>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <!-- Save Recipe Modal -->
+    <modal class="modal fade" id="saveRecipeModal" tabindex="-1" aria-labelledby="Modal to Save Recipe"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 rounded-5">
+                <div class="modal-header border-0 row align-items-baseline">
+                    <div class="line | col-1 bg-primary col rounded-5 ms-1 d-none d-md-block"></div>
+                    <h1 class="col-md-6 modal-title fs-4 text-center" id="exampleModalLabel">READY TO SAVE?</h1>
+                    <div class="line | col bg-primary col rounded-5 me-3 d-none d-md-block"></div>
+                    <button type="button" class="col-1 btn-close mb-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-1">
+                    <div class="invalid-credentials | d-none text-center text-danger fs-6 mt-2">
+                        <p>Credentials are wrong! Try again</p>
+                    </div>
+                    <form method="GET" action="index.html" onsubmit="return saveRecipe(this)">
+                        <div class="col-12">
+                            <div class="card-text py-2 px-1 mb-1 position-relative">
+                                <h5 class="text-black fs-6">Do you wanto to leave a note for <span
+                                        class="modal-recipe-label | text-primary">Recipe Name</span>?</h5>
+                                <textarea class="editable | w-100 rounded-5 border-2 ps-3 pe-5 py-2" id=""
+                                    rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="w-100 btn btn-primary fs-5 mt-3 mb-2">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-block border-0 text-center pt-0">
+                    <p class="text-secondary mt-0 pt-0">Saved recipes appear in your Cookbook!</p>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <!-- Delete Review Modal -->
+    <modal class="modal fade" id="deleteReviewModal" tabindex="-1" aria-labelledby="Modal to Delete Review"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 rounded-5">
+                <div class="modal-header border-0 row align-items-baseline">
+                    <div class="line | col-1 bg-primary rounded-5 ms-1 d-none d-md-block"></div>
+                    <h1 class="col-6 modal-title fs-4 text-center" id="exampleModalLabel">ARE YOU SURE?</h1>
+                    <div class="line | col bg-primary rounded-5 me-3 d-none d-md-block"></div>
+                    <button type="button" class="col-1 btn-close mb-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4 pb-1 fs-5 text-black">
+                    <p>Do you really want to delete your review about <span
+                            class="modal-recipe-label | text-primary">Recipe Name</span></span>?</p>
+                    <div class="d-flex justify-content-center gap-3 mx-3">
+                        <button type="button" class="w-100 btn btn-outline-secondary fs-5 mt-3 mb-2">Cancel</button>
+                        <button type="button" class="delete-review | w-100 btn btn-primary fs-5 mt-3 mb-2"
+                            onclick="deleteReview(this)">Delete</button>
+                    </div>
+                    <p class="fs-6 text-danger text-center">Mind that this operation is irreversibile</p>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <!-- Delete Account Modal -->
+    <modal class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="Modal to Delete Account"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 rounded-5">
+                <div class="modal-header border-0 row align-items-baseline">
+                    <div class="line | col-1 bg-primary rounded-5 ms-1 d-none d-md-block"></div>
+                    <h1 class="col-6 modal-title fs-4 text-center" id="exampleModalLabel">ARE YOU SURE?</h1>
+                    <div class="line | col bg-primary rounded-5 me-3 d-none d-md-block"></div>
+                    <button type="button" class="col-1 btn-close mb-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4 pb-1 fs-5 text-black">
+                    <p>Do you really want to delete your account?</p>
+                    <p class="fs-6 ">All your reviews will be marked as anonymous and you won't be able to edit them
+                        anymore.</p>
+                    <div class="d-flex justify-content-center gap-3 mx-3">
+                        <button type="button" class="w-100 btn btn-outline-secondary fs-5 mt-3 mb-2"
+                            data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                        <button type="button" class="w-100 btn btn-primary fs-5 mt-3 mb-2"
+                            onclick="deleteLoggedAccount()">Delete</button>
+                    </div>
+                    <p class="fs-6 text-danger text-center">Mind that this operation is irreversibile</p>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <!-- Templates -->
+
+    <!-- Saved Recipe Card -->
+    <template id="saved_recipe_card">
+        <div class="recipe-card | rounded-5 overflow-hidden shadow w-100" data-template-type="attribute"
+            data-template-attribute="data-favourite" data-template-value="favourite" data-favourite="true">
+            <a data-template-type="attribute" data-template-attribute="href" data-template-value="href"
+                class="card border-0" href="pages/recipe.html?id=00000">
+                <img data-template-type="attribute" data-template-attribute="src" data-template-value="image"
+                    src="https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg"
+                    class="recipe-image | card-img-top" alt="Lamb Pilaf (Plov)">
+                <div class="card-body">
+                    <div class="row pe-4 ps-1 align-items-baseline">
+                        <div class="col-7 mt-4">
+                            <h5 data-template-type="content" data-template-value="area"
+                                class="card-title text-primary text-uppercase fs-5">Area Cuisine</h5>
+                            <h4 data-template-type="content" data-template-value="name" class="card-title fs-3 mt-0">
+                                Recipe
+                                Name </h4>
+                        </div>
+                        <div class="col-5 row gap-2 justify-content-end mb-2">
+                            <div class="col d-flex align-items-center gap-2">
+                                <img width="20" src="../assets/img/star.png" alt="Taste Score">
+                                <span data-template-type="content" data-template-value="taste">0.0</span>
+                            </div>
+                            <div class="col d-flex align-items-center gap-2">
+                                <img class="tint-danger" width="20" src="../assets/img/chef.png" alt="Taste Score">
+                                <span data-template-type="content" data-template-value="difficulty">0.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text py-2 px-1 mb-1 position-relative" onclick="event.preventDefault();">
+                        <h5 class="text-secondary fs-5">Your Note:</h5>
+                        <textarea data-template-type="value" data-template-value="note"
+                            class="editable | w-100 rounded-5 border-2 ps-3 pe-5 py-2 fs-5" name="note" rows="4"
+                            disabled></textarea>
+                        <div class="edit-button | position-absolute" style="cursor:pointer; top: 30%; right: 4%;"
+                            onclick="enableEdit(this);">
+                            <img width="24" src="../assets/img/edit.png" alt="Edit Note">
+                        </div>
+                        <button type="button"
+                            class="save-button | position-absolute btn btn-outline-secondary rounded-5 d-none bg-white"
+                            style="cursor:pointer; bottom: 12%; right: 4%" onclick="saveAndDisableEdit(this)">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="recipe-save" data-bs-toggle="modal" data-bs-target="#saveRecipeModal"
+                data-bs-recipe="Lamb Pilaf (Plov)" onclick="removeRecipe(this);">
+                <div class="w-100 h-100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Save Recipe">
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Review Card -->
+    <template id="review_card">
+        <div class="review-card | card mx-3 p-3 rounded-5 shadow border-0 position-relative" style="max-width: 900px;"
+            data-my-review="true">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-body">
+                        <!-- Recipe Name -->
+                        <div class="d-flex align-items-center gap-2">
+                            <a data-template-type="attribute" data-template-attribute="href" data-template-value="href" href="">
+                                <p data-template-type="content" data-template-value="recipe"
+                                    class="card-text fs-5 text-secondary text-decoration-underline">Recipe Name</p>
+                            </a>
+                        </div>
+                        <!-- Taste -->
+                        <div data-template-type="element" data-template-value="taste">
+                        </div>
+                        <!-- Difficulty -->
+                        <div data-template-type="element" data-template-value="difficulty">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <!-- Review Date -->
+                        <p class="text-secondary mb-2" data-template-type="content" data-template-value="date">
+                            mm-dd-yyyy</p>
+                        <span data-template-type="content" data-template-value="timestamp" class="d-none"></span>
+                        <span data-template-type="content" data-template-value="recipe_id" class="d-none"></span>
+                        <!-- Review Content -->
+                        <p data-template-type="content" data-template-value="content" class="card-text fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias autem
+                            dolorem minus officiis alias unde rem vel dolorum accusamus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-delete" data-template-type="attribute" data-template-attribute="data-bs-recipe"
+                data-template-value="recipe" data-bs-toggle="modal" data-bs-target="#deleteReviewModal"
+                data-bs-recipe="Recipe Name">
+                <div class="w-100 h-100" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete Review">
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Taste Score -->
+    <template id="taste_score">
+        <div>
+            <p class="card-text my-0 pt-3">
+                Taste:
+            </p>
+            <div class="review-score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="1"
+                    src="../assets/img/star.png" alt="Taste Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="2"
+                    src="../assets/img/star.png" alt="Taste Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="3"
+                    src="../assets/img/star.png" alt="Taste Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="4"
+                    src="../assets/img/star.png" alt="Taste Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="5"
+                    src="../assets/img/star.png" alt="Taste Score">
+            </div>
+        </div>
+    </template>
+
+    <!-- Difficulty Score -->
+    <template id="difficulty_score">
+        <div>
+            <p class="card-text my-0 pt-3">
+                Difficulty:
+            </p>
+            <div class="review-score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="1"
+                    src="../assets/img/chef.png" alt="Difficulty Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="2"
+                    src="../assets/img/chef.png" alt="Difficulty Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="3"
+                    src="../assets/img/chef.png" alt="Difficulty Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="4"
+                    src="../assets/img/chef.png" alt="Difficulty Score">
+                <img data-template-type="attribute" data-template-attribute="class" data-template-value="5"
+                    src="../assets/img/chef.png" alt="Difficulty Score">
+            </div>
+        </div>
+    </template>
+
+    <!-- Preference Tag for Area -->
+    <template id="preferences_area_tag">
+        <span class="tag tag-area | btn btn-outline-success fs-5 d-flex align-items-center gap-2"
+            onclick="toggleStateAndUpdateStorage(this)">
+            <input data-template-type="attribute" data-template-attribute="value" data-template-value="name"
+                class="d-none" type="checkbox" name="preferences_area" value="Area">
+            <span data-template-type="content" data-template-value="name">Area</span>
+            <img class="d-none" width="12" src="../assets/img/close-white.png" alt="Deselect Tag">
+        </span>
+    </template>
+
+    <!-- Preference Tag for Category -->
+    <template id="preferences_category_tag">
+        <span class="tag tag-category | btn btn-outline-info fs-5 d-flex align-items-center gap-2"
+            onclick="toggleStateAndUpdateStorage(this)">
+            <input data-template-type="attribute" data-template-attribute="value" data-template-value="name"
+                class="d-none" type="checkbox" name="preferences_category" value="Category">
+            <span data-template-type="content" data-template-value="name">Category</span>
+            <img class="d-none" width="12" src="../assets/img/close.png" alt="Deselect Tag">
+        </span>
+    </template>
+
+    <!-- Preference Tag for Ingredient -->
+    <template id="preferences_ingredient_tag">
+        <span class="tag tag-ingredient | btn btn-outline-danger fs-5 d-flex align-items-center gap-2"
+            onclick="toggleStateAndUpdateStorage(this)">
+            <input data-template-type="attribute" data-template-attribute="value" data-template-value="name"
+                class="d-none" type="checkbox" name="preferences_ingredient" value="Ingredient">
+            <span data-template-type="content" data-template-value="name">Ingredient</span>
+            <img class="d-none" width="12" src="../assets/img/close-white.png" alt="Deselect Tag">
+        </span>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/form-control.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script type="module">
+        let logged_user = getLoggedUserData();
+        if (logged_user) {
+            fillCookbookTab();
+            fillReviewsTab();
+            updateProfileTab();
+        }
+
+        function fillCookbookTab() {
+            let saved_recipes = logged_user.cookbook;
+            let container = document.querySelector("#saved_recipes_container");
+            saved_recipes.forEach(async (saved_recipe) => {
+                let recipe = await getDetailsById(saved_recipe.id);
+                let recipe_stats = getRecipeReviewStats(recipe.idMeal);
+                container.appendChild(buildDynamicElement("saved_recipe_card", {
+                    href: "recipe.html?id=" + recipe.idMeal,
+                    image: recipe.strMealThumb,
+                    difficulty: recipe_stats.difficulty,
+                    taste: recipe_stats.taste,
+                    area: recipe.strArea + " Cuisine",
+                    name: recipe.strMeal,
+                    favourite: true,
+                    note: saved_recipe.note,
+                }))
+            })
+        }
+
+        function fillReviewsTab() {
+            let reviews = getFromStorage("reviews");
+            let container = document.querySelector("#reviews_container");
+            Object.entries(reviews).forEach((entry) => {
+                let id = entry[0];
+                let my_reviews = entry[1].filter((review) => review.author == logged_user.email);
+                my_reviews.forEach(async (review) => {
+
+                    let taste_template_data = {};
+                    let difficulty_template_data = {};
+                    for (let i = 1; i <= 5; i++) {
+                        if (review.taste < i)
+                            taste_template_data[i] = "tint-black";
+                        if (review.difficulty >= i)
+                            difficulty_template_data[i] = "tint-primary";
+                    }
+
+                    let recipe = await getDetailsById(review.recipe_id);
+                    container.appendChild(buildDynamicElement("review_card", {
+                        href: "recipe.html?id=" + recipe.idMeal,
+                        date: new Date(review.timestamp).toDateString(),
+                        timestamp: review.timestamp,
+                        content: review.content,
+                        recipe: recipe.strMeal,
+                        recipe_id: recipe.idMeal,
+                        taste: getElementHTML(buildDynamicElement("taste_score", taste_template_data)),
+                        difficulty: getElementHTML(buildDynamicElement("difficulty_score", difficulty_template_data)),
+                    }))
+                })
+            });
+        }
+
+        function updateProfileTab() {
+            document.querySelector("input#email").value = logged_user.email;
+            document.querySelector("input#username").value = logged_user.username;
+            document.querySelector("input#password").value = logged_user.password;
+            document.querySelector("input#password_confirm").value = logged_user.password;
+            fillInTags();
+            //Toggle Tags
+            logged_user.interests.areas.forEach(area_name => {
+                toggleState(document.querySelector("input[name='preferences_area'][value='" + area_name + "']").parentElement);
+            });
+            logged_user.interests.categories.forEach(category_name => {
+                toggleState(document.querySelector("input[name='preferences_category'][value='" + category_name + "']").parentElement);
+            });
+            logged_user.interests.ingredients.forEach(ingredient_name => {
+                toggleState(document.querySelector("input[name='preferences_ingredient'][value='" + ingredient_name + "']").parentElement);
+            });
+        }
+
+
+
+    </script>
+</body>
+
+</html>
