@@ -2,91 +2,574 @@
 <html lang="en" class="h-full w-full">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-  
-    <!-- More Meta Tags-->
-    <meta name="description" content="Briccola SPA - Lastre e Rotoli di Plastica dal 1967">
-    <meta name="keywords"
-      content="Briccola, Briccola SPA, Italo Briccola, Kunststoffmaterialien, Kunststoff, Thermoformen, Thermoformen Como, Thermoformen Italien, Kunststoffplatten und -rollen, Thermoformen Europa, ABS/PMMA, ABS, HIPS, HDPE">
-    <meta name="author" content="Briccola SpA">
-  
-    <!-- OG Meta Tags -->
-    <meta name="msapplication-TileImage" content="https://filippo-0.github.io/img/favicon.png">
-  
-    <meta property="og:site_name" content="Ing. Italo Briccola S.p.A.">
-    <meta property="og:title" content="Briccola S.p.A." />
-    <meta property="og:description" content="Plastic Sheets and Rolls Since 1967" />
-    <meta property="og:url" content="https://filippo-0.github.io" /> <!-- HAS TO BE CHANGED !!!! -->
-  
-    <meta property="og:image:secure_url" itemprop="image" content="https://filippo-0.github.io/img/favicon.png" />
-    <!-- HAS TO BE CHANGED !!!! -->
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="256">
-    <meta property="og:image:height" content="256">
-  
-    <meta property="og:type" content="website" />
-    <meta property='og:locale' content='it_IT' />
-    <meta property="og:updated_time" content="2023-04-16T12:00:00+00:00" />
-  
-    <meta name="twitter:description" property="og:description" itemprop="description"
-      content="Plastic Sheets and Rolls Since 1967" />
-  
-    <link rel="icon" type="image/png" href="/img/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Briccola S.p.A.</title>
-    <script type="module" crossorigin src="/assets/main-6923c23a.js"></script>
-    <script type="module" crossorigin src="/assets/tabs-9e16fd45.js"></script>
-    <link rel="stylesheet" href="/assets/main-5e6d7e43.css">
-  </head>
-  
-  <body class="min-h-screen flex flex-col h-full font-sans bg-neutral-50 overflow-x-hidden">
-  
-    <!-- Header -->
-    <header
-      class="container mx-auto flex items-center mt-4 pb-5 lg:pb-2 md:gap-3 px-3 lg:border-0 border-b-[7px] border-light_gray">
-      <div class="w-10 sm:w-12 lg:w-14">
-        <a href="/de/">
-          <img src="/img/logo.jpg" alt="Briccola-SPA">
+  <meta charset="UTF-8" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+  <!-- More Meta Tags-->
+  <meta name="description" content="Briccola SPA - Lastre e Rotoli di Plastica dal 1967">
+  <meta name="keywords"
+    content="Briccola, Briccola SPA, Italo Briccola, Kunststoffmaterialien, Kunststoff, Thermoformen, Thermoformen Como, Thermoformen Italien, Kunststoffplatten und -rollen, Thermoformen Europa, ABS/PMMA, ABS, HIPS, HDPE">
+  <meta name="author" content="Briccola SpA">
+
+  <!-- OG Meta Tags -->
+  <meta name="msapplication-TileImage" content="https://filippo-0.github.io/img/favicon.png">
+
+  <meta property="og:site_name" content="Ing. Italo Briccola S.p.A.">
+  <meta property="og:title" content="Briccola S.p.A." />
+  <meta property="og:description" content="Plastic Sheets and Rolls Since 1967" />
+  <meta property="og:url" content="https://filippo-0.github.io" /> <!-- HAS TO BE CHANGED !!!! -->
+
+  <meta property="og:image:secure_url" itemprop="image" content="https://filippo-0.github.io/img/favicon.png" />
+  <!-- HAS TO BE CHANGED !!!! -->
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+
+  <meta property="og:type" content="website" />
+  <meta property='og:locale' content='it_IT' />
+  <meta property="og:updated_time" content="2023-04-16T12:00:00+00:00" />
+
+  <meta name="twitter:description" property="og:description" itemprop="description"
+    content="Plastic Sheets and Rolls Since 1967" />
+
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briccola S.p.A.</title>
+  <script type="module" crossorigin src="/assets/main-39226b37.js"></script>
+  <script type="module" crossorigin src="/assets/tabs-9e16fd45.js"></script>
+  <link rel="stylesheet" href="/assets/main-79581680.css">
+</head>
+
+<body class="min-h-screen flex flex-col h-full font-sans bg-neutral-50 overflow-x-hidden">
+
+  <!-- Header -->
+  <header
+    class="container mx-auto flex items-center mt-4 pb-5 lg:pb-2 md:gap-3 px-3 lg:border-0 border-b-[7px] border-light_gray">
+    <div class="w-10 sm:w-12 lg:w-14">
+      <a href="/de/">
+        <img src="/img/logo.jpg" alt="Briccola-SPA">
+      </a>
+    </div>
+    <div class="ml-1 md:ml-5 flex-1 flex flex-col gap-1">
+      <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
+      <h1 class="text-black/70 font-normal text-fluid-lg-to-sm uppercase leading-none">Plastic Sheets And Rolls Since
+        1967</h1>
+    </div>
+    <div class="lg:hidden" id="mobile-menu-on">
+      <button type="button"
+        class="inline-flex items-center justify-center rounded-md bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 mr-1">
+        <span class="sr-only">Open Menu</span>
+        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex flex-col justify-center items-center gap-2">
+      <div>
+        <ul class="flex text-2xl">
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="/pages/contacts.html">IT</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="/en/pages/contacts.html">EN</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="/fr/pages/contacts.html">FR</a>
+          </li>
+          <li
+            class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
+            <a href="/es/pages/contacts.html">ES</a>
+          </li>
+          <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red" data-active>
+            <a href="#">DE</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="/de/pages/contacts.html">
+          <button type="button" class="border-4 border-bright_red px-8 py-2 group hover:bg-bright_red">
+            <span class="uppercase text-bright_red font-bold text-xl group-hover:text-white">Contacts</span>
+          </button>
         </a>
       </div>
-      <div class="ml-1 md:ml-5 flex-1 flex flex-col gap-1">
-        <h1 class="text-black font-normal text-fluid-xl leading-none">Ing. ITALO BRICCOLA S.p.A.</h1>
-        <h1 class="text-black/70 font-normal text-fluid-lg-to-sm uppercase leading-none">Plastic Sheets And Rolls Since
-          1967</h1>
-      </div>
-      <div class="lg:hidden" id="mobile-menu-on">
+    </div>
+  </header>
+  <!-- PC Navigation Mega Menu -->
+  <nav class="hidden lg:block w-full bg-light_gray px-4 py-3 z-10">
+    <ul class="container mx-auto flex justify-center items-center gap-12 2xl:gap-20">
+      <li class="group megamenu-item" tabindex="0">
+        <div class="relative">
+          <a href="/de/">
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Unternehmen</span>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a>
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Produkte</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/products.html#products">
+                <h3 class="uppercase font-semibold text-xl text-black">Produkte</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Qualität, Lieferungen und Garantien</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/products.html#properties">
+                <h3 class="uppercase font-semibold text-xl text-black">Eigenschaften</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Materialeigenschaften</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/products.html#quality">
+                <h3 class="uppercase font-semibold text-xl text-black">Qualität</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Unsere Werkzeuge: Spektralphotometer</p>
+              </a>
+            </div>
+          </div>
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/products.html#textures">
+                <h3 class="uppercase font-semibold text-xl text-black">Prägungen</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Frozen, Sand, Grain A, B, C</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/products.html#colors">
+                <h3 class="uppercase font-semibold text-xl text-black">Farbe</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  RAL-Farbskala, Pantone und Farbmuster</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a>
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Materialien</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#abs">
+                <h3 class="uppercase font-semibold text-xl text-black">ABS</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#abs_pmma">
+                <h3 class="uppercase font-semibold text-xl text-black">ABS/PMMA</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#abs_film">
+                <h3 class="uppercase font-semibold text-xl text-black">ABS + Film</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Acrilonitrile-Butadiene-Stirene</p>
+              </a>
+            </div>
+          </div>
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#hips">
+                <h3 class="uppercase font-semibold text-xl text-black">HIPS</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  High Impact PolyStryene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#hdpe">
+                <h3 class="uppercase font-semibold text-xl text-black">HDPE</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  High Density Polyethylene</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/materials.html#special_materials">
+                <h3 class="uppercase font-semibold text-base text-black">Spezialmaterialien</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  ABS/TPU, ASA, PC, PPO, ...</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item" tabindex="0">
+        <div class="relative">
+          <a href="/de/pages/products.html#quality">
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Qualität</span>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0">
+        <div class="relative">
+          <a>
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Nachhaltigkeit</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/sustainability.html#environment">
+                <h3 class="uppercase font-semibold text-xl text-black">Umwelt</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Recycling und Wiederverwendung von Produkten</p>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/sustainability.html#energy">
+                <h3 class="uppercase font-semibold text-xl text-black">Energie</h3>
+                <p
+                  class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
+                  Photovoltaikanlage mit 400 kW</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="group megamenu-item with-submenu" tabindex="0" data-active>
+        <div class="relative">
+          <a>
+            <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-md xl:text-[1.25rem] uppercase group-data-[active]:text-bright_red">Informationen</span>
+              <svg fill="transparent"
+                class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+            <div
+              class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
+            </div>
+          </a>
+        </div>
+        <div
+          class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
+          <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a href="/de/pages/contacts.html">
+                <h3 class="uppercase font-semibold text-xl text-black">Kontakte</h3>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
+                <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
+                  Privacy
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                  </svg>
+                </h3>
+              </a>
+            </div>
+            <div class="rounded-md hover:bg-gray-100 p-4">
+              <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
+                <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
+                  Verkaufsbedingungen
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                  </svg>
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- Mobile Navigation Menu -->
+  <div class="relative z-10">
+    <nav id="mobile-menu"
+      class="transform translate-x-full fixed min-h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll overflow-x-hidden transition duration-400 ease-in-out preload overscroll-contain">
+      <div class="absolute top-12 right-8" id="mobile-menu-off">
         <button type="button"
-          class="inline-flex items-center justify-center rounded-md bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 mr-1">
-          <span class="sr-only">Open Menu</span>
-          <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+          class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <span class="sr-only">Close Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
             stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path
+              d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex flex-col justify-center items-center gap-2">
+      <ul class="mt-24">
+        <li class="border-b-2 border-light_gray group ">
+          <a href="/de/" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Unternehmen</span>
+          </a>
+        </li>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Produkte</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+            <ul class="py-2">
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/products.html#products" class="pl-12 py-2 w-full block">
+                  Produkte
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/products.html#properties" class="pl-12 py-2 w-full block">
+                  Materialeigenschaften
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/products.html#quality" class="pl-12 py-2 w-full block">
+                  Qualität
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/products.html#textures" class="pl-12 py-2 w-full block">
+                  Prägungen
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/products.html#colors" class="pl-12 py-2 w-full block">
+                  Farbe
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Materialien</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+            <ul class="py-2">
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/materials.html#abs" class="pl-12 py-2 w-full block">
+                  ABS
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/materials.html#abs_pmma" class="pl-12 py-2 w-full block">
+                  ABS/PMMA
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/materials.html#abs_film" class="pl-12 py-2 w-full block">
+                  ABS + Film
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/materials.html#hips" class="pl-12 py-2 w-full block">
+                  HIPS
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/it/materials.html#hdpe" class="pl-12 py-2 w-full block">
+                  HDPE
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/materials.html#special_materials" class="pl-12 py-2 w-full block">
+                  Spezialmaterialien
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-b-2 border-light_gray group">
+          <a href="/de/pages/products.html#quality" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Qualität</span>
+          </a>
+        </li>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Nachhaltigkeit</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+            <ul class="py-2">
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/sustainability.html#environment" class="pl-12 py-2 w-full block">
+                  Umwelt
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/sustainability.html#energy" class="pl-12 py-2 w-full block">
+                  Energie
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-b-2 border-light_gray group with-submenu">
+          <a href="#" class="pl-7 py-4 flex justify-start items-center">
+            <span class="uppercase text-black font-semibold text-fluid-md">Informationen</span>
+            <svg fill="transparent"
+              class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
+              width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </a>
+          <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
+            <ul class="py-2">
+              <li class="text-black font-semibold text-fluid-md">
+                <a href="/de/pages/contacts.html" class="pl-12 py-2 w-full block">
+                  Kontakte
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf" class="pl-12 py-2 w-full flex items-center gap-2">
+                  Privacy
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="text-black font-semibold text-fluid-md">
+                <a target="_blank" href="/pdfs/SalesConditions_EN.pdf"
+                  class="pl-12 py-2 w-full flex items-center gap-2">
+                  Verkaufsbedingungen
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="flex flex-col justify-center items-center gap-3 px-4 py-6 mb-24">
         <div>
-          <ul class="flex text-2xl">
+          <ul class="flex text-fluid-lg-to-md">
             <li
               class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="/pages/contacts.html" >IT</a>
+              <a href="/pages/contacts.html">IT</a>
             </li>
             <li
               class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="/en/pages/contacts.html" >EN</a>
+              <a href="/en/pages/contacts.html">EN</a>
             </li>
             <li
               class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="/fr/pages/contacts.html" >FR</a>
+              <a href="/fr/pages/contacts.html">FR</a>
             </li>
             <li
               class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-              <a href="/es/pages/contacts.html" >ES</a>
+              <a href="/es/pages/contacts.html">ES</a>
             </li>
             <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
-            data-active>
-              <a href="#" >DE</a>
+              data-active>
+              <a href="#">DE</a>
             </li>
           </ul>
         </div>
@@ -101,7 +584,7 @@
     </header>
     <!-- PC Navigation Mega Menu -->
     <nav class="hidden lg:block w-full bg-light_gray px-4 py-3 z-10">
-      <ul class="container mx-auto flex justify-center items-center gap-12 xl:gap-20">
+      <ul class="container mx-auto flex justify-center items-center gap-12 xl:gap-20 relative">
         <li class="group megamenu-item" tabindex="0">
           <div class="relative">
             <a href="/de/">
@@ -112,581 +595,119 @@
               <div
                 class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
               </div>
+          <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
+            <a class="" href="/de/pages/contacts.html">
+              <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contacts</span>
             </a>
-          </div>
-        </li>
-        <li class="group megamenu-item with-submenu" tabindex="0">
-          <div class="relative">
-            <a href="/de/pages/products.html">
-              <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-                <span
-                  class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Produkte</span>
-                <svg fill="transparent"
-                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </button>
-              <div
-                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-              </div>
-            </a>
-          </div>
-          <div
-            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/products.html#products">
-                  <h3 class="uppercase font-semibold text-xl text-black">Produkte</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Qualität, Lieferungen und Garantien</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/products.html#properties">
-                  <h3 class="uppercase font-semibold text-xl text-black">Eigenschaften</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Materialeigenschaften</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/products.html#quality">
-                  <h3 class="uppercase font-semibold text-xl text-black">Qualität</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Unsere Werkzeuge: Spektralphotometer</p>
-                </a>
-              </div>
-            </div>
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/products.html#textures">
-                  <h3 class="uppercase font-semibold text-xl text-black">Prägungen</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Frozen, Sand, Grain A, B, C</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/products.html#colors">
-                  <h3 class="uppercase font-semibold text-xl text-black">Farbe</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    RAL-Farbskala, Pantone und Farbmuster</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="group megamenu-item with-submenu" tabindex="0">
-          <div class="relative">
-            <a href="/de/pages/materials.html">
-              <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-                <span
-                  class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Materialien</span>
-                <svg fill="transparent"
-                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </button>
-              <div
-                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-              </div>
-            </a>
-          </div>
-          <div
-            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#abs">
-                  <h3 class="uppercase font-semibold text-xl text-black">ABS</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Acrilonitrile-Butadiene-Stirene</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#abs_pmma">
-                  <h3 class="uppercase font-semibold text-xl text-black">ABS/PMMA</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Acrilonitrile-Butadiene-Stirene</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#abs_film">
-                  <h3 class="uppercase font-semibold text-xl text-black">ABS + Film</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Acrilonitrile-Butadiene-Stirene</p>
-                </a>
-              </div>
-            </div>
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 pb-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#hips">
-                  <h3 class="uppercase font-semibold text-xl text-black">HIPS</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    High Impact PolyStryene</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#hdpe">
-                  <h3 class="uppercase font-semibold text-xl text-black">HDPE</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    High Density Polyethylene</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/materials.html#special_materials">
-                  <h3 class="uppercase font-semibold text-base text-black">Spezialmaterialien</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    ABS/TPU, ASA, PC, PPO, ...</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="group megamenu-item" tabindex="0">
-          <div class="relative">
-            <a href="/de/pages/products.html#quality">
-              <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-                <span
-                  class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Qualität</span>
-              </button>
-              <div
-                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="group megamenu-item with-submenu" tabindex="0">
-          <div class="relative">
-            <a href="/de/pages/sustainability.html">
-              <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-                <span
-                  class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Nachhaltigkeit</span>
-                <svg fill="transparent"
-                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </button>
-              <div
-                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-              </div>
-            </a>
-          </div>
-          <div
-            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/sustainability.html#environment">
-                  <h3 class="uppercase font-semibold text-xl text-black">Umwelt</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Recycling und Wiederverwendung von Produkten</p>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/sustainability.html#energy">
-                  <h3 class="uppercase font-semibold text-xl text-black">Energie</h3>
-                  <p
-                    class="mt-1 font-normal text-black/70 text-sm text-ellipsis max-w-[20ch] overflow-hidden whitespace-nowrap">
-                    Photovoltaikanlage mit 400 kW</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="group megamenu-item with-submenu" tabindex="0" data-active>
-          <div class="relative">
-            <a href="/de/pages/contacts.html">
-              <button class="flex gap-0 xl:gap-2 items-center" tabindex="-1">
-                <span
-                  class="text-black font-semibold text-lg xl:text-[1.35rem] uppercase group-data-[active]:text-bright_red">Informationen</span>
-                <svg fill="transparent"
-                  class="stroke-current transform rotate-90 group-hover:-rotate-90 group-hover:-translate-y-1 group-focus:-rotate-90 group-focus:-translate-y-1 transition ease-in-out duration-200 translate-y-1 translate-x-1 group-data-[active]:text-bright_red"
-                  width="16" height="16" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
-                  <g fill-rule="evenodd">
-                    <path d="M1 1l4 4-4 4"></path>
-                  </g>
-                </svg>
-              </button>
-              <div
-                class="z-10 hidden group-data-[active]:block absolute w-4 h-4 bg-bright_red top-full left-1/2 rounded-sm rotate-45 transform -translate-x-1/2 translate-y-1">
-              </div>
-            </a>
-          </div>
-          <div
-            class="absolute left-0 w-full transition opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible duration-300 transform ease-in-out border-b-[7px] border-light_gray">
-            <div class="bg-neutral-50 flex justify-center items-center gap-2 mt-3 py-3">
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a href="/de/pages/contacts.html">
-                  <h3 class="uppercase font-semibold text-xl text-black">Kontakte</h3>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
-                  <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
-                    Privacy
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                      viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path
-                        d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                    </svg>
-                  </h3>
-                </a>
-              </div>
-              <div class="rounded-md hover:bg-gray-100 p-4">
-                <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
-                  <h3 class="uppercase font-semibold text-xl text-black flex items-center gap-2">
-                      Verkaufsbedingungen
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                      viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path
-                        d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                    </svg>
-                  </h3>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!-- Mobile Navigation Menu -->
-    <div class="relative z-10">
-      <nav id="mobile-menu"
-        class="transform translate-x-full fixed min-h-screen w-3/4 bg-neutral-50 top-0 right-0 z-20 overflow-y-scroll overflow-x-hidden transition duration-400 ease-in-out preload overscroll-contain">
-        <div class="absolute top-12 right-8" id="mobile-menu-off">
-          <button type="button"
-            class="inline-flex items-center justify-center rounded-md p-2 bg-transparent text-black focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            <span class="sr-only">Close Menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" stroke-width="2"
-              stroke="currentColor">
-              <path
-                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
-            </svg>
           </button>
         </div>
-        <ul class="mt-24">
-          <li class="border-b-2 border-light_gray group ">
-            <a href="/de/" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Unternehmen</span>
-            </a>
-          </li>
-          <li class="border-b-2 border-light_gray group with-submenu">
-            <a href="#" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Produkte</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-              <ul class="py-2">
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/products.html#products" class="pl-12 py-2 w-full block">
-                      Produkte
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/products.html#properties" class="pl-12 py-2 w-full block">
-                      Materialeigenschaften
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/products.html#quality" class="pl-12 py-2 w-full block">
-                      Qualität
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/products.html#textures" class="pl-12 py-2 w-full block">
-                      Prägungen
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/products.html#colors" class="pl-12 py-2 w-full block">
-                      Farbe
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="border-b-2 border-light_gray group with-submenu">
-            <a href="#" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Materialien</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-              <ul class="py-2">
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/materials.html#abs" class="pl-12 py-2 w-full block">
-                    ABS
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/materials.html#abs_pmma" class="pl-12 py-2 w-full block">
-                    ABS/PMMA
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/materials.html#abs_film" class="pl-12 py-2 w-full block">
-                    ABS + Film
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/materials.html#hips" class="pl-12 py-2 w-full block">
-                    HIPS
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/it/materials.html#hdpe" class="pl-12 py-2 w-full block">
-                    HDPE
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/materials.html#special_materials" class="pl-12 py-2 w-full block">
-                      Spezialmaterialien
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="border-b-2 border-light_gray group">
-            <a href="/de/pages/products.html#quality" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Qualität</span>
-            </a>
-          </li>
-          <li class="border-b-2 border-light_gray group with-submenu">
-            <a href="#" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Nachhaltigkeit</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-              <ul class="py-2">
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/sustainability.html#environment" class="pl-12 py-2 w-full block">
-                      Umwelt
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/sustainability.html#energy" class="pl-12 py-2 w-full block">
-                      Energie
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="border-b-2 border-light_gray group with-submenu">
-            <a href="#" class="pl-7 py-4 flex justify-start items-center">
-              <span class="uppercase text-black font-semibold text-fluid-md">Informationen</span>
-              <svg fill="transparent"
-                class="stroke-current transform rotate-90 transition ease-in-out duration-200 translate-y-[2px] translate-x-2"
-                width="14" height="14" stroke-width="1" viewBox="0 0 10 10" aria-hidden="true">
-                <g fill-rule="evenodd">
-                  <path d="M1 1l4 4-4 4"></path>
-                </g>
-              </svg>
-            </a>
-            <div class="translate-x-[200%] bg-light_gray max-h-0 transition-all duration-300 ease-in-out">
-              <ul class="py-2">
-                <li class="text-black font-semibold text-fluid-md">
-                  <a href="/de/pages/contacts.html" class="pl-12 py-2 w-full block">
-                      Kontakte
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf" class="pl-12 py-2 w-full flex items-center gap-2">
-                    Privacy
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                      viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path
-                        d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="text-black font-semibold text-fluid-md">
-                  <a target="_blank" href="/pdfs/SalesConditions_EN.pdf"
-                    class="pl-12 py-2 w-full flex items-center gap-2">
-                    Verkaufsbedingungen
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                      viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                      <path
-                        d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="flex flex-col justify-center items-center gap-3 px-4 py-6 mb-24">
-          <div>
-            <ul class="flex text-fluid-lg-to-md">
-              <li
-                class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-                <a href="/pages/contacts.html" >IT</a>
-              </li>
-              <li
-                class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-                <a href="/en/pages/contacts.html" >EN</a>
-              </li>
-              <li
-                class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-                <a href="/fr/pages/contacts.html" >FR</a>
-              </li>
-              <li
-                class="px-2 border-r-2 border-black data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red">
-                <a href="/es/pages/contacts.html" >ES</a>
-              </li>
-              <li class="px-2 data-[active]:text-bright_red data-[active]:font-semibold hover:text-bright_red"
-              data-active>
-                <a href="#" >DE</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <button type="button" class="border-4 border-bright_red px-10 py-2 group hover:bg-bright_red">
-              <a class="" href="/de/pages/contacts.html">
-                <span class="uppercase text-bright_red font-bold text-2xl group-hover:text-white">Contacts</span>
-              </a>
-            </button>
-          </div>
-        </div>
-      </nav>
-      <div id="mobile-menu-blur" class="transform translate-x-full fixed min-h-screen w-screen bg-black/60 inset-0 z-10">
       </div>
+    </nav>
+    <div id="mobile-menu-blur" class="transform translate-x-full fixed min-h-screen w-screen bg-black/60 inset-0 z-10">
+    </div>
+  </div>
+
+  <!-- Page -->
+  <section class="container mx-auto my-4 lg:my-6 lg:flex gap-12 z-0">
+
+    <!-- Local Navigation Menu -->
+    <div>
+      <!-- Bread Crumb -->
+      <div class="flex items-center px-2 lg:py-3 text-black/50 font-semibold ml-5 lg:ml-0">
+        <a href="/de/">Briccola SpA</a>
+        <svg fill="transparent" class="stroke-current transform transition ease-in-out duration-200 mx-2 -z-10"
+          width="10" height="10" stroke-width="2" viewBox="0 0 10 10">
+          <g fill-rule="evenodd">
+            <path d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg>
+        <a href="#" class="text-black font-bold">Informationen</a>
+      </div>
+
+      <section class="lg:ml-12 my-5 mx-4 lg:mx-0">
+        <div id="local-nav"
+          class="py-2 lg:py-4 border-y-[7px] border-y-light_gray px-2 lg:min-h-[18rem] group w-full lg:w-max">
+          <a href="#" class="flex justify-center lg:block">
+            <button class="flex gap-[1px] items-center" tabindex="-1">
+              <span
+                class="text-black font-semibold text-xl xl:text-2xl uppercase group-data-[active]:text-bright_red">Informationen</span>
+              <svg fill="transparent"
+                class="lg:hidden translate-y-[2px] stroke-current transform rotate-90 group-data-[expanded]:-rotate-90 group-data-[expanded]:-translate-y-1 transition ease-in-out duration-200 translate-x-1"
+                width="16" height="16" stroke-width="2" viewBox="0 0 10 10">
+                <g fill-rule="evenodd">
+                  <path d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+          </a>
+          <nav
+            class="group-data-[expanded]:mt-3 h-0 lg:h-auto group-data-[expanded]:h-auto transition-all duration-500 ease-in-out opacity-0 group-data-[expanded]:opacity-100 preload overflow-y-hidden lg:opacity-100 lg:mt-3 ml-3">
+            <ul class="text-lg">
+              <li
+                class="tabs-link py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline cursor-pointer"
+                data-tabs-target="tab-contacts" data-active>
+                Kontakte
+              </li>
+              <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
+                <li class="py-1 hover:text-bright_red">
+                  Privacy
+                </li>
+              </a>
+              <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
+                <li class="py-1 hover:text-bright_red">
+                  Verkaufsbedingungen
+                </li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </div>
 
-    <!-- Page -->
-    <section class="container mx-auto my-4 lg:my-6 lg:flex gap-12 z-0">
-
-        <!-- Local Navigation Menu -->
-        <div>
-            <!-- Bread Crumb -->
-            <div class="flex items-center px-2 lg:py-3 text-black/50 font-semibold ml-5 lg:ml-0">
-                <a href="/de/">Briccola SpA</a>
-                <svg fill="transparent" class="stroke-current transform transition ease-in-out duration-200 mx-2 -z-10"
-                    width="10" height="10" stroke-width="2" viewBox="0 0 10 10">
-                    <g fill-rule="evenodd">
-                        <path d="M1 1l4 4-4 4"></path>
-                    </g>
-                </svg>
-                <a href="#" class="text-black font-bold">Informationen</a>
-            </div>
-
-            <section class="lg:ml-12 my-5 mx-4 lg:mx-0">
-                <div id="local-nav"
-                    class="py-2 lg:py-4 border-y-[7px] border-y-light_gray px-2 lg:min-h-[18rem] group w-full lg:w-max">
-                    <a href="#" class="flex justify-center lg:block">
-                        <button class="flex gap-[1px] items-center" tabindex="-1">
-                            <span
-                                class="text-black font-semibold text-xl xl:text-2xl uppercase group-data-[active]:text-bright_red">Informationen</span>
-                            <svg fill="transparent"
-                                class="lg:hidden translate-y-[2px] stroke-current transform rotate-90 group-data-[expanded]:-rotate-90 group-data-[expanded]:-translate-y-1 transition ease-in-out duration-200 translate-x-1"
-                                width="16" height="16" stroke-width="2" viewBox="0 0 10 10">
-                                <g fill-rule="evenodd">
-                                    <path d="M1 1l4 4-4 4"></path>
-                                </g>
-                            </svg>
-                        </button>
-                    </a>
-                    <nav
-                        class="group-data-[expanded]:mt-3 h-0 lg:h-auto group-data-[expanded]:h-auto transition-all duration-500 ease-in-out opacity-0 group-data-[expanded]:opacity-100 preload overflow-y-hidden lg:opacity-100 lg:mt-3 ml-3">
-                        <ul class="text-lg">
-                            <li class="tabs-link py-1 hover:text-bright_red data-[active]:text-bright_red data-[active]:underline cursor-pointer"
-                                data-tabs-target="tab-contacts" data-active>
-                                Kontakte
-                            </li>
-                            <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
-                                <li class="py-1 hover:text-bright_red">
-                                    Privacy
-                                </li>
-                            </a>
-                            <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
-                                <li class="py-1 hover:text-bright_red">
-                                    Verkaufsbedingungen
-                                </li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
+    <!-- Page Content -->
+    <div class="tabs-content flex-1">
+      <div id="tab-contacts" class="tabs-tab lg:flex-1 mt-5 mb-8 xl:pl-10 mx-4">
+        <div class="lg:flex ml-4 lg:ml-0">
+          <div class="ml-4 text-fluid-md flex-1">
+            <h1 class="text-fluid-lg-to-md font-semibold my-4">Kontakte</h1>
+            <ul
+              class="marker:inline-block marker:content-['\25C6'] marker:transform marker:text-bright_red marker:text-[1.2rem]">
+              <li class="pl-4">Ing. Italo Briccola S.p.A.</li>
+              <p class="pl-4">
+                Via Leopardi, 25 <br>
+                22075 Lurate Caccivio (COMO) <br>
+                <span class="bold">ITALY</span> <br>
+                <br>
+                Tel.: +39 031 390 666 <br>
+                <br>
+                Email: <a href="mailto: commerciale@briccola.it"
+                  class="text-bright_red underline">commerciale@briccola.it</a>
+              </p>
+            </ul>
+            <ul
+              class="mt-3 marker:inline-block marker:content-['\25C6'] marker:transform marker:text-bright_red marker:text-[1.2rem]">
+              <li class="pl-4 font-bold">DE - A - CH</li>
+              <p class="pl-4">
+                HVG Agentur <br>
+                Wolfgang + Frithjof Stehle <br>
+                <br>
+                Kolping strasse, 15 <br>
+                D-86316 Friedberg/Bayern <br>
+                <span class="bold">GERMANY</span> <br>
+                <br>
+                Tel.: +49 (0) 821 - 267 35 0 <br>
+                <br>
+                Email: <a href="mailto: hvg-agentur.stehle@arcor.de"
+                  class="text-bright_red underline">hvg-agentur.stehle@arcor.de</a>
+              </p>
+            </ul>
+          </div>
+          <div
+            class="lg:ml-2 mt-3 w-full h-[12rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] overflow-y-hidden bg-[url(/img/europe_map2.png)] bg-cover bg-bottom flex-1">
+          </div>
         </div>
-
-        <!-- Page Content -->
-        <div class="tabs-content flex-1">
-            <div id="tab-contacts" class="tabs-tab lg:flex-1 mt-5 mb-8 xl:pl-10 mx-4">
-                <div class="lg:flex ml-4 lg:ml-0">
-                    <div class="ml-4 text-fluid-md flex-1">
-                        <h1 class="text-fluid-lg-to-md font-semibold my-4">Kontakte</h1>
-                        <ul
-                            class="marker:inline-block marker:content-['\25C6'] marker:transform marker:text-bright_red marker:text-[1.2rem]">
-                            <li class="pl-4">Ing. Italo Briccola S.p.A.</li>
-                            <p class="pl-4">
-                                Via Leopardi, 25 <br>
-                                22075 Lurate Caccivio (COMO) <br>
-                                <span class="bold">ITALY</span> <br>
-                                <br>
-                                Tel.: +39 031 390 666 <br>
-                                <br>
-                                Email: <a href="mailto: commerciale@briccola.it"
-                                    class="text-bright_red underline">commerciale@briccola.it</a>
-                            </p>
-                        </ul>
-                        <ul
-                        class="mt-3 marker:inline-block marker:content-['\25C6'] marker:transform marker:text-bright_red marker:text-[1.2rem]">
-                        <li class="pl-4 font-bold">DE - A - CH</li>
-                        <p class="pl-4">
-                            HVG Agentur <br>
-                            Wolfgang + Frithjof Stehle <br>
-                            <br>
-                            Kolping strasse, 15 <br>
-                            D-86316 Friedberg/Bayern <br>
-                            <span class="bold">GERMANY</span> <br>
-                            <br>
-                            Tel.: +49 (0) 821 - 267 35 0 <br>
-                            <br>
-                            Email: <a href="mailto: hvg-agentur.stehle@arcor.de"
-                                class="text-bright_red underline">hvg-agentur.stehle@arcor.de</a>
-                        </p>
-                    </ul>
-                    </div>
-                    <div
-                        class="lg:ml-2 mt-3 w-full h-[12rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] overflow-y-hidden bg-[url(/img/europe_map2.png)] bg-cover bg-bottom flex-1">
-                    </div>
-                </div>
-            </div>
-            <!--
+      </div>
+      <!--
             <h1 class="text-fluid-lg-to-md font-semibold my-4 ml-4 mt-5 lg:mt-0">Agenti Per Estero</h1>
             <div class="lg:flex justify-center my-4 lg:mt-10 mt-5 ml-4 lg:ml-0">
                 <div class="ml-4 text-fluid-md flex-1 lg:border-r-[7px] lg:border-r-light mb-3">
@@ -747,159 +768,159 @@
                 </div>
             </div>
             -->
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="mt-auto relative border-t-[7px] border-light_gray">
-      
-      <div class="container mx-auto flex flex-col md:flex-row gap-5 md:gap-0 px-10 md:px-2 justify-evenly my-8">
-        <div>
-          <a href="/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-              Unternehmen
-          </a>
-        </div>
-        <div>
-          <a href="/de/pages/sustainability.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-              Nachhaltigkeit
-          </a>
-          <nav class="mt-2">
-            <ul class="text-fluid-sm">
-              <a href="/de/pages/sustainability.html#environment">
-                <li class="py-1 hover:text-bright_red">
-                  Umwelt
-                </li>
-              </a>
-              <a href="/de/pages/sustainability.html#energy">
-                <li class="py-1 hover:text-bright_red">
-                  Energie
-                </li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <a href="/de/pages/products.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-              Produkte
-          </a>
-          <nav class="mt-2">
-            <ul class="text-fluid-sm">
-              <a href="/de/pages/products.html#products">
-                <li class="py-1 hover:text-bright_red">
-                  Produkte
-                </li>
-              </a>
-              <a href="/de/pages/products.html#properties">
-                <li class="py-1 hover:text-bright_red">
-                  Eigenschaften
-                </li>
-              </a>
-              <a href="/de/pages/products.html#quality">
-                <li class="py-1 hover:text-bright_red">
-                  Qualität
-                </li>
-              </a>
-              <a href="/de/pages/products.html#textures">
-                <li class="py-1 hover:text-bright_red">
-                  Prägungen
-                </li>
-              </a>
-              <a href="/de/pages/products.html#colors">
-                <li class="py-1 hover:text-bright_red">
-                  Farbe
-                </li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <a href="/de/pages/materials.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-              Materialien
-          </a>
-          <nav class="mt-2">
-            <ul class="text-fluid-sm">
-              <a href="/de/pages/materials.html#hips">
-                <li class="py-1 hover:text-bright_red">
-                  Hips
-                </li>
-              </a>
-              <a href="/de/pages/materials.html#abs">
-                <li class="py-1 hover:text-bright_red">
-                  ABS
-                </li>
-              </a>
-              <a href="/de/pages/materials.html#abs_pmma">
-                <li class="py-1 hover:text-bright_red">
-                  ABS/PMMA
-                </li>
-              </a>
-              <a href="/de/pages/materials.html#abs_film">
-                <li class="py-1 hover:text-bright_red">
-                  Abs + FILM
-                </li>
-              </a>
-              <a href="/de/pages/materials.html#hdpe">
-                <li class="py-1 hover:text-bright_red">
-                  HDPE
-                </li>
-              </a>
-              <a href="/de/pages/materials.html#special_materials">
-                <li class="py-1 hover:text-bright_red">
-                  Spezialmaterialien
-                </li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <a href="/de/pages/contacts.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
-              Informationen
-          </a>
-          <nav class="mt-2">
-            <ul class="text-fluid-sm">
-              <a href="/de/pages/contacts.html">
-                <li class="py-1 hover:text-bright_red">
-                  Kontakte
-                </li>
-              </a>
-              <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
-                <li class="py-1 hover:text-bright_red flex gap-2 items-center">
-                  Privacy
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                  </svg>
-                </li>
-              </a>
-              <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
-                <li class="py-1 hover:text-bright_red flex gap-2 items-center">
-                  Verkaufsbedingungen
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                      d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
-                  </svg>
-                </li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="w-full bg-light_gray py-5 font-semibold text-fluid-sm text-center leading-[1.2]">
-        <p>Ing. Italo Briccola S.p.A. - <a href="#">commerciale@briccola.it</a></p>
-        <p class="underline">
-          <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">Sales Conditions</a>
-        </p>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="mt-auto relative border-t-[7px] border-light_gray">
 
-    
-    
-    
-    <script>
-        localStorage.setItem("language", "de");
-    </script>
+    <div class="container mx-auto flex flex-col md:flex-row gap-5 md:gap-0 px-10 md:px-2 justify-evenly my-8">
+      <div>
+        <a href="/" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
+          Unternehmen
+        </a>
+      </div>
+      <div>
+        <a href="/de/pages/sustainability.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
+          Nachhaltigkeit
+        </a>
+        <nav class="mt-2">
+          <ul class="text-fluid-sm">
+            <a href="/de/pages/sustainability.html#environment">
+              <li class="py-1 hover:text-bright_red">
+                Umwelt
+              </li>
+            </a>
+            <a href="/de/pages/sustainability.html#energy">
+              <li class="py-1 hover:text-bright_red">
+                Energie
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="/de/pages/products.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
+          Produkte
+        </a>
+        <nav class="mt-2">
+          <ul class="text-fluid-sm">
+            <a href="/de/pages/products.html#products">
+              <li class="py-1 hover:text-bright_red">
+                Produkte
+              </li>
+            </a>
+            <a href="/de/pages/products.html#properties">
+              <li class="py-1 hover:text-bright_red">
+                Eigenschaften
+              </li>
+            </a>
+            <a href="/de/pages/products.html#quality">
+              <li class="py-1 hover:text-bright_red">
+                Qualität
+              </li>
+            </a>
+            <a href="/de/pages/products.html#textures">
+              <li class="py-1 hover:text-bright_red">
+                Prägungen
+              </li>
+            </a>
+            <a href="/de/pages/products.html#colors">
+              <li class="py-1 hover:text-bright_red">
+                Farbe
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="/de/pages/materials.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
+          Materialien
+        </a>
+        <nav class="mt-2">
+          <ul class="text-fluid-sm">
+            <a href="/de/pages/materials.html#hips">
+              <li class="py-1 hover:text-bright_red">
+                Hips
+              </li>
+            </a>
+            <a href="/de/pages/materials.html#abs">
+              <li class="py-1 hover:text-bright_red">
+                ABS
+              </li>
+            </a>
+            <a href="/de/pages/materials.html#abs_pmma">
+              <li class="py-1 hover:text-bright_red">
+                ABS/PMMA
+              </li>
+            </a>
+            <a href="/de/pages/materials.html#abs_film">
+              <li class="py-1 hover:text-bright_red">
+                Abs + FILM
+              </li>
+            </a>
+            <a href="/de/pages/materials.html#hdpe">
+              <li class="py-1 hover:text-bright_red">
+                HDPE
+              </li>
+            </a>
+            <a href="/de/pages/materials.html#special_materials">
+              <li class="py-1 hover:text-bright_red">
+                Spezialmaterialien
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="/de/pages/contacts.html" class="font-semibold text-fluid-md uppercase hover:text-bright_red">
+          Informationen
+        </a>
+        <nav class="mt-2">
+          <ul class="text-fluid-sm">
+            <a href="/de/pages/contacts.html">
+              <li class="py-1 hover:text-bright_red">
+                Kontakte
+              </li>
+            </a>
+            <a target="_blank" href="/pdfs/PrivacyPolicy_IT.pdf">
+              <li class="py-1 hover:text-bright_red flex gap-2 items-center">
+                Privacy
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                </svg>
+              </li>
+            </a>
+            <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">
+              <li class="py-1 hover:text-bright_red flex gap-2 items-center">
+                Verkaufsbedingungen
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z" />
+                </svg>
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="w-full bg-light_gray py-5 font-semibold text-fluid-sm text-center leading-[1.2]">
+      <p>Ing. Italo Briccola S.p.A. - <a href="#">commerciale@briccola.it</a></p>
+      <p class="underline">
+        <a target="_blank" href="/pdfs/SalesConditions_EN.pdf">Sales Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  
+  
+  
+  <script>
+    localStorage.setItem("language", "de");
+  </script>
 </body>
 
 </html>
